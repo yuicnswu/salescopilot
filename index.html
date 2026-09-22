@@ -1477,7 +1477,7 @@
     <!-- API Key Input Section -->
     <div style="padding:12px 20px; background:#0f172a; border-bottom:1px solid #1e293b; display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
       <span style="font-size:12px; color:#94a3b8; white-space:nowrap;">🔑 API Key:</span>
-      <input type="password" id="geminiApiKeyInput" placeholder="วาง Google AI Studio API Key..." style="flex:1; min-width:200px; background:#1e293b; border:1px solid #334155; border-radius:8px; padding:6px 12px; color:#fff; font-size:12px;" />
+      <input type="password" id="geminiApiKeyInput" value="AIzaSyBXYG47tyj9nHT52ClD4uj-U6_hjJ_tP6E" value="AIzaSyBXYG47tyj9nHT52ClD4uj-U6_hjJ_tP6E" placeholder="วาง Google AI Studio API Key..." style="flex:1; min-width:200px; background:#1e293b; border:1px solid #334155; border-radius:8px; padding:6px 12px; color:#fff; font-size:12px;" />
       <button onclick="saveApiKey()" style="background:#4f46e5; color:#fff; border:none; border-radius:8px; padding:6px 14px; font-size:12px; font-weight:600; cursor:pointer;">บันทึก</button>
       <a href="https://aistudio.google.com/app/apikey" target="_blank" style="font-size:11px; color:#a855f7; text-decoration:none; display:flex; align-items:center; gap:3px;">
         รับ API Key ฟรี ↗
@@ -1509,7 +1509,7 @@
 <script>
 function openAiStudioModal() {
   document.getElementById('aiStudioModal').style.display = 'flex';
-  const saved = localStorage.getItem('warrix_gemini_key') || '';
+  const saved = localStorage.getItem('warrix_gemini_key') || 'AIzaSyBXYG47tyj9nHT52ClD4uj-U6_hjJ_tP6E';
   if (saved) document.getElementById('geminiApiKeyInput').value = saved;
 }
 
@@ -1535,75 +1535,89 @@ async function handleAiChatSubmit(e) {
   if (!query) return;
 
   const chat = document.getElementById('aiChatContainer');
-  chat.innerHTML += `
-    <div style="align-self:flex-end; background:#4f46e5; color:#fff; padding:8px 14px; border-radius:14px 14px 2px 14px; max-width:80%;">
-      ${query}
-    </div>
-  `;
+  chat.innerHTML += '<div style="align-self:flex-end; background:#4f46e5; color:#fff; padding:8px 14px; border-radius:14px 14px 2px 14px; max-width:80%;">' + query + '</div>';
   input.value = '';
   chat.scrollTop = chat.scrollHeight;
 
   const apiKey = localStorage.getItem('warrix_gemini_key') || document.getElementById('geminiApiKeyInput').value.trim();
 
-  // Loading state
   const loadingId = 'loading-' + Date.now();
-  chat.innerHTML += `
-    <div id="${loadingId}" style="align-self:flex-start; background:#1e293b; color:#94a3b8; padding:8px 14px; border-radius:14px 14px 14px 2px; max-width:85%;">
-      กำลังประมวลผลผ่าน Gemini 1.5 Flash...
-    </div>
-  `;
+  chat.innerHTML += '<div id="' + loadingId + '" style="align-self:flex-start; background:#1e293b; color:#94a3b8; padding:8px 14px; border-radius:14px 14px 14px 2px; max-width:85%;">🤖 กำลังประมวลผลผ่าน Gemini Co-pilot Container...</div>';
   chat.scrollTop = chat.scrollHeight;
 
   try {
-    let replyText = "";
-    if (apiKey) {
-      // Call Google AI Studio Gemini API directly
-      const sysPrompt = "You are the WARRIX Live Commerce Sales Director. Answer concisely in persuasive Thai. You have 100 SKUs of Warrix products. Give product SKU, price, emotional benefit, and a 10-second spoken hook.";
-      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+    let replyText = '';
+
+    // 1. Try Container Backend API (/api/copilot) first
+    try {
+      const cRes = await fetch('/api/copilot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt: query, api_key: apiKey })
+      });
+      if (cRes.ok) {
+        const cData = await cRes.json();
+        if (cData.reply) {
+          replyText = cData.reply;
+        }
+      }
+    } catch (_) {}
+
+    // 2. Client-side direct call fallback if running without backend
+    if (!replyText && apiKey) {
+      const sysPrompt = 'You are the WARRIX Live Commerce Sales Director. Answer concisely in persuasive spoken Thai. You have 100 SKUs of Warrix products. Give product SKU, price, emotional benefit, and a 10-second spoken hook.';
+      const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + apiKey, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          contents: [{
-            role: "user",
-            parts: [{ text: sysPrompt + "\n\nHere is the query: " + query }]
-          }],
+          contents: [{ role: 'user', parts: [{ text: sysPrompt + '
+
+Question: ' + query }] }],
           generationConfig: { temperature: 0.3, maxOutputTokens: 800 }
         })
       });
       const data = await res.json();
       if (data.candidates && data.candidates[0].content.parts[0].text) {
         replyText = data.candidates[0].content.parts[0].text;
-      } else {
-        throw new Error(data.error ? data.error.message : "API Error");
       }
-    } else {
-      // Offline fallback: Search local 100 SKUs
+    }
+
+    // 3. Offline Heuristic Fallback
+    if (!replyText) {
+      const qWords = query.toLowerCase().split(' ').filter(w => w.length > 1);
       const matches = PRODUCTS.filter(p => {
-        const b = (p.sku + " " + p.name + " " + p.category + " " + (p.tagline||"") + " " + JSON.stringify(p.what_it_is)).toLowerCase();
-        return query.toLowerCase().split(' ').some(w => b.includes(w));
+        const b = (p.sku + ' ' + p.name + ' ' + p.category + ' ' + (p.tagline||'') + ' ' + JSON.stringify(p.what_it_is)).toLowerCase();
+        return qWords.some(w => b.includes(w));
       }).slice(0, 3);
 
       if (matches.length > 0) {
-        replyText = "💡 **ผลลัพธ์จากคลังข้อมูล 100 SKUs (โหมด Offline - ใส่ Google AI Studio API Key เพื่อใช้งานคำตอบแบบ AI อัจฉริยะ):**\n\n";
+        replyText = '💡 **คำแนะนำจากฐานข้อมูล 100 SKUs:**
+
+';
         matches.forEach(m => {
-          replyText += `• **[${m.sku}] ${m.name}** (ราคา ${m.price_range} | ลด ${m.discount_pct||'ราคาปกติ'})\n`;
-          replyText += `  🎣 **Hook:** ${m.how_to_sell.hook}\n`;
-          replyText += `  🎯 **Live Demo:** ${m.how_to_sell.live_demo}\n\n`;
+          replyText += '• **[' + m.sku + '] ' + m.name + '** (' + m.price_range + ')
+';
+          replyText += '  🎣 **Hook:** ' + m.how_to_sell.hook + '
+';
+          replyText += '  🎬 **Live Demo:** ' + m.how_to_sell.live_demo + '
+
+';
         });
       } else {
-        replyText = "กรุณาใส่ Google AI Studio API Key ด้านบน เพื่อเชื่อมต่อการวิเคราะห์แบบเรียลไทม์ผ่าน Gemini ครับ! (รับคีย์ฟรีที่ aistudio.google.com/app/apikey)";
+        replyText = 'พร้อมให้คำปรึกษาครับ! พิมพ์ถามเกี่ยวกับสินค้าวอริกซ์ ทรงเสื้อ เนื้อผ้า หรือโปรโมชันสดในไลฟ์ได้เลยครับ';
       }
     }
 
     const loader = document.getElementById(loadingId);
     if (loader) {
-      loader.innerHTML = marked ? marked.parse(replyText) : replyText.replace(/\n/g, '<br/>');
+      loader.innerHTML = (typeof marked !== 'undefined') ? marked.parse(replyText) : replyText.replace(/
+/g, '<br/>');
       loader.style.color = '#e2e8f0';
     }
   } catch (err) {
     const loader = document.getElementById(loadingId);
     if (loader) {
-      loader.innerHTML = `⚠️ เกิดข้อผิดพลาดในการเชื่อมต่อ Google AI Studio: ${err.message}<br/><small>กรุณาตรวจสอบ API Key ของคุณที่ <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color:#a855f7;">aistudio.google.com</a></small>`;
+      loader.innerHTML = '⚠️ เกิดข้อผิดพลาด: ' + err.message;
       loader.style.color = '#f87171';
     }
   }
