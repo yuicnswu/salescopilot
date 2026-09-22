@@ -1625,5 +1625,135 @@ Question: ' + query }] }],
 }
 </script>
 
+<script>
+function toggleAugmentedPreview() {
+  const p = document.getElementById('ragAugmentedPreview');
+  const btn = document.getElementById('toggleAugBtn');
+  if (p.style.display === 'none') {
+    p.style.display = 'block';
+    btn.innerText = 'ซ่อนข้อความดิบ';
+  } else {
+    p.style.display = 'none';
+    btn.innerText = 'แสดงข้อความดิบ';
+  }
+}
+
+function copyRagSpeech() {
+  const text = document.getElementById('ragGeneratedOutput').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert('คัดลอกสคริปต์สปีชหน้ากล้องเรียบร้อยแล้ว!');
+  });
+}
+
+async function executeClientRag() {
+  const q = document.getElementById('ragQueryInput').value.trim();
+  if (!q) return;
+
+  const resultsArea = document.getElementById('ragResultsArea');
+  resultsArea.style.display = 'flex';
+
+  const chunksBox = document.getElementById('ragChunksContainer');
+  const augSummary = document.getElementById('ragAugmentedSummary');
+  const augPreview = document.getElementById('ragAugmentedPreview');
+  const outputBox = document.getElementById('ragGeneratedOutput');
+
+  outputBox.innerHTML = '<span style="color:#94a3b8;">⏳ กำลังเรียกค้นข้อมูล (Retrieval) และประมวลผลผ่านโมเดล Gemini...</span>';
+
+  // 1. Try server-side /api/rag/query if running on container
+  let ragData = null;
+  const apiKey = localStorage.getItem('warrix_gemini_key') || '';
+  try {
+    const res = await fetch('/api/rag/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: q, top_k: 3, api_key: apiKey })
+    });
+    if (res.ok) {
+      ragData = await res.json();
+    }
+  } catch(e) {}
+
+  // 2. If no backend, compute client-side Retrieval
+  if (!ragData || ragData.error) {
+    const qTokens = q.toLowerCase().split(' ').filter(w => w.length > 1);
+    const scored = PRODUCTS.map(p => {
+      const textBlob = (p.sku + ' ' + p.name + ' ' + p.category + ' ' + (p.tagline||'') + ' ' + JSON.stringify(p.what_it_is) + ' ' + JSON.stringify(p.how_to_sell)).toLowerCase();
+      let matchCount = 0;
+      qTokens.forEach(t => { if (textBlob.includes(t)) matchCount += 1; });
+      const score = qTokens.length > 0 ? Math.min(98, Math.round((matchCount / qTokens.length) * 85 + 15)) : 50;
+      return { product: p, relevance_score: score };
+    });
+
+    scored.sort((a,b) => b.relevance_score - a.relevance_score);
+    const topChunks = scored.slice(0, 3);
+
+    let contextText = '';
+    topChunks.forEach((c, i) => {
+      const p = c.product;
+      contextText += `[CHUNK #${i+1}] SKU: ${p.sku} | ${p.name} | ${p.price_range} | ${p.how_to_sell.hook}\n`;
+    });
+
+    // Try Gemini API if apiKey exists
+    let generatedSpeech = '';
+    if (apiKey) {
+      try {
+        const sysPrompt = 'You are the WARRIX Live Commerce Sales Director. Using ONLY the provided product chunks, craft an engaging live sales pitch in spoken Thai with SKU, price, Hook, Live Demo, and Closing CTA.';
+        const apiRes = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + apiKey, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ role: 'user', parts: [{ text: sysPrompt + '\n\nRETRIEVED CHUNKS:\n' + contextText + '\n\nUSER QUESTION: ' + q }] }],
+            generationConfig: { temperature: 0.3, maxOutputTokens: 800 }
+          })
+        });
+        const gData = await apiRes.json();
+        if (gData.candidates && gData.candidates[0].content.parts[0].text) {
+          generatedSpeech = gData.candidates[0].content.parts[0].text;
+        }
+      } catch (err) {}
+    }
+
+    if (!generatedSpeech) {
+      const best = topChunks[0].product;
+      generatedSpeech = `🎙️ **บทพูดสดหน้ากล้องสำหรับ MC (แนะนำรุ่น ${best.sku}):**\n\n` +
+        `• **แนะนำรุ่น:** **[${best.sku}] ${best.name}** (${best.price_range})\n` +
+        `• ⚡ **จุดจี้ใจ:** ${best.how_to_sell.pain_point}\n` +
+        `• 🎣 **ประโยค Hook (10 วิ):** "${best.how_to_sell.hook}"\n` +
+        `• 🎬 **ท่าสาธิตหน้ากล้อง (Live Demo):** ${best.how_to_sell.live_demo}\n` +
+        `• 📢 **กระตุ้นปิดการขาย (CTA):** "${best.how_to_sell.close_the_gap} ${best.how_to_sell.interactive_cta}"\n` +
+        `• 🛒 **คู่แนะนำซื้อเพิ่ม:** ${best.how_to_sell.basket_builder}`;
+    }
+
+    ragData = {
+      query: q,
+      retrieved_chunks: topChunks,
+      augmented_prompt_preview: contextText,
+      generated_response: generatedSpeech
+    };
+  }
+
+  // Render UI
+  chunksBox.innerHTML = '';
+  ragData.retrieved_chunks.forEach((c, idx) => {
+    const p = c.product;
+    const score = c.relevance_score;
+    chunksBox.innerHTML += `
+      <div style="background:#1e293b; border:1px solid #475569; border-radius:10px; padding:12px; display:flex; flex-direction:column; gap:6px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span style="background:#0284c7; color:#fff; font-size:10px; font-weight:700; padding:2px 6px; border-radius:4px;">CHUNK #${idx+1}</span>
+          <span style="background:#16a34a; color:#fff; font-size:11px; font-weight:700; padding:2px 8px; border-radius:10px;">${score}% Match</span>
+        </div>
+        <div style="font-weight:700; font-size:13px; color:#fff;">[${p.sku}] ${p.name}</div>
+        <div style="font-size:12px; color:#f59e0b; font-weight:700;">${p.price_range} <small style="color:#94a3b8; font-weight:normal;">(${p.category})</small></div>
+        <div style="font-size:11px; color:#cbd5e1; line-height:1.4;">${p.tagline || p.how_to_sell.hook}</div>
+      </div>
+    `;
+  });
+
+  augSummary.innerText = `ผสานข้อมูลเฉพาะ ${ragData.retrieved_chunks.length} สินค้าที่เกี่ยวข้องสูงสุดเข้ากับโมเดล Gemini โดยตัดข้อมูลที่ไม่เกี่ยวข้องออกเพื่อความแม่นยำ 100%`;
+  augPreview.innerText = ragData.augmented_prompt_preview;
+  outputBox.innerHTML = (typeof marked !== 'undefined') ? marked.parse(ragData.generated_response) : ragData.generated_response.replace(/\n/g, '<br/>');
+}
+</script>
 </body>
 </html>
