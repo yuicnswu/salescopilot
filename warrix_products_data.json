@@ -163,7 +163,24 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-253placl33",
@@ -335,7 +352,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, น้ำเงิน",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-252placl30",
@@ -572,7 +610,56 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, ฟ้า, เทา, เลือดหมู, เขียว, เหลือง, ม่วง, น้ำตาล",
-    "color_count": 10
+    "color_count": 10,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "LL (ฟ้า)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "MM (เลือดหมู)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "TT (น้ำตาล)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Champagne Gold (ทอง/เหลือง)",
+        "hex": "#d97706"
+      }
+    ]
   },
   {
     "id": "wa-261placl02",
@@ -745,7 +832,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, น้ำเงิน",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-261placr01",
@@ -899,7 +1007,20 @@
       }
     ],
     "available_colors_text": "กรมท่า",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wa-261placl30",
@@ -1083,7 +1204,48 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "AE",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "ET",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "GL",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "KT",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "LD",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "TY",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "YW (หลากโทนสีพาสเทลและเอิร์ธโทน)",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-261placy01",
@@ -1246,7 +1408,20 @@
       }
     ],
     "available_colors_text": "แดง, ทอง",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      }
+    ]
   },
   {
     "id": "wa-plan15",
@@ -1465,7 +1640,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, ฟ้า, เทา, แดง, เขียว, เหลือง, ส้ม, ชมพู",
-    "color_count": 10
+    "color_count": 10,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-212placl30",
@@ -1635,7 +1823,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-221placl30",
@@ -1839,7 +2040,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, ฟ้า, เทา, แดง, เหลือง, ม่วง",
-    "color_count": 8
+    "color_count": 8,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-253plmcl37",
@@ -2021,7 +2235,32 @@
       }
     ],
     "available_colors_text": "ดำ, ฟ้า, เลือดหมู, ชมพู",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "LL (ฟ้าอ่อนหน้าสว่าง)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "MM (เลือดหมูดูแพง)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      }
+    ]
   },
   {
     "id": "wa-252placl31-wavora",
@@ -2205,7 +2444,36 @@
       }
     ],
     "available_colors_text": "ฟ้า, ชมพู, ม่วง, พีช",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      },
+      {
+        "name": "PH/PK (ชมพูพีช)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "G5 (มิ้นต์)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "LL (ฟ้า)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-252placl31-tactical",
@@ -2389,7 +2657,36 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เขียว",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "FF (คราม/กากี)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-242placl30",
@@ -2558,7 +2855,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wa-232placl34",
@@ -2728,7 +3038,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "หลากหลายสีสันโทนโมเดิร์นสปอร์ต",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-222placl34",
@@ -2897,7 +3220,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-221placl32",
@@ -3065,7 +3401,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-214placl32",
@@ -3234,7 +3583,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-252placl32-wisp",
@@ -3401,7 +3763,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "โทนสปอร์ตคลาสสิก แถบคอสีตัด",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-pla029",
@@ -3570,7 +3945,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wf-261rnacl01",
@@ -3743,7 +4131,24 @@
       }
     ],
     "available_colors_text": "ดำ, เหลือง, เหลืองนีออน, ชมพู, นีออนสะท้อนแสง",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      }
+    ]
   },
   {
     "id": "wf-261rnacl02",
@@ -3895,7 +4300,24 @@
       }
     ],
     "available_colors_text": "ครีม, เบจ",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "FF (ครีมเบจ)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "KK (กากีโอลีฟ)",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wf-261rnacl03",
@@ -4053,7 +4475,24 @@
       }
     ],
     "available_colors_text": "ขาว, เทา, แดง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wf-261rnacl04",
@@ -4195,7 +4634,20 @@
       }
     ],
     "available_colors_text": "ขาว",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wf-253rnacl04",
@@ -4338,7 +4790,19 @@
       }
     ],
     "available_colors_text": "ดำ",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wf-253rnacl03",
@@ -4494,7 +4958,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wf-253rnacl02",
@@ -4663,7 +5139,31 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, เทา, ครีม",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "FF (ครีม)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wf-203rnacl01",
@@ -4833,7 +5333,32 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, ชมพู, ม่วง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wf-254fbamy01",
@@ -4989,7 +5514,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, ทอง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wf-254fbamy03",
@@ -5145,7 +5682,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "โทนสีดุดัน ทรงพลัง",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wf-254fsamy01",
@@ -5301,7 +5850,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "โทนสีสปอร์ตฟุตซอล",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-243fbath10",
@@ -5470,7 +6031,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "โทนสตรีททีมชาติคลาสสิก",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-261fbwth11",
@@ -5634,7 +6208,24 @@
       }
     ],
     "available_colors_text": "เทา, ทอง",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "Champagne Gold (ทอง/เหลือง)",
+        "hex": "#d97706"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-261fbwth15",
@@ -5814,7 +6405,28 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง, ทอง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-253fbath51",
@@ -6005,7 +6617,36 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง, เขียว, เบจ",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "The Shade Taupe of Phasuta (เบจผสุทา)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      }
+    ]
   },
   {
     "id": "wa-253fbath52",
@@ -6188,7 +6829,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง, เขียว, เบจ",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-253fbath53-cheer",
@@ -6371,7 +7025,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง, เขียว, เบจ",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "lp-241jemw901",
@@ -6508,7 +7175,20 @@
       }
     ],
     "available_colors_text": "ยีนส์",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ยีนส์พรีเมียมทรงโมเดิร์น ยืดหยุ่นขยับสบายแต่เก็บทรงขาเรียวสวย ใส่แมตช์กับเสื้อได้ทุกแนวตั้งแต่โปโลจนถึงเสื้อยืดโอเวอร์ไซส์!",
+    "styling_advice": "พับขากางเกงขึ้น 1 ทบ โชว์ข้อเท้าและสนีกเกอร์คู่โปรด",
+    "fashion_color_swatches": [
+      {
+        "name": "สียีนส์ฟอกสตรีท, สียีนส์เข้ม",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "lp-241jemw103",
@@ -6663,7 +7343,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ยีนส์พรีเมียมทรงโมเดิร์น ยืดหยุ่นขยับสบายแต่เก็บทรงขาเรียวสวย ใส่แมตช์กับเสื้อได้ทุกแนวตั้งแต่โปโลจนถึงเสื้อยืดโอเวอร์ไซส์!",
+    "styling_advice": "พับขากางเกงขึ้น 1 ทบ โชว์ข้อเท้าและสนีกเกอร์คู่โปรด",
+    "fashion_color_swatches": [
+      {
+        "name": "Denim (เข้มดุดัน)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Fade Denim (มีมิติ)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-261fjacl06",
@@ -6832,7 +7533,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, เทา",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-252fjacl01",
@@ -7000,7 +7714,19 @@
       }
     ],
     "available_colors_text": "ดำ, กรมท่า, เทา",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-254wramy01",
@@ -7105,7 +7831,19 @@
       }
     ],
     "available_colors_text": "ดำ",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-254wramy02",
@@ -7209,7 +7947,19 @@
       }
     ],
     "available_colors_text": "ดำ",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-252bkawp01",
@@ -7384,7 +8134,31 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, ส้ม",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-254bkath01",
@@ -7546,7 +8320,23 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "la-243tsacl01",
@@ -7722,7 +8512,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เทา",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "la-233tsacl04",
@@ -7890,7 +8692,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, เทา",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-241fbacl06-199",
@@ -8059,7 +8874,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "มีมากกว่า 15 สี สดใสและสุภาพ",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "la-262tsawk01",
@@ -8228,7 +9055,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "โทนสีสตรีทมินิมอล",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-262jkacl70",
@@ -8380,7 +9219,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เทา",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Travel & Airport",
+      "Streetwear & Trendy",
+      "Office & Workwear"
+    ],
+    "fashion_hook": "เลเยอร์ชิ้นเด็ดที่เปลี่ยนชุดธรรมดาให้ดูแพงทันที! คัตติ้งเนี้ยบ กันลมกันหนาวบนเครื่องบินหรือในห้องแอร์ได้สบายมากครับ!",
+    "styling_advice": "สวมทับเสื้อยืดสีพื้นหรือเสื้อโปโล รูดซิปครึ่งอกเพื่อโชว์เลเยอร์ด้านใน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-254cpamy01",
@@ -8484,7 +9336,19 @@
       }
     ],
     "available_colors_text": "ดำ",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-254cpamy01",
@@ -8588,7 +9452,19 @@
       }
     ],
     "available_colors_text": "ดำ",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-262fbask10",
@@ -8750,7 +9626,20 @@
       }
     ],
     "available_colors_text": "ชมพู, ฟ้า",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "ชมพู-ฟ้า สวนกุหลาบ",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-262fbabc10",
@@ -8912,7 +9801,20 @@
       }
     ],
     "available_colors_text": "ม่วง, ทอง",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      }
+    ]
   },
   {
     "id": "la-254djacl01",
@@ -9050,7 +9952,20 @@
       }
     ],
     "available_colors_text": "ดำ, เทา",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Travel & Airport",
+      "Streetwear & Trendy",
+      "Office & Workwear"
+    ],
+    "fashion_hook": "เลเยอร์ชิ้นเด็ดที่เปลี่ยนชุดธรรมดาให้ดูแพงทันที! คัตติ้งเนี้ยบ กันลมกันหนาวบนเครื่องบินหรือในห้องแอร์ได้สบายมากครับ!",
+    "styling_advice": "สวมทับเสื้อยืดสีพื้นหรือเสื้อโปโล รูดซิปครึ่งอกเพื่อโชว์เลเยอร์ด้านใน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "la-254djwcl01",
@@ -9194,7 +10109,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, ครีม",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Travel & Airport",
+      "Streetwear & Trendy",
+      "Office & Workwear"
+    ],
+    "fashion_hook": "เลเยอร์ชิ้นเด็ดที่เปลี่ยนชุดธรรมดาให้ดูแพงทันที! คัตติ้งเนี้ยบ กันลมกันหนาวบนเครื่องบินหรือในห้องแอร์ได้สบายมากครับ!",
+    "styling_advice": "สวมทับเสื้อยืดสีพื้นหรือเสื้อโปโล รูดซิปครึ่งอกเพื่อโชว์เลเยอร์ด้านใน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "la-254jkmcl02",
@@ -9331,7 +10259,20 @@
       }
     ],
     "available_colors_text": "ดำ, เทา",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Travel & Airport",
+      "Streetwear & Trendy",
+      "Office & Workwear"
+    ],
+    "fashion_hook": "เลเยอร์ชิ้นเด็ดที่เปลี่ยนชุดธรรมดาให้ดูแพงทันที! คัตติ้งเนี้ยบ กันลมกันหนาวบนเครื่องบินหรือในห้องแอร์ได้สบายมากครับ!",
+    "styling_advice": "สวมทับเสื้อยืดสีพื้นหรือเสื้อโปโล รูดซิปครึ่งอกเพื่อโชว์เลเยอร์ด้านใน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-changsuek-blackout",
@@ -9486,7 +10427,20 @@
       }
     ],
     "available_colors_text": "ดำ",
-    "color_count": 1
+    "color_count": 1,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-blue-gold-polo",
@@ -9648,7 +10602,20 @@
       }
     ],
     "available_colors_text": "กรมท่า, ทอง",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wa-262fbath51",
@@ -9817,7 +10784,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-262fbath52",
@@ -9985,7 +10965,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-262fbath30",
@@ -10161,7 +11154,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, น้ำเงิน, แดง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-262fbath53",
@@ -10343,7 +11349,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง, เขียว, เบจ",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-241placl32-easy",
@@ -10518,7 +11537,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เทา",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "ws-262asath01",
@@ -10687,7 +11719,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wp-1509",
@@ -10846,7 +11891,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เทา",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-252rnacl02",
@@ -11029,7 +12086,20 @@
       }
     ],
     "available_colors_text": "ดำ, กรมท่า, เทา, เขียว, เขียวทหาร",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-223wracl30",
@@ -11179,7 +12249,19 @@
       }
     ],
     "available_colors_text": "ดำ, กรมท่า, เทา",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wp-231wracl70",
@@ -11336,7 +12418,19 @@
       }
     ],
     "available_colors_text": "ดำ, กรมท่า, ฟ้า, เทา",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-fba071",
@@ -11504,7 +12598,19 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "หลากหลายสีสัน",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-233fbath53",
@@ -11672,7 +12778,20 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-221fbare01",
@@ -11848,7 +12967,19 @@
       }
     ],
     "available_colors_text": "ดำ, ฟ้า, แดง, เหลือง, เหลืองนีออน, นีออนสะท้อนแสง",
-    "color_count": 6
+    "color_count": 6,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-263placu01",
@@ -12010,7 +13141,19 @@
       }
     ],
     "available_colors_text": "ชมพู, ขาว",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "ชมพูจุฬาฯ",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-smiley-patchplay",
@@ -12178,7 +13321,20 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, ครีม",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-254plath31",
@@ -12351,7 +13507,32 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, น้ำเงิน, แดง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-244plath30",
@@ -12521,7 +13702,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, ทอง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "la-254plmcl01",
@@ -12685,7 +13887,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wa-253plath32",
@@ -12858,7 +14081,32 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, ฟ้า",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "สีฟ้าอ่อนลูมินัส",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-252fbare01",
@@ -13033,7 +14281,31 @@
       }
     ],
     "available_colors_text": "ดำ, ฟ้า, เหลือง, เหลืองนีออน, ชมพู, นีออนสะท้อนแสง",
-    "color_count": 6
+    "color_count": 6,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Champagne Gold (ทอง/เหลือง)",
+        "hex": "#d97706"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "ฟ้าเทอร์คอยซ์",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "ชมพูสด",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "la-254jkmcl03",
@@ -13173,7 +14445,28 @@
       }
     ],
     "available_colors_text": "ดำ, กรมท่า, เทา",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Travel & Airport",
+      "Streetwear & Trendy",
+      "Office & Workwear"
+    ],
+    "fashion_hook": "เลเยอร์ชิ้นเด็ดที่เปลี่ยนชุดธรรมดาให้ดูแพงทันที! คัตติ้งเนี้ยบ กันลมกันหนาวบนเครื่องบินหรือในห้องแอร์ได้สบายมากครับ!",
+    "styling_advice": "สวมทับเสื้อยืดสีพื้นหรือเสื้อโปโล รูดซิปครึ่งอกเพื่อโชว์เลเยอร์ด้านใน",
+    "fashion_color_swatches": [
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wf-233alacl01",
@@ -13325,7 +14618,27 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, เทา",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      }
+    ]
   },
   {
     "id": "lp-244jemw104",
@@ -13471,7 +14784,28 @@
       }
     ],
     "available_colors_text": "ดำ, น้ำเงิน, ยีนส์",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ยีนส์พรีเมียมทรงโมเดิร์น ยืดหยุ่นขยับสบายแต่เก็บทรงขาเรียวสวย ใส่แมตช์กับเสื้อได้ทุกแนวตั้งแต่โปโลจนถึงเสื้อยืดโอเวอร์ไซส์!",
+    "styling_advice": "พับขากางเกงขึ้น 1 ทบ โชว์ข้อเท้าและสนีกเกอร์คู่โปรด",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "สีไบโอวอช",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-253fbath12",
@@ -13649,7 +14983,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เทา, ทอง",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Streetwear & Trendy"
+    ],
+    "fashion_hook": "ลุคนี้คือ Streetwear ตัวจริง! ทรง Drop-Shoulder โอเวอร์ไซส์สไตล์เกาหลี พรางหุ่นได้เนียนกริบ ใส่เที่ยวคาเฟ่ถ่ายรูปขึ้นกล้องสุดๆ!",
+    "styling_advice": "ใส่คู่กางเกงขาสั้นคาร์โก้ หรือกางเกงยีนส์ขาปล่อย พร้อมหมวกแก๊ปโทนสีโมโนโครม",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wa-223placl30",
@@ -13858,7 +15213,48 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, น้ำเงิน, ฟ้า, เทา, แดง, เหลือง",
-    "color_count": 8
+    "color_count": 8,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Champagne Gold (ทอง/เหลือง)",
+        "hex": "#d97706"
+      },
+      {
+        "name": "ฟ้า",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-241placl30",
@@ -14031,7 +15427,32 @@
       }
     ],
     "available_colors_text": "กรมท่า, เทา, เขียว, พีช",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Office & Workwear",
+      "Smart Casual"
+    ],
+    "fashion_hook": "ตัวนี้คือ Polo ทรง Everyday Luxury ครับ! ปกตั้งทรงสวยไม่มีย้วย ใส่ทำงานเช้าจรดดินเนอร์ค่ำ ลุคดูภูมิฐาน เรียบหรู แต่ไม่แก่แน่นอน!",
+    "styling_advice": "แมตช์คู่กางเกงสแล็คหรือยีนส์ทรงกระบอกเล็ก สวมคู่สนีกเกอร์คลีนๆ หรือโลฟเฟอร์หนัง",
+    "fashion_color_swatches": [
+      {
+        "name": "สีพีช (PH)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "wc-262fbath01",
@@ -14204,7 +15625,32 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, น้ำเงิน, แดง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Matchday & Pride",
+      "Streetwear & Trendy",
+      "Cafe & Weekend"
+    ],
+    "fashion_hook": "แมตช์เดย์แบบมีสไตล์! เสื้อเชียร์ลิขสิทธิ์แท้ที่ใส่ออกมาแล้วกลายเป็นลุค Blokecore สุดไฮป์ ใส่กับยีนส์หรือกระโปรงสั้นก็น่ารักมากครับ!",
+    "styling_advice": "สไตล์ Blokecore แมตช์คู่ยีนส์ทรงวินเทจ หรือแจ็คเก็ตวอร์มสวมทับแบบเลเยอร์",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wc-243rnacl01",
@@ -14403,7 +15849,28 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, เทา, เขียว, เขียวมะนาว, ส้ม, ชมพู, นีออนสะท้อนแสง",
-    "color_count": 8
+    "color_count": 8,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      }
+    ]
   },
   {
     "id": "wf-242caacl01",
@@ -14571,7 +16038,31 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, เทา, เทาอ่อน, เขียว",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      }
+    ]
   },
   {
     "id": "wf-263tracl01",
@@ -14730,7 +16221,27 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, ทอง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   },
   {
     "id": "ws-253tcacl02",
@@ -14844,7 +16355,27 @@
       }
     ],
     "available_colors_text": "ดำ, เขียว, เขียวทหาร",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "สีกากี (Coyote Tan)",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wb-254wramy03",
@@ -14947,7 +16478,19 @@
       }
     ],
     "available_colors_text": "ดำ, ส้ม",
-    "color_count": 2
+    "color_count": 2,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wb-253tcacl02",
@@ -15061,7 +16604,27 @@
       }
     ],
     "available_colors_text": "ดำ, เขียว, เขียวทหาร",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "สีกากีแทน",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wb-263wracl01",
@@ -15182,7 +16745,27 @@
       }
     ],
     "available_colors_text": "ดำ, กรมท่า, แดง, ทอง",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      }
+    ]
   },
   {
     "id": "wa-224rnacl05",
@@ -15362,7 +16945,32 @@
       }
     ],
     "available_colors_text": "ดำ, ฟ้า, เขียว, ส้ม, นีออนสะท้อนแสง",
-    "color_count": 5
+    "color_count": 5,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Travel & Airport",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทม Active Lifestyle น้ำหนักเบาดุจขนนก ระบายเหงื่อขั้นสุด วิ่งเสร็จแวะจิบกาแฟต่อได้แบบลุคสปอร์ตี้เท่ๆ ไม่โทรม!",
+    "styling_advice": "แมตช์คู่กางเกงวิ่ง 2-in-1 หรือกางเกงเลกกิ้งพร้อมรองเท้าวิ่งสายซัพพอร์ต",
+    "fashion_color_swatches": [
+      {
+        "name": "Sunset Orange (ส้ม)",
+        "hex": "#ea580c"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "สีฟ้าสด",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-261fbacl90",
@@ -15551,7 +17159,35 @@
       }
     ],
     "available_colors_text": "ฟ้า, เขียว, เหลือง, ส้ม, ชมพู, นีออนสะท้อนแสง",
-    "color_count": 6
+    "color_count": 6,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "Sunset Orange (ส้ม)",
+        "hex": "#ea580c"
+      },
+      {
+        "name": "Champagne Gold (ทอง/เหลือง)",
+        "hex": "#d97706"
+      },
+      {
+        "name": "ฟ้าสด",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "ชมพู",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-241fbbkl01",
@@ -15715,7 +17351,27 @@
       }
     ],
     "available_colors_text": "ขาว, น้ำเงิน, แดง",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      }
+    ]
   },
   {
     "id": "wa-251fbtte01",
@@ -15899,7 +17555,27 @@
       }
     ],
     "available_colors_text": "ดำ, น้ำเงิน, ฟ้า, แดง, ส้ม, ทอง",
-    "color_count": 6
+    "color_count": 6,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Royal Blue (น้ำเงิน)",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Crimson Red (แดงเข้ม)",
+        "hex": "#b91c1c"
+      },
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      }
+    ]
   },
   {
     "id": "wa-242msc01",
@@ -16014,7 +17690,31 @@
       }
     ],
     "available_colors_text": "กรมท่า, ฟ้า, เขียว",
-    "color_count": 3
+    "color_count": 3,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Forest Pine (เขียว)",
+        "hex": "#15803d"
+      },
+      {
+        "name": "สีฟ้าพาสเทล",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "สีเบอร์กันดี",
+        "hex": "#1e293b"
+      }
+    ]
   },
   {
     "id": "wa-253jtm01",
@@ -16200,7 +17900,31 @@
       }
     ],
     "available_colors_text": "ชมพู, ฟ้า, เขียว, เหลือง, แดง, ม่วง",
-    "color_count": 6
+    "color_count": 6,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "ชมพู-ฟ้า (สวนกุหลาบ)",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Champagne Gold (ทอง/เหลือง)",
+        "hex": "#d97706"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Imperial Violet (ม่วง)",
+        "hex": "#7e22ce"
+      }
+    ]
   },
   {
     "id": "wa-3315",
@@ -16324,6 +18048,30 @@
       }
     ],
     "available_colors_text": "ดำ, ขาว, กรมท่า, เทา",
-    "color_count": 4
+    "color_count": 4,
+    "occasion_vibes": [
+      "Cafe & Weekend",
+      "Active Performance"
+    ],
+    "fashion_hook": "ไอเทมอเนกประสงค์ใส่สบาย เนื้อผ้าคัดเกรดพรีเมียม ดีไซน์สปอร์ตแคชชวลที่ใส่ได้ทุกวันไม่มีเบื่อ!",
+    "styling_advice": "แมตช์กับกางเกงขาสั้นหรือกางเกงวอร์มในโทนสีคุมโทนเดียวกัน",
+    "fashion_color_swatches": [
+      {
+        "name": "Carbon Black (ดำ)",
+        "hex": "#0f172a"
+      },
+      {
+        "name": "Ivory White (ขาว)",
+        "hex": "#f8fafc"
+      },
+      {
+        "name": "Slate Grey (เทา)",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Midnight Navy (กรมท่า)",
+        "hex": "#1e3a8a"
+      }
+    ]
   }
 ]
