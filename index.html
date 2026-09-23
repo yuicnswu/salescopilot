@@ -3,32 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WARRIX Live Commerce — Luxury Fashion Studio & AI Personal Stylist (100 SKUs)</title>
+  <title>WARRIX Live Commerce Studio Hub & Lookbook (100 SKUs)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Kanit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Kanit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     :root {
-      --bg-base: #040711;
-      --bg-surface: #0a0f1d;
-      --bg-panel: #10172a;
-      --bg-panel-hover: #17223b;
+      --bg-base: #07090e;
+      --bg-surface: #0e131f;
+      --bg-panel: #141b2d;
+      --bg-panel-hover: #1c263e;
       --border-subtle: #1e293b;
       --border-focus: #3b82f6;
       --border-accent: #f59e0b;
-      --border-fashion: #ec4899;
       --accent-gold: #f59e0b;
       --accent-gold-light: #fbbf24;
-      --accent-blue: #3b82f6;
       --accent-pink: #ec4899;
       --accent-purple: #8b5cf6;
+      --accent-blue: #3b82f6;
       --accent-cyan: #06b6d4;
       --accent-green: #10b981;
+      --accent-red: #ef4444;
       --text-high: #f8fafc;
       --text-medium: #cbd5e1;
       --text-muted: #64748b;
       --shopee-orange: #ee4d2d;
+      --warrix-blue: #002d62;
     }
 
     * {
@@ -47,10 +48,10 @@
       flex-direction: column;
     }
 
-    /* Top Global Navigation Bar */
+    /* Top Navigation Bar */
     header.studio-header {
       background: rgba(10, 15, 29, 0.95);
-      backdrop-filter: blur(20px);
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--border-subtle);
       padding: 10px 24px;
       display: flex;
@@ -69,73 +70,83 @@
     }
 
     .brand-badge {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, #1e293b 0%, #0a0f1d 100%);
-      border: 1.5px solid #38bdf8;
-      border-radius: 12px;
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, var(--accent-gold), #b45309);
+      color: #000;
+      border-radius: 9px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Cinzel', serif;
       font-weight: 800;
-      font-size: 22px;
-      color: #38bdf8;
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
     }
 
     .brand-title-box h1 {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      color: #fff;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
       display: flex;
       align-items: center;
       gap: 8px;
     }
 
-    .fashion-pill {
-      font-size: 9.5px;
-      background: linear-gradient(135deg, #ec4899, #8b5cf6);
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 20px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      box-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+    .brand-title-box .live-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+      padding: 2px 7px;
+      border-radius: 12px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #ef4444;
+      border-radius: 50%;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
     }
 
     .brand-subtitle {
       font-size: 11px;
       color: var(--text-muted);
-      font-weight: 400;
+      font-weight: 300;
     }
 
-    /* Global Search */
     .header-search-box {
       flex: 1;
-      max-width: 420px;
+      max-width: 440px;
       position: relative;
     }
 
     .header-search-box input {
       width: 100%;
-      background: var(--bg-surface);
+      background: var(--bg-panel);
       border: 1px solid var(--border-subtle);
       border-radius: 10px;
-      padding: 8px 14px 8px 36px;
-      color: var(--text-high);
-      font-size: 13px;
+      padding: 8px 38px 8px 36px;
+      color: #fff;
       font-family: inherit;
-      outline: none;
+      font-size: 13.5px;
       transition: all 0.2s ease;
     }
 
     .header-search-box input:focus {
-      border-color: var(--border-focus);
-      background: var(--bg-panel);
-      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+      outline: none;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
     }
 
     .search-lens {
@@ -143,131 +154,114 @@
       left: 12px;
       top: 50%;
       transform: translateY(-50%);
+      color: var(--text-muted);
       font-size: 14px;
-      color: var(--text-muted);
-      pointer-events: none;
     }
 
-    .search-shortcut {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 10.5px;
-      color: var(--text-muted);
-      background: rgba(255, 255, 255, 0.05);
-      padding: 2px 6px;
-      border-radius: 4px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    /* View Switcher */
     .view-switcher {
       display: flex;
-      background: var(--bg-panel);
-      padding: 3px;
-      border-radius: 10px;
-      border: 1px solid var(--border-subtle);
-      gap: 4px;
+      gap: 6px;
+      align-items: center;
     }
 
     .view-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      padding: 6px 12px;
-      border-radius: 7px;
-      font-size: 12px;
+      background: var(--bg-panel);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-medium);
+      padding: 7px 13px;
+      border-radius: 8px;
+      font-size: 12.5px;
       font-weight: 500;
       cursor: pointer;
-      font-family: inherit;
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.18s ease;
-      white-space: nowrap;
+      font-family: inherit;
+      transition: all 0.2s ease;
     }
 
     .view-btn:hover {
+      background: var(--bg-panel-hover);
       color: #fff;
-      background: rgba(255, 255, 255, 0.05);
     }
 
     .view-btn.active {
-      background: var(--accent-blue);
-      color: #fff;
+      background: rgba(59, 130, 246, 0.15);
+      border-color: var(--accent-blue);
+      color: #93c5fd;
       font-weight: 600;
-      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.35);
     }
 
     .view-btn.btn-lookbook.active {
-      background: linear-gradient(135deg, #ec4899, #db2777);
-      color: #fff;
-      font-weight: 700;
-      box-shadow: 0 2px 12px rgba(236, 72, 153, 0.45);
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.25), rgba(139, 92, 246, 0.25));
+      border-color: var(--accent-pink);
+      color: #f472b6;
     }
 
     .view-btn.btn-stylist.active {
-      background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-      color: #fff;
-      font-weight: 700;
-      box-shadow: 0 2px 12px rgba(139, 92, 246, 0.45);
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(59, 130, 246, 0.25));
+      border-color: var(--accent-purple);
+      color: #c084fc;
     }
 
     .view-btn.btn-sizes.active {
-      background: linear-gradient(135deg, #f59e0b, #d97706);
-      color: #000;
-      font-weight: 700;
-      box-shadow: 0 2px 10px rgba(245, 158, 11, 0.35);
+      background: rgba(245, 158, 11, 0.2);
+      border-color: var(--accent-gold);
+      color: #fbbf24;
     }
 
-    /* Occasion Filter Chips Bar */
-    .filter-chips-bar {
-      background: var(--bg-surface);
+    /* Occasion & Vibe Discovery Filter Bar */
+    nav.filter-chips-bar {
+      background: #090d16;
       border-bottom: 1px solid var(--border-subtle);
       padding: 7px 24px;
       display: flex;
-      gap: 6px;
+      align-items: center;
+      gap: 7px;
       overflow-x: auto;
       flex-shrink: 0;
       scrollbar-width: thin;
     }
 
     .chip-btn {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
       color: var(--text-medium);
-      padding: 4px 12px;
-      border-radius: 8px;
-      font-size: 12px;
+      padding: 4px 11px;
+      border-radius: 18px;
+      font-size: 11.5px;
       font-weight: 400;
       cursor: pointer;
       white-space: nowrap;
-      font-family: inherit;
-      transition: all 0.18s ease;
       display: flex;
       align-items: center;
       gap: 5px;
+      font-family: inherit;
+      transition: all 0.18s ease;
     }
 
     .chip-btn:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--bg-panel);
       color: #fff;
-      border-color: #475569;
+      border-color: #334155;
     }
 
     .chip-btn.active {
-      background: rgba(245, 158, 11, 0.15);
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.15));
       border-color: var(--accent-gold);
       color: var(--accent-gold-light);
       font-weight: 600;
     }
 
-    .chip-btn.chip-fashion.active {
-      background: rgba(236, 72, 153, 0.18);
-      border-color: var(--accent-pink);
+    .chip-btn.chip-vibe {
+      border-color: rgba(236, 72, 153, 0.3);
       color: #f472b6;
-      font-weight: 600;
+    }
+
+    .chip-btn.chip-vibe.active {
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.25), rgba(139, 92, 246, 0.2));
+      border-color: var(--accent-pink);
+      color: #fff;
     }
 
     /* App Workspace */
@@ -278,7 +272,7 @@
       position: relative;
     }
 
-    /* ================= VIEW 1: STUDIO PROMPTER ================= */
+    /* VIEW 1: STUDIO SPLIT VIEW */
     .studio-split-view {
       display: flex;
       width: 100%;
@@ -286,26 +280,26 @@
       overflow: hidden;
     }
 
+    /* Left Sidebar */
     .product-sidebar {
-      width: 360px;
+      width: 340px;
       background: var(--bg-surface);
       border-right: 1px solid var(--border-subtle);
       display: flex;
       flex-direction: column;
       flex-shrink: 0;
-      height: 100%;
     }
 
     .sidebar-header {
-      padding: 10px 16px;
+      padding: 11px 16px;
+      background: var(--bg-panel);
       border-bottom: 1px solid var(--border-subtle);
-      font-size: 11.5px;
-      color: var(--text-muted);
-      font-weight: 600;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(255, 255, 255, 0.01);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-medium);
     }
 
     .product-list-scroll {
@@ -318,40 +312,41 @@
     }
 
     .list-item-card {
-      display: flex;
-      gap: 10px;
-      padding: 8px 10px;
-      border-radius: 10px;
       background: var(--bg-panel);
       border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 10px;
+      padding: 10px 12px;
       cursor: pointer;
-      transition: all 0.15s ease;
+      display: flex;
+      gap: 10px;
       align-items: center;
+      transition: all 0.15s ease;
+      position: relative;
     }
 
     .list-item-card:hover {
       background: var(--bg-panel-hover);
-      border-color: rgba(255, 255, 255, 0.1);
+      border-color: #334155;
       transform: translateX(2px);
     }
 
-    .list-item-card.selected {
-      background: rgba(59, 130, 246, 0.15);
+    .list-item-card.active {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(30, 41, 59, 0.8) 100%);
       border-color: var(--accent-blue);
-      box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+      box-shadow: 0 4px 14px rgba(59, 130, 246, 0.2);
     }
 
     .list-item-thumb {
-      width: 50px;
-      height: 50px;
-      border-radius: 8px;
+      width: 44px;
+      height: 44px;
+      border-radius: 7px;
       background: #040711;
-      overflow: hidden;
-      flex-shrink: 0;
+      border: 1px solid #1e293b;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      overflow: hidden;
+      flex-shrink: 0;
     }
 
     .list-item-thumb img {
@@ -360,104 +355,91 @@
       object-fit: cover;
     }
 
-    .list-item-content {
+    .list-item-info {
       flex: 1;
       min-width: 0;
     }
 
-    .list-item-sku-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2px;
-    }
-
     .list-item-sku {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--accent-gold);
       font-family: 'JetBrains Mono', monospace;
-    }
-
-    .list-item-price {
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 700;
-      color: var(--accent-green);
+      color: var(--accent-gold);
+      letter-spacing: 0.3px;
     }
 
     .list-item-name {
       font-size: 12.5px;
       font-weight: 500;
-      color: var(--text-high);
+      color: #fff;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      line-height: 1.3;
+      margin-top: 1px;
     }
 
-    .list-item-badges {
+    .list-item-bottom {
       display: flex;
-      gap: 4px;
-      margin-top: 4px;
-      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3px;
+      font-size: 11px;
     }
 
-    .mini-badge {
+    .list-item-price {
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    .list-item-vibe {
       font-size: 9.5px;
-      padding: 1px 6px;
-      border-radius: 4px;
-      font-weight: 500;
-    }
-
-    .mini-badge-vibe {
-      background: rgba(236, 72, 153, 0.15);
       color: #f472b6;
-      border: 1px solid rgba(236, 72, 153, 0.3);
+      background: rgba(236, 72, 153, 0.1);
+      padding: 1px 5px;
+      border-radius: 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 130px;
     }
 
-    .mini-badge-hot {
-      background: rgba(239, 68, 68, 0.2);
-      color: #fca5a5;
-      font-weight: 600;
-    }
-
-    /* Right Teleprompter Stage */
+    /* Right Prompter Stage */
     .product-teleprompter-stage {
       flex: 1;
+      background: radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%), var(--bg-base);
       overflow-y: auto;
-      padding: 24px 32px 60px;
-      background: radial-gradient(circle at 80% 20%, rgba(30, 58, 138, 0.1) 0%, transparent 60%), var(--bg-base);
+      padding: 20px 26px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
     }
 
     .prompter-top-nav {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 18px;
       gap: 16px;
       flex-wrap: wrap;
     }
 
     .prompter-header-info {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      max-width: 65%;
+      flex: 1;
+      min-width: 280px;
     }
 
     .sku-badge-large {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: rgba(245, 158, 11, 0.12);
       border: 1px solid rgba(245, 158, 11, 0.3);
-      padding: 3px 10px;
+      color: #fbbf24;
+      padding: 3px 9px;
       border-radius: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--accent-gold-light);
       font-family: 'JetBrains Mono', monospace;
-      width: fit-content;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
     }
 
     .prompter-title {
@@ -468,8 +450,9 @@
     }
 
     .prompter-pitch {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--text-medium);
+      margin-top: 4px;
       font-style: italic;
     }
 
@@ -482,74 +465,73 @@
     .btn-action-pill {
       background: var(--bg-panel);
       border: 1px solid var(--border-subtle);
-      color: var(--text-high);
-      padding: 7px 14px;
-      border-radius: 8px;
-      font-size: 12px;
-      font-weight: 500;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 9px;
+      font-size: 12.5px;
+      font-weight: 600;
       cursor: pointer;
-      font-family: inherit;
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      font-family: inherit;
       transition: all 0.18s ease;
-      text-decoration: none;
     }
 
     .btn-action-pill:hover {
       background: var(--bg-panel-hover);
       border-color: #475569;
-      color: #fff;
-    }
-
-    .btn-action-pill.btn-gold {
-      background: rgba(245, 158, 11, 0.15);
-      border-color: var(--accent-gold);
-      color: var(--accent-gold-light);
-      font-weight: 600;
     }
 
     .btn-action-pill.btn-pink {
-      background: rgba(236, 72, 153, 0.15);
-      border-color: var(--accent-pink);
-      color: #f472b6;
-      font-weight: 600;
+      background: linear-gradient(135deg, #ec4899, #db2777);
+      border-color: #ec4899;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+    }
+
+    .btn-action-pill.btn-gold {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      border-color: #f59e0b;
+      color: #000;
+      font-weight: 700;
     }
 
     .btn-action-pill.btn-blue {
-      background: var(--accent-blue);
+      background: rgba(59, 130, 246, 0.2);
       border-color: var(--accent-blue);
-      color: #fff;
-      font-weight: 600;
+      color: #93c5fd;
     }
 
     /* Hero Showcase Grid */
     .hero-showcase-grid {
       display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 22px;
-      margin-bottom: 22px;
+      grid-template-columns: 280px 1fr;
+      gap: 18px;
     }
 
     .hero-image-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      overflow: hidden;
+      border-radius: 14px;
+      padding: 14px;
       display: flex;
       flex-direction: column;
+      gap: 12px;
     }
 
     .hero-image-box {
       width: 100%;
-      height: 310px;
+      height: 220px;
       background: #040711;
-      position: relative;
+      border-radius: 10px;
+      border: 1px solid #1e293b;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
-      overflow: hidden;
+      position: relative;
+      cursor: zoom-in;
     }
 
     .hero-image-box img {
@@ -564,230 +546,438 @@
     }
 
     .price-highlight-card {
-      padding: 14px 18px;
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(10, 15, 29, 0.95) 100%);
-      border-top: 1px solid rgba(16, 185, 129, 0.2);
+      background: var(--bg-panel);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 10px 14px;
     }
 
     .price-main-val {
-      font-size: 26px;
-      font-weight: 700;
-      color: #34d399;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--accent-green);
       font-family: 'JetBrains Mono', monospace;
-      letter-spacing: -0.5px;
     }
 
     .price-anchor-row {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-top: 4px;
+      margin-top: 3px;
     }
 
     .price-msrp-tag {
-      font-size: 13px;
+      font-size: 11.5px;
       color: var(--text-muted);
       text-decoration: line-through;
     }
 
     .price-discount-badge {
-      background: #ef4444;
-      color: #fff;
-      font-size: 11px;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+      font-size: 10px;
       font-weight: 700;
-      padding: 1px 7px;
-      border-radius: 6px;
+      padding: 1px 6px;
+      border-radius: 4px;
     }
 
-    /* Teleprompter Script Container */
-    .prompter-script-container {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .fashion-flash-banner {
-      background: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(139, 92, 246, 0.1) 100%);
-      border: 1px solid rgba(236, 72, 153, 0.4);
-      border-radius: 12px;
-      padding: 14px 18px;
-      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.15);
-    }
-
-    .fashion-flash-banner .banner-label {
-      font-size: 11px;
-      font-weight: 700;
-      color: #f472b6;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 4px;
-    }
-
-    .fashion-flash-text {
-      font-size: 15px;
-      font-weight: 500;
-      color: #fff;
-      line-height: 1.45;
-    }
-
-    .script-flow-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .script-card-mini {
-      background: var(--bg-panel);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
-      padding: 12px 14px;
-    }
-
-    .script-card-mini .card-title {
-      font-size: 11.5px;
-      font-weight: 600;
-      color: var(--accent-blue);
-      margin-bottom: 4px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .script-card-mini .card-text {
-      font-size: 13px;
-      color: var(--text-medium);
-      line-height: 1.4;
-    }
-
+    /* Color Swatches Circle Palette */
     .swatch-circles-container {
       display: flex;
       gap: 6px;
+      align-items: center;
       flex-wrap: wrap;
-      margin-top: 8px;
+      margin-top: 6px;
     }
 
     .swatch-circle {
       width: 22px;
       height: 22px;
       border-radius: 50%;
-      border: 2px solid rgba(255, 255, 255, 0.2);
+      border: 2px solid #1e293b;
       cursor: pointer;
-      transition: transform 0.15s ease;
+      transition: all 0.15s ease;
       position: relative;
     }
 
     .swatch-circle:hover {
       transform: scale(1.2);
       border-color: #fff;
+      box-shadow: 0 0 8px rgba(255,255,255,0.4);
     }
 
-    /* ================= VIEW 2: DEDICATED MIX & MATCH LOOKBOOK ================= */
-    .lookbook-view-container {
-      display: none;
-      height: calc(100vh - 122px);
-      overflow-y: auto;
-      padding: 24px;
-      background: radial-gradient(circle at 50% 20%, rgba(236, 72, 153, 0.07) 0%, transparent 70%), var(--bg-base);
-    }
-
-    .lookbook-layout-grid {
-      display: grid;
-      grid-template-columns: 310px 1fr 340px;
-      gap: 20px;
-      max-width: 1440px;
-      margin: 0 auto;
-    }
-
-    .lookbook-presets-card, .outfit-builder-card, .outfit-pricing-card {
+    /* Big Teleprompter Script Card */
+    .prompter-script-container {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 16px;
-      padding: 20px;
+      border-radius: 14px;
+      padding: 18px 20px;
       display: flex;
       flex-direction: column;
+      gap: 14px;
+    }
+
+    .script-block-hero {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(20, 30, 51, 0.8) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 14px 18px;
+    }
+
+    .block-header-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 6px;
+    }
+
+    .hook-speaking-text {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.5;
+    }
+
+    .fashion-hook-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(236, 72, 153, 0.15);
+      border: 1px solid rgba(236, 72, 153, 0.35);
+      color: #f472b6;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12.5px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .script-flow-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .script-card-mini {
+      background: var(--bg-panel);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 9px;
+      padding: 10px 12px;
+    }
+
+    .card-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 4px;
+    }
+
+    .card-text {
+      font-size: 12.5px;
+      color: var(--text-medium);
+      line-height: 1.4;
+    }
+
+    /* Specs & Strategy Drawer */
+    .specs-strategy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
 
-    .look-preset-item {
-      background: var(--bg-panel);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      padding: 12px 14px;
-      cursor: pointer;
-      transition: all 0.18s ease;
-    }
-
-    .look-preset-item:hover, .look-preset-item.active {
-      background: rgba(236, 72, 153, 0.14);
-      border-color: var(--accent-pink);
-      transform: translateY(-2px);
-    }
-
-    .outfit-zone-card {
-      background: var(--bg-panel);
-      border: 1px solid rgba(255, 255, 255, 0.06);
+    .specs-panel, .strategy-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
       border-radius: 14px;
-      padding: 14px 16px;
+      padding: 16px;
+    }
+
+    .panel-section-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
       display: flex;
-      gap: 14px;
       align-items: center;
+      gap: 8px;
+    }
+
+    .specs-table {
+      width: 100%;
+      font-size: 12.5px;
+      border-collapse: collapse;
+    }
+
+    .specs-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .specs-table td {
+      padding: 6px 4px;
+    }
+
+    .spec-name {
+      color: var(--text-muted);
+      width: 90px;
+    }
+
+    .spec-val {
+      color: var(--text-high);
+      font-weight: 500;
+    }
+
+    /* =========================================================
+       VIEW 2: MIX & MATCH LOOKBOOK BUILDER (OUTFIT CANVAS)
+       ========================================================= */
+    .lookbook-view {
+      display: none;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 24px 32px 80px;
+      background: radial-gradient(circle at 20% 30%, rgba(236, 72, 153, 0.06) 0%, transparent 60%), var(--bg-base);
+    }
+
+    .lookbook-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .lookbook-header {
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      border-radius: 16px;
+      padding: 20px 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .lookbook-header-title h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .lookbook-header-title p {
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-top: 4px;
+    }
+
+    .lookbook-presets-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .preset-pill-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .preset-pill-btn:hover {
+      background: rgba(236, 72, 153, 0.2);
+      border-color: var(--accent-pink);
+    }
+
+    .preset-pill-btn.active {
+      background: linear-gradient(135deg, #ec4899, #8b5cf6);
+      border-color: transparent;
+      box-shadow: 0 4px 14px rgba(236, 72, 153, 0.4);
+      font-weight: 700;
+    }
+
+    /* Visual 3-Piece Outfit Canvas Grid */
+    .outfit-builder-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) 340px;
+      gap: 18px;
+    }
+
+    .outfit-slot-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       position: relative;
     }
 
-    .outfit-zone-thumb {
-      width: 76px;
-      height: 76px;
-      border-radius: 10px;
+    .outfit-slot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .outfit-slot-preview {
+      height: 220px;
       background: #040711;
+      border-radius: 12px;
+      border: 1px solid #1e293b;
       overflow: hidden;
-      flex-shrink: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .outfit-zone-thumb img {
+    .outfit-slot-preview img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
 
-    /* ================= VIEW 3: AI PERSONAL STYLIST (GEMINI TURBO) ================= */
-    .stylist-view-container {
-      display: none;
-      height: calc(100vh - 122px);
-      overflow: hidden;
-      background: radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.08) 0%, transparent 60%), var(--bg-base);
-    }
-
-    .stylist-workspace-grid {
-      display: grid;
-      grid-template-columns: 380px 1fr;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .stylist-sidebar {
-      background: var(--bg-surface);
-      border-right: 1px solid var(--border-subtle);
+    .outfit-slot-details {
       display: flex;
       flex-direction: column;
+      gap: 4px;
+    }
+
+    .outfit-slot-sku {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+
+    .outfit-slot-name {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    .outfit-slot-price {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    .slot-select-dropdown {
+      width: 100%;
+      background: #040711;
+      border: 1px solid #334155;
+      color: #fff;
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-family: inherit;
+      outline: none;
+      cursor: pointer;
+    }
+
+    /* Bundle Summary Card */
+    .bundle-summary-card {
+      background: linear-gradient(135deg, rgba(20, 30, 51, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid rgba(236, 72, 153, 0.35);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+    }
+
+    .bundle-summary-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .bundle-calc-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: var(--text-medium);
+      padding: 4px 0;
+    }
+
+    .bundle-total-row {
+      border-top: 1px solid #334155;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .bundle-final-price {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--accent-gold);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .bundle-script-box {
+      background: #040711;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 12.5px;
+      color: #e2e8f0;
+      line-height: 1.45;
+    }
+
+    /* =========================================================
+       VIEW 3: AI PERSONAL STYLIST STUDIO (GEMINI 3.6 FLASH)
+       ========================================================= */
+    .stylist-view {
+      display: none;
+      width: 100%;
       height: 100%;
+      overflow: hidden;
+    }
+
+    .stylist-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .stylist-sidebar-tools {
+      width: 380px;
+      background: var(--bg-surface);
+      border-right: 1px solid var(--border-subtle);
       overflow-y: auto;
       padding: 20px;
-      gap: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      flex-shrink: 0;
     }
 
     .stylist-main-chat {
+      flex: 1;
       display: flex;
       flex-direction: column;
-      height: 100%;
+      background: radial-gradient(circle at 70% 30%, rgba(139, 92, 246, 0.06) 0%, transparent 60%), var(--bg-base);
       overflow: hidden;
-      background: #040711;
     }
 
     .stylist-chat-header {
@@ -891,6 +1081,252 @@
       font-weight: 700;
     }
 
+    /* =========================================================
+       VIEW 4: DEDICATED SIZE MATRIX & SMART ADVISOR HUB
+       ========================================================= */
+    .size-hub-view {
+      display: none;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 24px 32px 80px;
+      background: radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.05) 0%, transparent 60%), var(--bg-base);
+    }
+
+    .size-hub-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .size-hub-header-card {
+      background: linear-gradient(135deg, rgba(20, 30, 51, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 16px;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+    }
+
+    .size-calc-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 22px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 24px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+    }
+
+    .calc-input-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .calc-output-section {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(20, 30, 51, 0.8) 100%);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .calc-field-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .calc-field-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-medium);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .calc-input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .calc-input-box-num {
+      width: 100px;
+      background: #090d16;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      outline: none;
+    }
+
+    .calc-input-box-num:focus {
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    }
+
+    .chip-selector-group {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .size-quick-chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s ease;
+    }
+
+    .size-quick-chip:hover {
+      background: rgba(59, 130, 246, 0.2);
+      color: #93c5fd;
+      border-color: var(--accent-blue);
+    }
+
+    .fit-pref-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .fit-pref-btn {
+      background: #090d16;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      padding: 8px 6px;
+      border-radius: 8px;
+      font-size: 11.5px;
+      text-align: center;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.18s ease;
+    }
+
+    .fit-pref-btn.active {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: #10b981;
+      color: #34d399;
+      font-weight: 700;
+    }
+
+    .rec-badge-display {
+      font-size: 30px;
+      font-weight: 800;
+      color: #fbbf24;
+      font-family: 'JetBrains Mono', monospace;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .live-speaking-card {
+      background: #090d16;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13.5px;
+      color: #e2e8f0;
+      line-height: 1.5;
+    }
+
+    .size-tables-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .size-table-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .size-table-header {
+      padding: 14px 20px;
+      background: var(--bg-panel);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .table-unit-toggle {
+      display: flex;
+      gap: 4px;
+      background: #090d16;
+      padding: 2px;
+      border-radius: 6px;
+      border: 1px solid #334155;
+    }
+
+    .unit-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11.5px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .unit-btn.active {
+      background: var(--accent-blue);
+      color: #fff;
+    }
+
+    .styled-size-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .styled-size-table th {
+      background: rgba(20, 30, 51, 0.5);
+      padding: 10px 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .styled-size-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-medium);
+    }
+
+    .styled-size-table tr:hover td {
+      background: rgba(59, 130, 246, 0.06);
+    }
+
+    .styled-size-table tr.row-highlight td {
+      background: rgba(245, 158, 11, 0.15) !important;
+      color: #fbbf24 !important;
+      font-weight: 700;
+    }
+
     /* Global Footer */
     .global-footer-bar {
       background: #040711;
@@ -942,15 +1378,14 @@
   <div class="brand-section">
     <div class="brand-badge">W</div>
     <div class="brand-title-box">
-      <h1>WARRIX LIVE STUDIO <span class="fashion-pill">✨ LUXURY FASHION V3</span></h1>
-      <div class="brand-subtitle">Fashion-Forward Live Commerce & AI Personal Stylist Hub</div>
+      <h1>WARRIX LIVE STUDIO <span class="live-indicator"><span class="live-dot"></span> FASHION HUB</span></h1>
+      <div class="brand-subtitle">ระบบช่วยขายหน้ากล้อง & Lookbook Builder (100 SKUs)</div>
     </div>
   </div>
 
   <div class="header-search-box">
     <span class="search-lens">🔍</span>
-    <input type="text" id="global-search" placeholder="ค้นหา SKU, รุ่น, ลุคแฟชั่น, Occasion, โทนสี... (กด ⌘K)" oninput="handleSearch(this.value)">
-    <span class="search-shortcut">⌘K</span>
+    <input type="text" id="global-search" placeholder="ค้นหา SKU, ชื่อรุ่น, เนื้อผ้า, โทนสี หรือ Vibe..." oninput="handleSearch(this.value)">
   </div>
 
   <div class="view-switcher">
@@ -958,10 +1393,10 @@
       📺 Live Prompter
     </button>
     <button class="view-btn btn-lookbook" id="btn-view-lookbook" onclick="switchView('lookbook')" title="เปิดระบบจัดชุด Mix & Match Lookbook">
-      👗 Lookbook & Outfits
+      👗 Mix & Match Lookbook
     </button>
     <button class="view-btn btn-stylist" id="btn-view-stylist" onclick="switchView('stylist')" title="เปิดผู้ช่วย AI Personal Stylist (Gemini 3.6 Flash)">
-      💄 AI Personal Stylist
+      💄 AI Stylist Studio
     </button>
     <button class="view-btn btn-sizes" id="btn-view-sizes" onclick="switchView('sizes')">
       📏 Size Hub & Advisor
@@ -972,248 +1407,245 @@
     <button class="view-btn" id="btn-view-matrix" onclick="switchView('matrix')">
       📊 Price Matrix
     </button>
-    <button class="view-btn" id="btn-warrix-sync" onclick="syncWithWarrixWebsite()" style="color:#38bdf8; border:1px solid rgba(56,189,248,0.35);">
+    <button class="view-btn" id="btn-warrix-sync" onclick="syncWithWarrixWebsite()" style="color:#38bdf8; border:1px solid rgba(56,189,248,0.35);" title="เชื่อมต่อและซิงค์ข้อมูลกับ Warrix.com">
       🌐 Sync Web
     </button>
   </div>
 </header>
 
-<!-- Occasion & Vibe Filter Chips Bar -->
+<!-- Occasion & Vibe Discovery Chips Bar -->
 <nav class="filter-chips-bar" id="filter-bar">
   <button class="chip-btn active" onclick="applyFilter('ALL')">⭐ ทั้งหมด (100)</button>
-  <button class="chip-btn chip-fashion" onclick="applyFilter('Office & Workwear')">💼 Office & Workwear</button>
-  <button class="chip-btn chip-fashion" onclick="applyFilter('Cafe & Weekend')">☕ Cafe & Weekend Vibe</button>
-  <button class="chip-btn chip-fashion" onclick="applyFilter('Travel & Airport')">✈️ Travel & Airport Look</button>
-  <button class="chip-btn chip-fashion" onclick="applyFilter('Streetwear & Trendy')">🕶️ Streetwear & Oversize</button>
-  <button class="chip-btn chip-fashion" onclick="applyFilter('Matchday & Pride')">🏆 Matchday & Pride</button>
-  <button class="chip-btn chip-fashion" onclick="applyFilter('Active Performance')">🏃 Active Performance</button>
-  <button class="chip-btn" onclick="applyFilter('TOP_GMV')">🔥 สินค้าขายดี Top GMV</button>
+  <button class="chip-btn chip-vibe" onclick="applyFilter('VIBE_OFFICE')">💼 Office & Workwear</button>
+  <button class="chip-btn chip-vibe" onclick="applyFilter('VIBE_CAFE')">☕ Cafe & Weekend</button>
+  <button class="chip-btn chip-vibe" onclick="applyFilter('VIBE_TRAVEL')">✈️ Travel & Airport</button>
+  <button class="chip-btn chip-vibe" onclick="applyFilter('VIBE_STREET')">🕶️ Streetwear & Oversize</button>
+  <button class="chip-btn chip-vibe" onclick="applyFilter('VIBE_MATCHDAY')">🏆 Matchday & Pride</button>
+  <button class="chip-btn chip-vibe" onclick="applyFilter('VIBE_ACTIVE')">🏃 Active Performance</button>
+  <button class="chip-btn" onclick="applyFilter('TOP_GMV')">🔥 Top GMV</button>
   <button class="chip-btn" onclick="applyFilter('SHOPEE_DEAL')">🏷️ Shopee ถูกชัวร์</button>
+  <button class="chip-btn" onclick="applyFilter('Polo Shirts')">👕 เสื้อโปโล</button>
+  <button class="chip-btn" onclick="applyFilter('Pants & Shorts')">🩳 กางเกงวอร์ม/กีฬา</button>
+  <button class="chip-btn" onclick="applyFilter('Running Shoes')">👟 รองเท้าวิ่ง/ลำลอง</button>
+  <button class="chip-btn" onclick="applyFilter('Jeans')">👖 ยีนส์ Kuma/Pansa</button>
 </nav>
 
 <!-- Main App Workspace -->
 <div class="app-workspace">
 
-  <!-- ================= VIEW 1: STUDIO PROMPTER ================= -->
+  <!-- ================= VIEW 1: STUDIO SPLIT VIEW ================= -->
   <div class="studio-split-view" id="studio-view">
+    <!-- Left Navigator -->
     <aside class="product-sidebar">
       <div class="sidebar-header">
         <span>รายการสินค้า (<span id="filtered-count">100</span>)</span>
         <span style="font-size:10.5px; color:var(--text-muted);">กด ↑ ↓ สลับสินค้า</span>
       </div>
-      <div class="product-list-scroll" id="product-list-container"></div>
+      <div class="product-list-scroll" id="product-list-container">
+        <!-- Rendered dynamically -->
+      </div>
     </aside>
 
-    <main class="product-teleprompter-stage" id="prompter-stage"></main>
+    <!-- Right Live Stage Prompter -->
+    <main class="product-teleprompter-stage" id="prompter-stage">
+      <!-- Rendered dynamically -->
+    </main>
   </div>
 
-  <!-- ================= VIEW 2: DEDICATED MIX & MATCH LOOKBOOK ================= -->
-  <div class="lookbook-view-container" id="lookbook-view">
-    <div class="lookbook-layout-grid">
+  <!-- ================= VIEW 2: MIX & MATCH LOOKBOOK BUILDER ================= -->
+  <div class="lookbook-view" id="lookbook-view">
+    <div class="lookbook-container">
       
-      <!-- Left: Curated Look Presets -->
-      <div class="lookbook-presets-card">
-        <div>
-          <div style="font-size:11px; font-weight:700; color:#ec4899; text-transform:uppercase; letter-spacing:0.8px;">
-            👗 CURATED OUTFIT PRESETS
+      <!-- Lookbook Header & Presets -->
+      <div class="lookbook-header">
+        <div class="lookbook-header-title">
+          <div style="font-size:12px; font-weight:700; color:var(--accent-pink); text-transform:uppercase; letter-spacing:0.8px;">
+            👗 OUTFIT BUILDER & STYLING CANVAS
           </div>
-          <h2 style="font-size:17px; font-weight:700; color:#fff; margin-top:2px;">
-            ลุคแต่งตัวยอดนิยมในไลฟ์
-          </h2>
-          <p style="font-size:12px; color:var(--text-muted); margin-top:3px;">
-            คลิกเพื่อโหลดเซ็ตเสื้อ + กางเกง + รองเท้า ทันที
-          </p>
+          <h2>WARRIX Mix & Match Total Look Studio</h2>
+          <p>จัดเซ็ต Total Look 3 ชิ้น (Top + Bottom + Footwear) พร้อมคำนวณส่วนลดบันเดิลและสคริปต์ปิดการขายชุดเซ็ต</p>
         </div>
 
-        <div class="look-preset-item active" onclick="loadLookPreset('smart_casual')">
-          <div style="font-size:13px; font-weight:700; color:#38bdf8;">💼 Smart Casual Friday Look</div>
-          <div style="font-size:11.5px; color:#cbd5e1; margin-top:3px;">PIN Polo (กรม) + ยีนส์ Pansa Raw + สนีกเกอร์คลีน</div>
-          <div style="font-size:11px; color:#34d399; margin-top:4px; font-weight:600;">ยอดนิยมสำหรับคนทำงานออฟฟิศ</div>
-        </div>
-
-        <div class="look-preset-item" onclick="loadLookPreset('cafe_street')">
-          <div style="font-size:13px; font-weight:700; color:#f472b6;">☕ Weekend Cafe / Streetwear</div>
-          <div style="font-size:11.5px; color:#cbd5e1; margin-top:3px;">Oversize Tee + กางเกงวอร์มขาสั้น + หมวกแก๊ป</div>
-          <div style="font-size:11px; color:#34d399; margin-top:4px; font-weight:600;">ลุคชิลล์ ถ่ายรูปคาเฟ่ขึ้นกล้อง</div>
-        </div>
-
-        <div class="look-preset-item" onclick="loadLookPreset('matchday_chic')">
-          <div style="font-size:13px; font-weight:700; color:#fbbf24;">🏟️ Stadium Matchday Chic</div>
-          <div style="font-size:11.5px; color:#cbd5e1; margin-top:3px;">Cheer Polo แดงเข้ม + แจ็คเก็ตคลุมไหล่</div>
-          <div style="font-size:11px; color:#34d399; margin-top:4px; font-weight:600;">ลุค Blokecore สุดไฮป์</div>
-        </div>
-
-        <div class="look-preset-item" onclick="loadLookPreset('active_runner')">
-          <div style="font-size:13px; font-weight:700; color:#a78bfa;">🏃 Active City Runner</div>
-          <div style="font-size:11.5px; color:#cbd5e1; margin-top:3px;">เสื้อวิ่งระบายอากาศ + กางเกง 2-in-1 + รองเท้าวิ่ง</div>
-          <div style="font-size:11px; color:#34d399; margin-top:4px; font-weight:600;">สปอร์ตตี้เท่ๆ วิ่งเสร็จเที่ยวต่อได้</div>
+        <div style="display:flex; gap:8px;">
+          <button class="btn-action-pill btn-blue" onclick="switchView('studio')">
+            📺 กลับหน้า Live Prompter
+          </button>
         </div>
       </div>
 
-      <!-- Center: Interactive 3-Piece Outfit Canvas -->
-      <div class="outfit-builder-card">
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <div>
-            <div style="font-size:11px; font-weight:700; color:#ec4899; text-transform:uppercase;">
-              ✨ INTERACTIVE OUTFIT CANVAS
+      <!-- Style Preset Chips Bar -->
+      <div class="lookbook-presets-bar">
+        <span style="font-size:12px; color:var(--text-muted); align-self:center; font-weight:600;">สไตล์สำเร็จรูป:</span>
+        <button class="preset-pill-btn active" onclick="loadOutfitPreset('smart_casual')">💼 Smart Casual Friday Look</button>
+        <button class="preset-pill-btn" onclick="loadOutfitPreset('cafe_street')">☕ Weekend Cafe / Streetwear</button>
+        <button class="preset-pill-btn" onclick="loadOutfitPreset('active_running')">🏃 City Run & Active Gym</button>
+        <button class="preset-pill-btn" onclick="loadOutfitPreset('matchday')">🏆 Matchday Stadium Pride</button>
+      </div>
+
+      <!-- 3-Piece Visual Outfit Builder Canvas -->
+      <div class="outfit-builder-grid">
+        
+        <!-- Slot 1: TOP -->
+        <div class="outfit-slot-card" id="slot-card-top">
+          <div class="outfit-slot-header">
+            <span>👕 ชิ้นบน (Top / Jacket)</span>
+            <span style="font-size:11px; color:#38bdf8;">ชิ้นหลัก</span>
+          </div>
+          <div class="outfit-slot-preview" id="slot-img-top">
+            <!-- Dynamic Image -->
+          </div>
+          <div class="outfit-slot-details">
+            <div class="outfit-slot-sku" id="slot-sku-top">WA-261PLACL15</div>
+            <div class="outfit-slot-name" id="slot-name-top">THE SIGNATURE POLO</div>
+            <div class="outfit-slot-price" id="slot-price-top">฿499</div>
+          </div>
+          <select class="slot-select-dropdown" id="select-slot-top" onchange="handleOutfitChange('top', this.value)">
+            <!-- Top Options -->
+          </select>
+        </div>
+
+        <!-- Slot 2: BOTTOM -->
+        <div class="outfit-slot-card" id="slot-card-bottom">
+          <div class="outfit-slot-header">
+            <span>👖 ชิ้นล่าง (Pants / Shorts / Jeans)</span>
+            <span style="font-size:11px; color:#a855f7;">จับคู่สไตล์</span>
+          </div>
+          <div class="outfit-slot-preview" id="slot-img-bottom">
+            <!-- Dynamic Image -->
+          </div>
+          <div class="outfit-slot-details">
+            <div class="outfit-slot-sku" id="slot-sku-bottom">LP-241JEMW103</div>
+            <div class="outfit-slot-name" id="slot-name-bottom">Pansa Straight Leg Jeans</div>
+            <div class="outfit-slot-price" id="slot-price-bottom">฿1,290</div>
+          </div>
+          <select class="slot-select-dropdown" id="select-slot-bottom" onchange="handleOutfitChange('bottom', this.value)">
+            <!-- Bottom Options -->
+          </select>
+        </div>
+
+        <!-- Slot 3: FOOTWEAR & ACC -->
+        <div class="outfit-slot-card" id="slot-card-shoes">
+          <div class="outfit-slot-header">
+            <span>👟 รองเท้า / หมวก (Shoes / Acc)</span>
+            <span style="font-size:11px; color:#10b981;">Total Look</span>
+          </div>
+          <div class="outfit-slot-preview" id="slot-img-shoes">
+            <!-- Dynamic Image -->
+          </div>
+          <div class="outfit-slot-details">
+            <div class="outfit-slot-sku" id="slot-sku-shoes">WF-232SNACL01</div>
+            <div class="outfit-slot-name" id="slot-name-shoes">Classico Lifestyle Sneakers</div>
+            <div class="outfit-slot-price" id="slot-price-shoes">฿1,490</div>
+          </div>
+          <select class="slot-select-dropdown" id="select-slot-shoes" onchange="handleOutfitChange('shoes', this.value)">
+            <!-- Shoes Options -->
+          </select>
+        </div>
+
+        <!-- Right Side: Total Look Pricing & MC Bundle Script -->
+        <div class="bundle-summary-card">
+          <div class="bundle-summary-title">
+            <span>🎁 สรุปเซ็ต Total Look Bundle</span>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap:4px;">
+            <div class="bundle-calc-row">
+              <span>ราคารวมปกติ (3 ชิ้น):</span>
+              <span id="bundle-raw-total" style="text-decoration:line-through; color:var(--text-muted);">฿3,279</span>
             </div>
-            <h2 style="font-size:18px; font-weight:700; color:#fff;">ประกอบลุค Total Look แบบ Real-time</h2>
+            <div class="bundle-calc-row">
+              <span style="color:#ec4899; font-weight:600;">ส่วนลดเซ็ต Total Look (-20%):</span>
+              <span id="bundle-discount-val" style="color:#ec4899; font-weight:700;">-฿656</span>
+            </div>
+            <div class="bundle-total-row">
+              <div>
+                <div style="font-size:11.5px; color:#94a3b8;">ราคาเซ็ตพิเศษในไลฟ์:</div>
+                <div class="bundle-final-price" id="bundle-final-price">฿2,623</div>
+              </div>
+              <span style="background:rgba(245, 158, 11, 0.2); border:1px solid var(--accent-gold); color:#fbbf24; font-size:11px; font-weight:700; padding:3px 8px; border-radius:6px;">ประหยัดทันที</span>
+            </div>
           </div>
-          <span style="font-size:11px; background:rgba(236,72,153,0.15); border:1px solid #ec4899; color:#f472b6; padding:3px 10px; border-radius:20px; font-weight:600;">
-            Live Studio Mannequin
-          </span>
-        </div>
 
-        <!-- Zone 1: TOP -->
-        <div class="outfit-zone-card" id="outfit-top-card">
-          <div class="outfit-zone-thumb" id="outfit-top-thumb">
-            <span style="font-size:32px;">👕</span>
+          <div style="margin-top:4px;">
+            <div style="font-size:11.5px; color:var(--accent-gold); font-weight:700; margin-bottom:6px;">
+              🎙️ สคริปต์ MC พูดปิดการขายชุดเซ็ต:
+            </div>
+            <div class="bundle-script-box" id="bundle-speaking-script">
+              "ถ้าใครไม่อยากคิดเยอะ แนะนำกดเซ็ต Total Look นี้เลยครับ! ได้ทั้งเสื้อโปโล กางเกงยีนส์ และสนีกเกอร์ ครบชุดลดทันที 20% จาก ฿3,279 เหลือเพียง ฿2,623 เท่านั้นครับ!"
+            </div>
           </div>
-          <div style="flex:1;">
-            <div style="font-size:11px; font-weight:700; color:#38bdf8;">ชิ้นที่ 1: เสื้อ (TOP)</div>
-            <select id="outfit-top-select" onchange="updateOutfitItem('top', this.value)" style="width:100%; background:#040711; border:1px solid #334155; border-radius:6px; padding:6px 10px; color:#fff; font-size:12.5px; margin-top:4px; outline:none; font-family:inherit;"></select>
-            <div style="font-size:12px; color:#34d399; font-weight:700; margin-top:4px;" id="outfit-top-price">฿390</div>
-          </div>
-        </div>
 
-        <!-- Zone 2: BOTTOM -->
-        <div class="outfit-zone-card" id="outfit-bottom-card">
-          <div class="outfit-zone-thumb" id="outfit-bottom-thumb">
-            <span style="font-size:32px;">👖</span>
-          </div>
-          <div style="flex:1;">
-            <div style="font-size:11px; font-weight:700; color:#f472b6;">ชิ้นที่ 2: กางเกง (BOTTOM)</div>
-            <select id="outfit-bottom-select" onchange="updateOutfitItem('bottom', this.value)" style="width:100%; background:#040711; border:1px solid #334155; border-radius:6px; padding:6px 10px; color:#fff; font-size:12.5px; margin-top:4px; outline:none; font-family:inherit;"></select>
-            <div style="font-size:12px; color:#34d399; font-weight:700; margin-top:4px;" id="outfit-bottom-price">฿590</div>
-          </div>
-        </div>
-
-        <!-- Zone 3: FOOTWEAR & ACC -->
-        <div class="outfit-zone-card" id="outfit-shoes-card">
-          <div class="outfit-zone-thumb" id="outfit-shoes-thumb">
-            <span style="font-size:32px;">👟</span>
-          </div>
-          <div style="flex:1;">
-            <div style="font-size:11px; font-weight:700; color:#fbbf24;">ชิ้นที่ 3: รองเท้า / แอคเซสเซอรี่ (FOOTWEAR & ACC)</div>
-            <select id="outfit-shoes-select" onchange="updateOutfitItem('shoes', this.value)" style="width:100%; background:#040711; border:1px solid #334155; border-radius:6px; padding:6px 10px; color:#fff; font-size:12.5px; margin-top:4px; outline:none; font-family:inherit;"></select>
-            <div style="font-size:12px; color:#34d399; font-weight:700; margin-top:4px;" id="outfit-shoes-price">฿890</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right: Pricing & Bundle Discount Box -->
-      <div class="outfit-pricing-card">
-        <div>
-          <div style="font-size:11px; font-weight:700; color:#34d399; text-transform:uppercase; letter-spacing:0.8px;">
-            💰 TOTAL LOOK & BUNDLE VALUE
-          </div>
-          <h2 style="font-size:17px; font-weight:700; color:#fff; margin-top:2px;">
-            สรุปราคาเซ็ตคู่ & ดีลไลฟ์
-          </h2>
-        </div>
-
-        <div style="background:#040711; border:1px solid #1e293b; border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px;">
-          <div style="display:flex; justify-content:space-between; font-size:13px; color:var(--text-medium);">
-            <span>ราคาเต็มรวม (Total MSRP):</span>
-            <span id="outfit-total-msrp" style="text-decoration:line-through; color:#94a3b8;">฿1,870</span>
-          </div>
-          <div style="display:flex; justify-content:space-between; font-size:13px; color:#f472b6; font-weight:600;">
-            <span>ส่วนลดเซ็ตไลฟ์ (Bundle Deal -15%):</span>
-            <span id="outfit-discount-val">-฿280</span>
-          </div>
-          <div style="border-top:1px dashed #334155; padding-top:10px; display:flex; justify-content:space-between; align-items:flex-end;">
-            <span style="font-size:14px; font-weight:700; color:#fff;">ราคาเหมาเซ็ตพิเศษ:</span>
-            <span id="outfit-final-price" style="font-size:26px; font-weight:700; color:#34d399; font-family:'JetBrains Mono';">฿1,590</span>
-          </div>
-        </div>
-
-        <!-- Pitch Script Box -->
-        <div>
-          <div style="font-size:11.5px; font-weight:700; color:#fbbf24; margin-bottom:6px;">
-            🎙️ สคริปต์พูดขายเซ็ตคู่สำหรับ MC:
-          </div>
-          <div id="outfit-pitch-text" style="background:#040711; border:1px solid rgba(245,158,11,0.3); border-radius:10px; padding:12px 14px; font-size:12.5px; color:#e2e8f0; line-height:1.45;">
-            "ใครชอบลุคนี้ จัดเซ็ตคู่ เสื้อ + กางเกง + รองเท้า จากปกติ 1,870 วันนี้ในไลฟ์กดปักหมุดเซ็ต 3 ชิ้น เหลือเพียง 1,590 บาทเท่านั้น! ได้ครบชุดพร้อมใส่เที่ยวได้เลยครับ!"
-          </div>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <button class="btn-action-pill btn-pink" onclick="copyOutfitPitch()" style="justify-content:center; padding:10px;">
-            📋 คัดลอกสคริปต์ขายเซ็ตคู่ (Shop The Look)
-          </button>
-          <button class="btn-action-pill" onclick="askAiStylistForOutfit()" style="justify-content:center; color:#c084fc; border-color:rgba(192,132,252,0.4);">
-            ✨ ให้ AI สไตลิสต์แนะนำการแต่งตัวลุคนี้
+          <button class="btn-action-pill btn-pink" onclick="copyBundleScript()" style="justify-content:center; margin-top:auto;">
+            📋 คัดลอกบทพูด Total Look
           </button>
         </div>
+
       </div>
 
     </div>
   </div>
 
-  <!-- ================= VIEW 3: AI PERSONAL STYLIST (GEMINI TURBO) ================= -->
-  <div class="stylist-view-container" id="stylist-view">
-    <div class="stylist-workspace-grid">
+  <!-- ================= VIEW 3: AI PERSONAL STYLIST STUDIO ================= -->
+  <div class="stylist-view" id="stylist-view">
+    <div class="stylist-container">
       
-      <!-- Sidebar Controls -->
-      <aside class="stylist-sidebar">
+      <!-- Left Stylist Knowledge Sidebar -->
+      <aside class="stylist-sidebar-tools">
         <div>
-          <div style="font-size:11px; font-weight:700; color:#c084fc; text-transform:uppercase; letter-spacing:0.8px;">
-            💄 FASHION STYLIST INTELLIGENCE
+          <div style="font-size:11px; font-weight:700; color:var(--accent-pink); text-transform:uppercase; letter-spacing:0.8px;">
+            💄 AI FASHION ASSISTANT
           </div>
-          <h2 style="font-size:17px; font-weight:700; color:#fff; margin-top:2px;">
-            ผู้ช่วยสไตลิสต์หน้ากล้อง
+          <h2 style="font-size:18px; font-weight:700; color:#fff; margin-top:2px;">
+            WARRIX Stylist Studio
           </h2>
-          <p style="font-size:12px; color:var(--text-muted); margin-top:3px;">
-            วิเคราะห์คู่สี ทรงเสื้อ และการแมตช์ชุดจาก 100 SKUs
+          <p style="font-size:12px; color:var(--text-muted); margin-top:4px;">
+            ผู้ช่วยสไตลิสต์ AI ส่วนตัว ขับเคลื่อนด้วย <strong>Gemini 3.6 Flash</strong>
           </p>
         </div>
 
-        <!-- Personal Color Analysis Tool -->
+        <!-- Personal Color Selector Box -->
         <div class="color-analysis-box">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:11.5px; font-weight:700; color:#f472b6;">🎨 วิเคราะห์โทนผิว (Personal Color)</span>
-            <span style="font-size:10px; color:#38bdf8;">1-Click Analysis</span>
+          <div style="font-size:12px; font-weight:700; color:#fff; display:flex; align-items:center; gap:6px;">
+            <span>🎨 วิเคราะห์โทนสีผิว (Personal Color)</span>
           </div>
           <div class="undertone-btn-row">
-            <button class="undertone-btn active" id="btn-undertone-warm" onclick="setUndertone('warm')">☀️ ผิวสองสี / เหลือง</button>
-            <button class="undertone-btn" id="btn-undertone-cool" onclick="setUndertone('cool')">❄️ ผิวขาวชมพู / สว่าง</button>
-            <button class="undertone-btn" id="btn-undertone-deep" onclick="setUndertone('deep')">🍂 ผิวเข้ม / แทนคม</button>
+            <button class="undertone-btn active" onclick="setPersonalColor('warm')">
+              ☀️ Warm Tone<br><span style="font-size:9.5px; opacity:0.8;">ผิวสองสี/เหลือง</span>
+            </button>
+            <button class="undertone-btn" onclick="setPersonalColor('cool')">
+              ❄️ Cool Tone<br><span style="font-size:9.5px; opacity:0.8;">ผิวขาวอมชมพู</span>
+            </button>
+            <button class="undertone-btn" onclick="setPersonalColor('deep')">
+              🌙 Deep Tone<br><span style="font-size:9.5px; opacity:0.8;">ผิวเข้มคมเข้ม</span>
+            </button>
           </div>
-          <div id="undertone-rec-text" style="font-size:11.5px; color:#cbd5e1; line-height:1.4;">
-            ✨ <strong>Warm Tone:</strong> แนะนำสี <em>Forest Green, Midnight Navy, Champagne Gold</em> ช่วยขับผิวให้ดูสว่างและออร่าพุ่ง
+          <div id="personal-color-rec" style="font-size:11.5px; color:#cbd5e1; line-height:1.4; background:#040711; padding:8px 10px; border-radius:6px; border:1px solid #1e293b;">
+            💡 <strong>Warm Tone:</strong> เหมาะกับเสื้อสี <em>Forest Pine, Champagne Gold, Navy Blue</em> ช่วยขับผิวให้สว่างผ่อง
           </div>
         </div>
 
+        <!-- Quick Styling Prompts -->
         <div style="display:flex; flex-direction:column; gap:8px;">
-          <label style="font-size:12px; font-weight:600; color:#fbbf24;">
-            ✨ คำถามแฟชั่นยอดนิยม (1-Click Stylist)
-          </label>
+          <div style="font-size:12px; font-weight:700; color:#cbd5e1;">⚡ สคริปต์สไตลิ่งด่วน (คลิกถาม AI ทันที):</div>
           
           <div class="stylist-quick-card" onclick="askStylistPreset('color_analysis')">
-            <div style="font-size:12.5px; font-weight:600; color:#38bdf8;">🎨 สีไหนขับผิวหน้ากล้องสุด?</div>
-            <div style="font-size:11px; color:#94a3b8; margin-top:2px;">แนะนำสีสำหรับสีผิวของลูกค้าในคอมเมนต์</div>
+            <div style="font-weight:600; font-size:12.5px; color:#f472b6;">🎨 แนะนำคู่สีเสื้อผ้าขับผิวออร่า</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:2px;">วิธีเลือกสีเสื้อให้หน้าสว่าง ไม่หมอง</div>
           </div>
 
           <div class="stylist-quick-card" onclick="askStylistPreset('silhouette')">
-            <div style="font-size:12.5px; font-weight:600; color:#34d399;">👔 สไตลิ่งพรางหุ่น & ดูตัวสูง</div>
-            <div style="font-size:11px; color:#94a3b8; margin-top:2px;">ทริกใส่เสื้อให้ดูเพรียว ชายเสื้อ Tuck-in</div>
+            <div style="font-weight:600; font-size:12.5px; color:#38bdf8;">📏 ทริกแต่งตัวพรางสัดส่วน & พรางพุง</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:2px;">ใส่โปโลและยีนส์อย่างไรให้ดูสูงเพรียว</div>
           </div>
 
           <div class="stylist-quick-card" onclick="askStylistPreset('quiet_luxury')">
-            <div style="font-size:12.5px; font-weight:600; color:#fbbf24;">✨ Quiet Luxury: แต่งยังไงให้ดูแพง?</div>
-            <div style="font-size:11px; color:#94a3b8; margin-top:2px;">สปอร์ตแวร์เรียบหรูสไตล์ Old Money</div>
+            <div style="font-weight:600; font-size:12.5px; color:#fbbf24;">✨ ลุค Quiet Luxury / Old Money</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:2px;">แต่งตัวสไตล์มินิมอลแต่ดูแพงมาก</div>
           </div>
 
           <div class="stylist-quick-card" onclick="askStylistPreset('mix_match')">
-            <div style="font-size:12.5px; font-weight:600; color:#f472b6;">👗 แมตช์คู่เสื้อโปโลกับกางเกงอะไรดี?</div>
-            <div style="font-size:11px; color:#94a3b8; margin-top:2px;">จับคู่สีกางเกงและรองเท้าที่เข้ากันที่สุด</div>
-          </div>
-        </div>
-
-        <div style="margin-top:auto; padding-top:12px; border-top:1px solid #1e293b; display:flex; flex-direction:column; gap:6px;">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span style="font-size:11px; color:#64748b;">Gemini 3.6 Flash Turbo</span>
-            <span style="font-size:10px; color:#10b981;">● Online Streaming</span>
+            <div style="font-weight:600; font-size:12.5px; color:#10b981;">👖 การแมตช์กางเกงและรองเท้า</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:2px;">ไอเดียจับคู่สี Total Look สากล</div>
           </div>
         </div>
       </aside>
@@ -1261,14 +1693,182 @@
     </div>
   </div>
 
-  <!-- ================= VIEW 4: SIZES VIEW ================= -->
-  <div class="size-hub-view" id="sizes-view" style="display:none; padding:24px; overflow-y:auto; width:100%; height:100%;">
-    <div style="max-width:1100px; margin:0 auto; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:16px; padding:24px;">
-      <h2 style="font-size:20px; font-weight:700; color:#fff;">📏 WARRIX Smart Sizing & Fitting Hub</h2>
-      <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">ระบบคำนวณไซซ์และตารางไซซ์ทางการสำหรับตอบแชตหน้ากล้อง</p>
-      <div style="margin-top:20px;" id="size-tables-container">
-        <!-- Rendered dynamically -->
+  <!-- ================= VIEW 4: DEDICATED SIZE MATRIX & ADVISOR HUB ================= -->
+  <div class="size-hub-view" id="sizes-view">
+    <div class="size-hub-container">
+      
+      <!-- Hub Header -->
+      <div class="size-hub-header-card">
+        <div>
+          <div style="font-size:12px; font-weight:700; color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.8px;">
+            📏 WARRIX SMART SIZING & FITTING HUB
+          </div>
+          <h2 style="font-size:20px; font-weight:700; color:#fff; margin-top:2px;">
+            ระบบวิเคราะห์ขนาดและตารางไซซ์ทางการ (สำหรับตอบแชตสดหน้ากล้อง)
+          </h2>
+          <div style="font-size:12.5px; color:var(--text-muted); margin-top:4px;">
+            กำลังอ้างอิงสินค้าปัจจุบัน: <strong id="hub-current-sku" style="color:#fbbf24; font-family:'JetBrains Mono';">WA-261PLACL15</strong> (<span id="hub-current-name">THE SIGNATURE POLO</span>)
+          </div>
+        </div>
+
+        <div style="display:flex; gap:8px;">
+          <button class="btn-action-pill btn-blue" onclick="switchView('studio')">
+            📺 กลับหน้า Live Prompter
+          </button>
+        </div>
       </div>
+
+      <!-- Interactive Calculator Card -->
+      <div class="size-calc-card">
+        <!-- Input Side -->
+        <div class="calc-input-section">
+          <div style="font-size:14px; font-weight:700; color:#fff; border-bottom:1px solid #1e293b; padding-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+            <span>👤 ใส่ข้อมูลสรีระลูกค้า (จากคอมเมนต์ในไลฟ์)</span>
+            <span style="font-size:11px; color:#38bdf8;">คำนวณแบบ Real-time</span>
+          </div>
+
+          <!-- Height -->
+          <div class="calc-field-row">
+            <div class="calc-field-label">
+              <span>ส่วนสูง (Height)</span>
+              <span style="color:#94a3b8; font-size:11px;">ซม. (cm)</span>
+            </div>
+            <div class="calc-input-wrapper">
+              <input type="number" id="calc-height-input" value="175" min="140" max="210" class="calc-input-box-num" oninput="runSizeCalculation()">
+              <div class="chip-selector-group">
+                <span class="size-quick-chip" onclick="setQuickHeight(160)">160</span>
+                <span class="size-quick-chip" onclick="setQuickHeight(165)">165</span>
+                <span class="size-quick-chip" onclick="setQuickHeight(170)">170</span>
+                <span class="size-quick-chip" onclick="setQuickHeight(175)">175</span>
+                <span class="size-quick-chip" onclick="setQuickHeight(180)">180</span>
+                <span class="size-quick-chip" onclick="setQuickHeight(185)">185</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weight -->
+          <div class="calc-field-row">
+            <div class="calc-field-label">
+              <span>น้ำหนักตัว (Weight)</span>
+              <span style="color:#94a3b8; font-size:11px;">กก. (kg)</span>
+            </div>
+            <div class="calc-input-wrapper">
+              <input type="number" id="calc-weight-input" value="75" min="35" max="180" class="calc-input-box-num" oninput="runSizeCalculation()">
+              <div class="chip-selector-group">
+                <span class="size-quick-chip" onclick="setQuickWeight(55)">55</span>
+                <span class="size-quick-chip" onclick="setQuickWeight(65)">65</span>
+                <span class="size-quick-chip" onclick="setQuickWeight(70)">70</span>
+                <span class="size-quick-chip" onclick="setQuickWeight(75)">75</span>
+                <span class="size-quick-chip" onclick="setQuickWeight(82)">82</span>
+                <span class="size-quick-chip" onclick="setQuickWeight(90)">90</span>
+                <span class="size-quick-chip" onclick="setQuickWeight(105)">105+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fit Preference -->
+          <div class="calc-field-row">
+            <div class="calc-field-label">
+              <span>สไตล์ความชอบในการสวมใส่ (Fit Style)</span>
+            </div>
+            <div class="fit-pref-group">
+              <button class="fit-pref-btn active" id="pref-btn-regular" onclick="setFitPreference('regular')">
+                🟢 พอดีตัว (Fit)
+              </button>
+              <button class="fit-pref-btn" id="pref-btn-comfort" onclick="setFitPreference('comfort')">
+                🟡 พรางพุง (Comfort)
+              </button>
+              <button class="fit-pref-btn" id="pref-btn-oversize" onclick="setFitPreference('oversize')">
+                🟣 โคร่ง (Oversize)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output Side -->
+        <div class="calc-output-section">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="font-size:11.5px; color:#f59e0b; font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">
+              🎯 ผลวิเคราะห์ไซซ์ที่แนะนำ (Recommended Size)
+            </div>
+            <span id="calc-fit-badge" style="background:#0284c7; color:#fff; font-size:10.5px; font-weight:700; padding:2px 8px; border-radius:6px;">Smart Regular Fit</span>
+          </div>
+
+          <div class="rec-badge-display">
+            <span id="calc-rec-size">XL</span>
+            <span id="calc-rec-spec" style="font-size:15px; color:#cbd5e1; font-weight:normal;">(อก 44" / 111 ซม.)</span>
+          </div>
+
+          <div id="calc-reason-text" style="font-size:12.5px; color:#94a3b8; line-height:1.4;">
+            สำหรับส่วนสูง 175 ซม. น้ำหนัก 75 กก. แนะนำไซซ์ XL สวมใส่สบาย ไม่รั้งช่วงอกและไหล่
+          </div>
+
+          <!-- Live MC Speaking Script Box -->
+          <div class="calc-field-row" style="margin-top:auto;">
+            <div class="calc-field-label" style="color:#fbbf24; font-weight:700;">
+              <span>🎙️ สคริปต์พูดสดสำหรับ MC (ตอบคอมเมนต์ทันที)</span>
+            </div>
+            <div class="live-speaking-card" id="calc-speaking-script">
+              "พี่ที่สูง 175 หนัก 75 แนะนำกดไซซ์ XL เลยครับ! ทรงสวยเข้ารูปกำลังดี รุ่นนี้ไหล่สโลปใส่แล้วดูตัวเพรียวมากครับ!"
+            </div>
+          </div>
+
+          <button class="btn-action-pill btn-blue" onclick="copyAdvisorScript()" style="justify-content:center;">
+            📋 คัดลอกสคริปต์ตอบแชต
+          </button>
+        </div>
+      </div>
+
+      <!-- Size Matrix Tables Section -->
+      <div class="size-tables-grid">
+        
+        <!-- Table 1: Tops & Polos -->
+        <div class="size-table-card">
+          <div class="size-table-header">
+            <div style="font-size:14px; font-weight:700; color:#fff;">
+              👕 1. ตารางขนาดเสื้อโปโลและเสื้อกีฬา (Tops & Polos Size Matrix)
+            </div>
+            <div class="table-unit-toggle">
+              <button class="unit-btn active" id="unit-top-in" onclick="switchSizeUnit('in')">นิ้ว (Inches)</button>
+              <button class="unit-btn" id="unit-top-cm" onclick="switchSizeUnit('cm')">ซม. (CM)</button>
+            </div>
+          </div>
+          <table class="styled-size-table" id="table-tops-body">
+            <!-- Rendered dynamically -->
+          </table>
+        </div>
+
+        <!-- Table 2: Pants & Shorts -->
+        <div class="size-table-card">
+          <div class="size-table-header">
+            <div style="font-size:14px; font-weight:700; color:#fff;">
+              🩳 2. ตารางขนาดกางเกงวอร์มและกางเกงกีฬา (Pants & Shorts Matrix)
+            </div>
+            <div class="table-unit-toggle">
+              <button class="unit-btn active" id="unit-pant-in" onclick="switchSizeUnit('in')">นิ้ว (Inches)</button>
+              <button class="unit-btn" id="unit-pant-cm" onclick="switchSizeUnit('cm')">ซม. (CM)</button>
+            </div>
+          </div>
+          <table class="styled-size-table" id="table-pants-body">
+            <!-- Rendered dynamically -->
+          </table>
+        </div>
+
+        <!-- Table 3: Shoes & Boots -->
+        <div class="size-table-card">
+          <div class="size-table-header">
+            <div style="font-size:14px; font-weight:700; color:#fff;">
+              👟 3. ตารางขนาดรองเท้าวิ่ง สนีกเกอร์ และสตั๊ด (Shoes & Cleats Matrix)
+            </div>
+            <span style="font-size:11.5px; color:#38bdf8;">ทรง Wide Fit เพื่อเท้าคนไทย</span>
+          </div>
+          <table class="styled-size-table" id="table-shoes-body">
+            <!-- Rendered dynamically -->
+          </table>
+        </div>
+
+      </div>
+
     </div>
   </div>
 
@@ -1305,6 +1905,7 @@
   </div>
   <div style="display:flex; gap:16px;">
     <span>✨ Luxury Fashion V3 Edition</span>
+    <span>📏 Sizing & Advisor Hub</span>
     <span>⚡ Gemini 3.6 Flash Turbo</span>
     <span>📦 100 Live SKUs Grounded</span>
     <span>🇹🇭 Warrix Official Partner</span>
@@ -1320,15 +1921,59 @@
   let activeView = 'studio';
   let searchQuery = '';
 
+  let currentFitPref = 'regular';
+  let currentSizeUnit = 'in';
+
   let selectedOutfit = {
     top: 'WA-261PLACL15',
     bottom: 'LP-241JEMW103',
     shoes: 'WF-232SNACL01'
   };
 
+  const WARRIX_SIZE_SPECS = {
+    tops: [
+      { size: 'XS', chest_in: 36, chest_cm: 91, len_in: 26.0, len_cm: 66, shoulder_in: 16.0, shoulder_cm: 41, wt: '45-55 kg', ht: '155-165 cm' },
+      { size: 'S',  chest_in: 38, chest_cm: 96, len_in: 27.0, len_cm: 68, shoulder_in: 17.0, shoulder_cm: 43, wt: '55-65 kg', ht: '160-170 cm' },
+      { size: 'M',  chest_in: 40, chest_cm: 101, len_in: 28.0, len_cm: 71, shoulder_in: 18.0, shoulder_cm: 46, wt: '65-72 kg', ht: '165-175 cm' },
+      { size: 'L',  chest_in: 42, chest_cm: 106, len_in: 29.0, len_cm: 74, shoulder_in: 19.0, shoulder_cm: 48, wt: '73-80 kg', ht: '170-180 cm' },
+      { size: 'XL', chest_in: 44, chest_cm: 111, len_in: 30.0, len_cm: 76, shoulder_in: 20.0, shoulder_cm: 51, wt: '81-88 kg', ht: '175-185 cm' },
+      { size: '2L', chest_in: 46, chest_cm: 116, len_in: 30.5, len_cm: 77, shoulder_in: 21.0, shoulder_cm: 53, wt: '89-98 kg', ht: '175-190 cm' },
+      { size: '3L', chest_in: 48, chest_cm: 121, len_in: 31.0, len_cm: 79, shoulder_in: 22.0, shoulder_cm: 56, wt: '99-108 kg', ht: '175-195 cm' },
+      { size: '5L', chest_in: 52, chest_cm: 132, len_in: 32.0, len_cm: 81, shoulder_in: 23.5, shoulder_cm: 60, wt: '109-120 kg', ht: '180-200 cm' },
+      { size: '7L', chest_in: 56, chest_cm: 142, len_in: 33.0, len_cm: 84, shoulder_in: 25.0, shoulder_cm: 64, wt: '120+ kg (บิ๊กไซซ์)', ht: '180-205 cm' }
+    ],
+    pants: [
+      { size: 'S',  waist_in: '26-29"', waist_cm: '66-74', hip_in: '36-38"', hip_cm: '91-96', len_in: '38.0"', len_cm: '96', wt: '45-55 kg' },
+      { size: 'M',  waist_in: '29-32"', waist_cm: '74-81', hip_in: '38-40"', hip_cm: '96-101', len_in: '39.0"', len_cm: '99', wt: '55-68 kg' },
+      { size: 'L',  waist_in: '32-35"', waist_cm: '81-89', hip_in: '40-42"', hip_cm: '101-106', len_in: '40.0"', len_cm: '101', wt: '69-78 kg' },
+      { size: 'XL', waist_in: '35-38"', waist_cm: '89-96', hip_in: '42-44"', hip_cm: '106-112', len_in: '41.0"', len_cm: '104', wt: '79-88 kg' },
+      { size: '2L', waist_in: '38-41"', waist_cm: '96-104', hip_in: '44-46"', hip_cm: '112-117', len_in: '41.5"', len_cm: '105', wt: '89-98 kg' },
+      { size: '3L', waist_in: '41-45"', waist_cm: '104-114', hip_in: '46-49"', hip_cm: '117-124', len_in: '42.0"', len_cm: '106', wt: '99-108 kg' },
+      { size: '5L', waist_in: '45-50"', waist_cm: '114-127', hip_in: '50-54"', hip_cm: '127-137', len_in: '43.0"', len_cm: '109', wt: '109-120 kg' },
+      { size: '7L', waist_in: '50-56"', waist_cm: '127-142', hip_in: '54-60"', hip_cm: '137-152', len_in: '43.5"', len_cm: '110', wt: '120+ kg' }
+    ],
+    shoes: [
+      { eu: 'EU 35', cm: '22.5 cm', us: 'US 4.0', uk: 'UK 3.5' },
+      { eu: 'EU 36', cm: '23.0 cm', us: 'US 4.5', uk: 'UK 4.0' },
+      { eu: 'EU 37', cm: '23.5 cm', us: 'US 5.0', uk: 'UK 4.5' },
+      { eu: 'EU 38', cm: '24.0 cm', us: 'US 5.5', uk: 'UK 5.0' },
+      { eu: 'EU 39', cm: '24.5 cm', us: 'US 6.5', uk: 'UK 6.0' },
+      { eu: 'EU 40', cm: '25.0 cm', us: 'US 7.0', uk: 'UK 6.5' },
+      { eu: 'EU 41', cm: '25.5 cm', us: 'US 8.0', uk: 'UK 7.5' },
+      { eu: 'EU 42', cm: '26.0 cm', us: 'US 8.5', uk: 'UK 8.0' },
+      { eu: 'EU 43', cm: '26.5 cm', us: 'US 9.5', uk: 'UK 9.0' },
+      { eu: 'EU 44', cm: '27.0 cm', us: 'US 10.0', uk: 'UK 9.5' },
+      { eu: 'EU 45', cm: '27.5 cm', us: 'US 11.0', uk: 'UK 10.5' },
+      { eu: 'EU 46', cm: '28.0 cm', us: 'US 11.5', uk: 'UK 11.0' },
+      { eu: 'EU 47', cm: '28.5 cm', us: 'US 12.5', uk: 'UK 12.0' }
+    ]
+  };
+
   window.addEventListener('DOMContentLoaded', () => {
     initOutfitBuilder();
     renderAll();
+    runSizeCalculation();
+    renderSizeTables();
   });
 
   function switchView(view) {
@@ -1350,6 +1995,10 @@
     document.getElementById('matrix-view').style.display = (view === 'matrix') ? 'block' : 'none';
 
     if (view === 'lookbook') updateOutfitPricing();
+    if (view === 'sizes') {
+      runSizeCalculation();
+      renderSizeTables();
+    }
   }
 
   function getFilteredProducts() {
@@ -1359,28 +2008,40 @@
         if (!isTop) return false;
       } else if (activeFilter === 'SHOPEE_DEAL') {
         if (!p.is_shopee_deal && !p.shopee_synced) return false;
+      } else if (activeFilter === 'VIBE_OFFICE') {
+        if (!(p.occasion_vibes || []).includes('Office & Workwear')) return false;
+      } else if (activeFilter === 'VIBE_CAFE') {
+        if (!(p.occasion_vibes || []).includes('Cafe & Weekend')) return false;
+      } else if (activeFilter === 'VIBE_TRAVEL') {
+        if (!(p.occasion_vibes || []).includes('Travel & Airport')) return false;
+      } else if (activeFilter === 'VIBE_STREET') {
+        if (!(p.occasion_vibes || []).includes('Streetwear & Oversize')) return false;
+      } else if (activeFilter === 'VIBE_MATCHDAY') {
+        if (!(p.occasion_vibes || []).includes('Matchday & Pride')) return false;
+      } else if (activeFilter === 'VIBE_ACTIVE') {
+        if (!(p.occasion_vibes || []).includes('Active Performance')) return false;
       } else if (activeFilter !== 'ALL') {
-        const vibes = p.occasion_vibes || [];
-        if (!vibes.includes(activeFilter) && p.category !== activeFilter) return false;
+        const match = (p.category === activeFilter) || 
+                      (activeFilter === 'Pants & Shorts' && (p.category === 'Pants & Shorts' || p.category === 'Jeans')) ||
+                      (activeFilter === 'Running Shoes' && (p.category === 'Running Shoes' || p.category === 'Sneakers & Lifestyle'));
+        if (!match) return false;
       }
 
       if (!searchQuery) return true;
       const q = searchQuery.toLowerCase();
-      return (p.sku || '').toLowerCase().includes(q) ||
-             (p.name || '').toLowerCase().includes(q) ||
-             (p.fashion_hook || '').toLowerCase().includes(q) ||
-             (p.tagline || '').toLowerCase().includes(q);
+      return p.sku.toLowerCase().includes(q) ||
+             p.name.toLowerCase().includes(q) ||
+             (p.category && p.category.toLowerCase().includes(q)) ||
+             (p.product_details?.fabric && p.product_details.fabric.toLowerCase().includes(q)) ||
+             (p.occasion_vibes && p.occasion_vibes.some(v => v.toLowerCase().includes(q)));
     });
   }
 
   function renderAll() {
     const filtered = getFilteredProducts();
     document.getElementById('filtered-count').textContent = filtered.length;
-    if (filtered.length > 0 && !filtered.some(p => p.sku === selectedSku)) {
-      selectedSku = filtered[0].sku;
-    }
     renderSidebarList(filtered);
-    renderTeleprompterStage();
+    renderPrompterStage();
     renderGridView(filtered);
     renderMatrixView(filtered);
   }
@@ -1388,23 +2049,30 @@
   function renderSidebarList(filtered) {
     const container = document.getElementById('product-list-container');
     container.innerHTML = '';
+
+    if (filtered.length === 0) {
+      container.innerHTML = '<div style="padding:24px; text-align:center; color:var(--text-muted); font-size:13px;">ไม่พบสินค้าที่ตรงกับคำค้นหา</div>';
+      return;
+    }
+
     filtered.forEach(p => {
       const card = document.createElement('div');
-      card.className = `list-item-card ${p.sku === selectedSku ? 'selected' : ''}`;
+      card.className = 'list-item-card ' + (p.sku === selectedSku ? 'active' : '');
       card.onclick = () => selectProduct(p.sku);
 
-      let thumbHtml = p.image_url ? `<img src="${p.image_url}" alt="${p.name}" loading="lazy">` : `<span style="font-size:20px;">${p.category_icon || '👕'}</span>`;
-      let vibeBadges = (p.occasion_vibes || []).slice(0, 1).map(v => `<span class="mini-badge mini-badge-vibe">${v}</span>`).join('');
+      const vibeTag = (p.occasion_vibes && p.occasion_vibes[0]) ? p.occasion_vibes[0] : (p.category || '');
 
       card.innerHTML = `
-        <div class="list-item-thumb">${thumbHtml}</div>
-        <div class="list-item-content">
-          <div class="list-item-sku-row">
-            <span class="list-item-sku">${p.sku}</span>
-            <span class="list-item-price">${p.price_range || '-'}</span>
-          </div>
+        <div class="list-item-thumb">
+          ${p.image_url ? `<img src="${p.image_url}" alt="${p.name}" loading="lazy">` : `<span style="font-size:20px;">${p.category_icon || '🏷️'}</span>`}
+        </div>
+        <div class="list-item-info">
+          <div class="list-item-sku">${p.sku}</div>
           <div class="list-item-name">${p.name}</div>
-          <div class="list-item-badges">${vibeBadges}</div>
+          <div class="list-item-bottom">
+            <span class="list-item-price">${p.price_range || '-'}</span>
+            <span class="list-item-vibe">${vibeTag}</span>
+          </div>
         </div>
       `;
       container.appendChild(card);
@@ -1413,21 +2081,25 @@
 
   function selectProduct(sku) {
     selectedSku = sku;
-    document.querySelectorAll('.list-item-card').forEach(el => el.classList.remove('selected'));
-    const filtered = getFilteredProducts();
-    const idx = filtered.findIndex(p => p.sku === sku);
-    const items = document.querySelectorAll('.list-item-card');
-    if (idx >= 0 && items[idx]) items[idx].classList.add('selected');
-    renderTeleprompterStage();
+    document.querySelectorAll('.list-item-card').forEach(c => c.classList.remove('active'));
+    renderAll();
+    runSizeCalculation();
   }
 
-  function renderTeleprompterStage() {
+  function renderPrompterStage() {
     const stage = document.getElementById('prompter-stage');
-    const p = PRODUCTS.find(x => x.sku === selectedSku);
+    const p = PRODUCTS.find(x => x.sku === selectedSku) || PRODUCTS[0];
     if (!p) return;
 
-    const d = p.product_details || p.what_it_is || {};
-    const s = p.selling_script || p.how_to_sell || {};
+    const s = p.selling_script || {};
+    const d = p.product_details || {};
+    const perf = p.live_performance || {};
+
+    let vibesHtml = (p.occasion_vibes || []).map(v => `
+      <span style="background:rgba(236, 72, 153, 0.15); border:1px solid rgba(236, 72, 153, 0.3); color:#f472b6; font-size:11px; padding:2px 8px; border-radius:12px; font-weight:500;">
+        ✨ ${v}
+      </span>
+    `).join(' ');
 
     let swatchesHtml = (p.fashion_color_swatches || []).map(c => `
       <div class="swatch-circle" style="background:${c.hex};" title="${c.name}" onclick="showToast('🎨 สี ${c.name}')"></div>
@@ -1450,7 +2122,7 @@
             👗 ประกอบเป็น Lookbook
           </button>
           <button class="btn-action-pill btn-gold" onclick="switchView('sizes')">
-            📏 คำนวณไซซ์
+            📏 Size Hub & Advisor
           </button>
           <button class="btn-action-pill btn-blue" onclick="copyPinText('${p.sku}')">
             📋 คัดลอกปักหมุด
@@ -1479,204 +2151,491 @@
 
         <div class="prompter-script-container">
           <!-- Fashion Flash Hook -->
-          <div class="fashion-flash-banner">
-            <div class="banner-label">✨ FASHION FLASH HOOK (สคริปต์เปิดตัวสไตล์ลิสต์)</div>
-            <div class="fashion-flash-text">"${p.fashion_hook || s.hook || '-'}"</div>
+          <div class="script-block-hero">
+            <div class="block-header-label">⚡ HOOK • ประโยคเปิดสะกดคนดู (พูดทันทีที่ปักตะกร้า)</div>
+            <div class="hook-speaking-text">"${s.hook || p.fashion_hook || '-'}"</div>
+          </div>
+
+          <!-- Occasion Vibes Tags -->
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span style="font-size:11.5px; color:#94a3b8; font-weight:600;">Occasion & Vibe:</span>
+            ${vibesHtml}
+          </div>
+
+          <!-- Fashion Benefit / Styling Tip -->
+          <div class="fashion-hook-badge">
+            <span>✨ <strong>Fashion Styling Advice:</strong> ${p.styling_advice || 'แมตช์คู่กับกางเกงสแล็คหรือยีนส์ทรงกระบอก เพิ่มลุคสมาร์ทแคชชวลทันสมัย'}</span>
           </div>
 
           <div class="script-flow-grid">
             <div class="script-card-mini">
-              <div class="card-title">👗 ทริกการแมตช์ชุด (Styling Advice):</div>
-              <div class="card-text">${p.styling_advice || s.basket_builder || 'ใส่คู่กับกางเกงยีนส์หรือกางเกงวอร์ม'}</div>
+              <div class="card-title">🔥 Pain Point ที่ช่วยแก้:</div>
+              <div class="card-text">${s.pain_point || '-'}</div>
             </div>
 
             <div class="script-card-mini">
               <div class="card-title">🎥 Live Demo (ท่าสาธิตหน้ากล้อง):</div>
-              <div class="card-text">${s.live_demo || 'โชว์ความยืดหยุ่นและเนื้อผ้าให้เห็นมิติใกล้กล้อง'}</div>
+              <div class="card-text">${s.live_demo || '-'}</div>
             </div>
 
             <div class="script-card-mini">
               <div class="card-title">💬 Interactive CTA (ดึงคอมเมนต์):</div>
-              <div class="card-text">${s.interactive_cta || 'ชอบสีไหนพิมพ์เลขสีมาในไลฟ์ได้เลยครับ!'}</div>
+              <div class="card-text">${s.interactive_cta || '-'}</div>
             </div>
 
             <div class="script-card-mini">
-              <div class="card-title">🛍️ Basket Builder (คู่แนะนำเพิ่มยอด):</div>
+              <div class="card-title">🔗 Basket Builder (จับคู่ขาย):</div>
               <div class="card-text">${s.basket_builder || '-'}</div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specs, Sizing & Strategy Drawer -->
+      <div class="specs-strategy-grid">
+        <div class="specs-panel">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <div class="panel-section-title" style="margin-bottom:0;">ℹ️ สเปกสินค้า & ขนาด (Product Facts)</div>
+            <button onclick="switchView('sizes')" style="background:rgba(245,158,11,0.15); border:1px solid var(--accent-gold); color:var(--accent-gold-light); font-size:11px; padding:4px 10px; border-radius:6px; cursor:pointer; font-weight:600;">
+              📏 เปิดดู Size Hub เต็มจอ
+            </button>
+          </div>
+          <table class="specs-table">
+            <tr>
+              <td class="spec-name">เนื้อผ้า:</td>
+              <td class="spec-val"><strong>${d.fabric || '-'}</strong></td>
+            </tr>
+            <tr>
+              <td class="spec-name">ดีไซน์:</td>
+              <td class="spec-val">${d.key_design || '-'}</td>
+            </tr>
+            <tr>
+              <td class="spec-name">ช่วงไซซ์:</td>
+              <td class="spec-val"><strong style="color:#fbbf24;">${d.size_range || 'S - 7L'}</strong></td>
+            </tr>
+            <tr>
+              <td class="spec-name">เฉดสี:</td>
+              <td class="spec-val">${(p.colors || []).join(', ')}</td>
+            </tr>
+          </table>
+
+          <!-- Sizing Cheat Sheet Widget -->
+          <div style="margin-top:12px; background:#040711; border:1px solid rgba(245,158,11,0.3); border-radius:8px; padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <div style="font-size:10.5px; color:#f59e0b; font-weight:700; text-transform:uppercase;">🎯 คำแนะนำไซซ์ด่วนสำหรับรุ่นนี้:</div>
+              <div style="font-size:12px; color:#fff; margin-top:2px;">มาตรฐานส่วนสูง 175 ซม. หนัก 75 กก. แนะนำ <strong>ไซซ์ XL</strong> (อก 44")</div>
+            </div>
+            <button class="btn-action-pill btn-gold" onclick="switchView('sizes')" style="padding:4px 10px; font-size:11px;">
+              คำนวณสด ↗
+            </button>
+          </div>
+        </div>
+
+        <div class="strategy-panel">
+          <div class="panel-section-title">📊 อินไซต์และกลยุทธ์การขาย (Sales Strategy)</div>
+          ${perf.tip_from_report ? `
+            <div style="background:rgba(59, 130, 246, 0.1); border:1px solid rgba(59, 130, 246, 0.25); border-radius:8px; padding:10px 12px; font-size:12px; color:#cbd5e1; line-height:1.4;">
+              <strong>⭐ TikTok / Shopee Insight:</strong><br>
+              ${perf.tip_from_report}
+            </div>
+          ` : '<div style="font-size:12px; color:var(--text-muted);">สินค้ามาตรฐานสำหรับขยายความหลากหลายในไลฟ์</div>'}
+
+          <div style="margin-top:10px; background:rgba(236, 72, 153, 0.1); border:1px solid rgba(236, 72, 153, 0.25); border-radius:8px; padding:10px 12px; font-size:12px; color:#f472b6;">
+            <strong>💡 Fashion AOV Upsell:</strong> เชียร์ขายคู่กับกางเกงวอร์มหรือสนีกเกอร์ใน Lookbook เพื่อรับส่วนลดเซ็ต 20% ทันที
           </div>
         </div>
       </div>
     `;
   }
 
-  // Lookbook Builder Functions
-  function initOutfitBuilder() {
-    const topSel = document.getElementById('outfit-top-select');
-    const bottomSel = document.getElementById('outfit-bottom-select');
-    const shoesSel = document.getElementById('outfit-shoes-select');
-
-    if (!topSel || !bottomSel || !shoesSel) return;
-
-    PRODUCTS.forEach(p => {
-      const opt = `<option value="${p.sku}">[${p.sku}] ${p.name} (${p.price_range || '-'})</option>`;
-      const cat = (p.category || '').toLowerCase();
-      if (cat.includes('polo') || cat.includes('t-shirt') || cat.includes('jacket') || cat.includes('thailand') || cat.includes('oversize')) {
-        topSel.innerHTML += opt;
-      } else if (cat.includes('pants') || cat.includes('shorts') || cat.includes('jeans')) {
-        bottomSel.innerHTML += opt;
-      } else {
-        shoesSel.innerHTML += opt;
-      }
-    });
-
-    if (bottomSel.children.length < 5) {
-      PRODUCTS.slice(20, 40).forEach(p => bottomSel.innerHTML += `<option value="${p.sku}">[${p.sku}] ${p.name}</option>`);
-    }
-    if (shoesSel.children.length < 5) {
-      PRODUCTS.slice(40, 60).forEach(p => shoesSel.innerHTML += `<option value="${p.sku}">[${p.sku}] ${p.name}</option>`);
-    }
-
-    loadLookPreset('smart_casual');
+  // =========================================================
+  // SIZE CALCULATOR & MATRIX HUB LOGIC
+  // =========================================================
+  function setQuickHeight(h) {
+    const el = document.getElementById('calc-height-input');
+    if (el) el.value = h;
+    runSizeCalculation();
   }
 
-  function loadLookPreset(presetKey) {
-    document.querySelectorAll('.look-preset-item').forEach(el => el.classList.remove('active'));
-    event?.currentTarget?.classList.add('active');
+  function setQuickWeight(w) {
+    const el = document.getElementById('calc-weight-input');
+    if (el) el.value = w;
+    runSizeCalculation();
+  }
 
-    if (presetKey === 'smart_casual') {
-      selectedOutfit = {
-        top: PRODUCTS.find(p => p.category.includes('Polo'))?.sku || 'WA-261PLACL15',
-        bottom: PRODUCTS.find(p => p.sku.includes('JEM') || p.category.includes('Jeans') || p.name.includes('Pansa'))?.sku || PRODUCTS[20].sku,
-        shoes: PRODUCTS.find(p => p.category.includes('Shoes') || p.sku.includes('SNA'))?.sku || PRODUCTS[30].sku
-      };
-    } else if (presetKey === 'cafe_street') {
-      selectedOutfit = {
-        top: PRODUCTS.find(p => p.category.includes('Oversize') || p.name.includes('Oversize'))?.sku || PRODUCTS[10].sku,
-        bottom: PRODUCTS.find(p => p.category.includes('Pants') || p.category.includes('Shorts'))?.sku || PRODUCTS[25].sku,
-        shoes: PRODUCTS.find(p => p.category.includes('Shoes'))?.sku || PRODUCTS[35].sku
-      };
-    } else if (presetKey === 'matchday_chic') {
-      selectedOutfit = {
-        top: PRODUCTS.find(p => p.category.includes('Thailand') || p.name.includes('Cheer'))?.sku || PRODUCTS[5].sku,
-        bottom: PRODUCTS.find(p => p.category.includes('Jeans') || p.category.includes('Pants'))?.sku || PRODUCTS[22].sku,
-        shoes: PRODUCTS.find(p => p.category.includes('Shoes'))?.sku || PRODUCTS[32].sku
-      };
-    } else if (presetKey === 'active_runner') {
-      selectedOutfit = {
-        top: PRODUCTS.find(p => p.category.includes('Running') || p.name.includes('Running'))?.sku || PRODUCTS[15].sku,
-        bottom: PRODUCTS.find(p => p.category.includes('Pants') || p.category.includes('Shorts'))?.sku || PRODUCTS[28].sku,
-        shoes: PRODUCTS.find(p => p.category.includes('Running Shoes'))?.sku || PRODUCTS[38].sku
-      };
+  function setFitPreference(pref) {
+    currentFitPref = pref;
+    ['regular', 'comfort', 'oversize'].forEach(p => {
+      const el = document.getElementById('pref-btn-' + p);
+      if (el) el.classList.toggle('active', p === pref);
+    });
+    runSizeCalculation();
+  }
+
+  function switchSizeUnit(unit) {
+    currentSizeUnit = unit;
+    ['top', 'pant'].forEach(t => {
+      const btnIn = document.getElementById(`unit-${t}-in`);
+      const btnCm = document.getElementById(`unit-${t}-cm`);
+      if (btnIn && btnCm) {
+        btnIn.classList.toggle('active', unit === 'in');
+        btnCm.classList.toggle('active', unit === 'cm');
+      }
+    });
+    renderSizeTables();
+  }
+
+  function runSizeCalculation() {
+    const p = PRODUCTS.find(x => x.sku === selectedSku) || PRODUCTS[0];
+    const h = parseFloat(document.getElementById('calc-height-input')?.value) || 175;
+    const w = parseFloat(document.getElementById('calc-weight-input')?.value) || 75;
+
+    const hubSku = document.getElementById('hub-current-sku');
+    const hubName = document.getElementById('hub-current-name');
+    if (hubSku) hubSku.textContent = p.sku;
+    if (hubName) hubName.textContent = p.name;
+
+    let recSize = 'XL';
+    let recSpec = 'อก 44"';
+    let cutBadge = 'Smart Regular Fit';
+    let reason = '';
+    let script = '';
+
+    const isPlayer = p.name.includes('Player') || p.sku.includes('51');
+    const isOversize = p.category === 'Oversize Lifestyle' || p.name.includes('Oversize');
+    const isPants = p.category === 'Pants & Shorts' || p.category === 'Jeans';
+    const isShoes = p.category === 'Running Shoes' || p.category === 'Football Boots' || p.category === 'Sneakers & Lifestyle';
+
+    if (isShoes) {
+      cutBadge = p.name.includes('Classico') ? 'Wide Fit (หน้าเท้ากว้างคนไทย)' : 'True to Size';
+      recSize = 'EU 42';
+      recSpec = '(ความยาวเท้า 26.0 - 26.5 ซม.)';
+      reason = 'สำหรับสรีระเท้ามาตรฐานคนไทย ใส่เบอร์ 42 จะกระชับกำลังดี';
+      script = `พี่ที่สูง ${h} ซม. สั่งเบอร์ ${recSize} ${recSpec} ได้เลยครับ ${cutBadge} สวมใส่สบาย ไม่บีบหน้าเท้าแน่นอน!`;
+    } else if (isPants) {
+      if (w < 55) { recSize = 'S'; recSpec = 'เอว 26-29"'; }
+      else if (w <= 68) { recSize = 'M'; recSpec = 'เอว 29-32"'; }
+      else if (w <= 78) { recSize = 'L'; recSpec = 'เอว 32-35"'; }
+      else if (w <= 88) { recSize = 'XL'; recSpec = 'เอว 35-38"'; }
+      else if (w <= 98) { recSize = '2L'; recSpec = 'เอว 38-41"'; }
+      else if (w <= 108) { recSize = '3L'; recSpec = 'เอว 41-45"'; }
+      else if (w <= 120) { recSize = '5L'; recSpec = 'เอว 45-50"'; }
+      else { recSize = '7L'; recSpec = 'เอว 50-56"'; }
+
+      cutBadge = 'Elastic & Stretch (เอวยางยืด)';
+      reason = `สำหรับน้ำหนัก ${w} กก. รอบเอวประมาณ ${recSpec} ขอบเอวยืดหยุ่นได้ดี`;
+      script = `พี่ที่สูง ${h} หนัก ${w} แนะนำกางเกงไซซ์ ${recSize} (${recSpec}) เลยครับ ขอบเอวยืดหยุ่นลุกนั่งสบาย เป้าไม่รั้งครับ!`;
+    } else {
+      let baseIndex = 3; // L as base
+      if (w < 55) baseIndex = 0;
+      else if (w <= 65) baseIndex = 1;
+      else if (w <= 72) baseIndex = 2;
+      else if (w <= 80) baseIndex = 3;
+      else if (w <= 88) baseIndex = 4;
+      else if (w <= 98) baseIndex = 5;
+      else if (w <= 108) baseIndex = 6;
+      else if (w <= 120) baseIndex = 7;
+      else baseIndex = 8;
+
+      if (currentFitPref === 'comfort') baseIndex = Math.min(8, baseIndex + 1);
+      if (currentFitPref === 'oversize') baseIndex = Math.min(8, baseIndex + (isOversize ? 0 : 1));
+
+      if (isPlayer && currentFitPref !== 'regular') {
+        baseIndex = Math.min(8, baseIndex + 1);
+        cutBadge = 'Slim Fit (เกรดนักเตะ แนบเนื้อ)';
+      } else if (isOversize) {
+        cutBadge = 'Drop Shoulder (สตรีทไหล่ตก)';
+      } else {
+        cutBadge = 'Smart Regular Fit';
+      }
+
+      const topSpec = WARRIX_SIZE_SPECS.tops[baseIndex];
+      recSize = topSpec.size;
+      recSpec = `อก ${topSpec.chest_in}" / ${topSpec.chest_cm} ซม.`;
+      reason = `สำหรับส่วนสูง ${h} ซม. น้ำหนัก ${w} กก. แนะนำไซซ์ ${recSize} (${recSpec}) เสื้อยาว ${topSpec.len_in} นิ้ว ชายเสื้อไม่ลอย`;
+
+      let fitTip = 'ทรงสวยเข้ารูปกำลังดี';
+      if (currentFitPref === 'comfort') fitTip = 'ใส่สบายพรางพุง ไม่อึดอัดแน่นอน';
+      if (currentFitPref === 'oversize') fitTip = 'ได้ลุคสตรีทไหล่ตกสุดเท่';
+
+      script = `พี่ที่สูง ${h} หนัก ${w} แนะนำกดไซซ์ ${recSize} (${recSpec}) เลยครับ! ${fitTip} รุ่นนี้ไหล่สโลปใส่แล้วดูตัวเพรียวมากครับ!`;
     }
 
-    if (document.getElementById('outfit-top-select')) document.getElementById('outfit-top-select').value = selectedOutfit.top;
-    if (document.getElementById('outfit-bottom-select')) document.getElementById('outfit-bottom-select').value = selectedOutfit.bottom;
-    if (document.getElementById('outfit-shoes-select')) document.getElementById('outfit-shoes-select').value = selectedOutfit.shoes;
+    const recSizeEl = document.getElementById('calc-rec-size');
+    const recSpecEl = document.getElementById('calc-rec-spec');
+    const cutBadgeEl = document.getElementById('calc-fit-badge');
+    const reasonEl = document.getElementById('calc-reason-text');
+    const scriptEl = document.getElementById('calc-speaking-script');
 
-    updateOutfitItem('top', selectedOutfit.top);
-    updateOutfitItem('bottom', selectedOutfit.bottom);
-    updateOutfitItem('shoes', selectedOutfit.shoes);
+    if (recSizeEl) recSizeEl.textContent = recSize;
+    if (recSpecEl) recSpecEl.textContent = `(${recSpec})`;
+    if (cutBadgeEl) cutBadgeEl.textContent = cutBadge;
+    if (reasonEl) reasonEl.textContent = reason;
+    if (scriptEl) scriptEl.textContent = script;
+  }
+
+  function renderSizeTables() {
+    const recSize = document.getElementById('calc-rec-size')?.textContent || 'XL';
+
+    // Tops Table
+    const topTbody = document.getElementById('table-tops-body');
+    if (topTbody) {
+      topTbody.innerHTML = `
+        <thead>
+          <tr>
+            <th>ไซซ์</th>
+            <th>รอบอก (${currentSizeUnit === 'in' ? 'นิ้ว' : 'ซม.'})</th>
+            <th>ความยาว (${currentSizeUnit === 'in' ? 'นิ้ว' : 'ซม.'})</th>
+            <th>ไหล่กว้าง (${currentSizeUnit === 'in' ? 'นิ้ว' : 'ซม.'})</th>
+            <th>น้ำหนักที่แนะนำ</th>
+            <th>ส่วนสูงที่แนะนำ</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${WARRIX_SIZE_SPECS.tops.map(s => `
+            <tr class="${s.size === recSize ? 'row-highlight' : ''}">
+              <td style="font-weight:700; font-family:'JetBrains Mono'; color:#fbbf24;">${s.size}</td>
+              <td><strong>${currentSizeUnit === 'in' ? s.chest_in + '"' : s.chest_cm + ' cm'}</strong></td>
+              <td>${currentSizeUnit === 'in' ? s.len_in + '"' : s.len_cm + ' cm'}</td>
+              <td>${currentSizeUnit === 'in' ? s.shoulder_in + '"' : s.shoulder_cm + ' cm'}</td>
+              <td style="color:#94a3b8;">${s.wt}</td>
+              <td style="color:#94a3b8;">${s.ht}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+
+    // Pants Table
+    const pantTbody = document.getElementById('table-pants-body');
+    if (pantTbody) {
+      pantTbody.innerHTML = `
+        <thead>
+          <tr>
+            <th>ไซซ์</th>
+            <th>รอบเอว (${currentSizeUnit === 'in' ? 'นิ้ว' : 'ซม.'})</th>
+            <th>สะโพก (${currentSizeUnit === 'in' ? 'นิ้ว' : 'ซม.'})</th>
+            <th>ความยาว (${currentSizeUnit === 'in' ? 'นิ้ว' : 'ซม.'})</th>
+            <th>น้ำหนักที่แนะนำ</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${WARRIX_SIZE_SPECS.pants.map(s => `
+            <tr class="${s.size === recSize ? 'row-highlight' : ''}">
+              <td style="font-weight:700; font-family:'JetBrains Mono'; color:#fbbf24;">${s.size}</td>
+              <td><strong>${currentSizeUnit === 'in' ? s.waist_in : s.waist_cm}</strong></td>
+              <td>${currentSizeUnit === 'in' ? s.hip_in : s.hip_cm}</td>
+              <td>${currentSizeUnit === 'in' ? s.len_in : s.len_cm}</td>
+              <td style="color:#94a3b8;">${s.wt}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+
+    // Shoes Table
+    const shoeTbody = document.getElementById('table-shoes-body');
+    if (shoeTbody) {
+      shoeTbody.innerHTML = `
+        <thead>
+          <tr>
+            <th>ไซซ์ EU</th>
+            <th>ความยาวเท้า (CM)</th>
+            <th>US Size</th>
+            <th>UK Size</th>
+            <th>ความกระชับ</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${WARRIX_SIZE_SPECS.shoes.map(s => `
+            <tr class="${s.eu.includes(recSize) ? 'row-highlight' : ''}">
+              <td style="font-weight:700; font-family:'JetBrains Mono'; color:#fbbf24;">${s.eu}</td>
+              <td><strong>${s.cm}</strong></td>
+              <td>${s.us}</td>
+              <td>${s.uk}</td>
+              <td>${s.eu === 'EU 42' ? '⭐ ไซซ์ยอดนิยม' : 'มาตรฐาน'}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      `;
+    }
+  }
+
+  function copyAdvisorScript() {
+    const text = document.getElementById('calc-speaking-script')?.textContent.trim();
+    if (text) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('📋 คัดลอกสคริปต์แนะนำไซซ์เรียบร้อยแล้ว!');
+      }).catch(() => {
+        showToast('📋 คัดลอกสคริปต์แนะนำไซซ์เรียบร้อยแล้ว!');
+      });
+    }
+  }
+
+  // =========================================================
+  // MIX & MATCH LOOKBOOK ENGINE
+  // =========================================================
+  function initOutfitBuilder() {
+    const tops = PRODUCTS.filter(p => p.category === 'Polo Shirts' || p.category === 'Thailand National Team' || p.category === 'Oversize Lifestyle' || p.category === 'Jackets & Suits');
+    const bottoms = PRODUCTS.filter(p => p.category === 'Pants & Shorts' || p.category === 'Jeans');
+    const shoes = PRODUCTS.filter(p => p.category === 'Running Shoes' || p.category === 'Football Boots' || p.category === 'Sneakers & Lifestyle' || p.category === 'Accessories & Bags');
+
+    const topSelect = document.getElementById('select-slot-top');
+    const bottomSelect = document.getElementById('select-slot-bottom');
+    const shoesSelect = document.getElementById('select-slot-shoes');
+
+    if (topSelect) {
+      topSelect.innerHTML = tops.map(p => `<option value="${p.sku}">${p.sku} - ${p.name} (${p.price_range})</option>`).join('');
+      topSelect.value = selectedOutfit.top;
+    }
+    if (bottomSelect) {
+      bottomSelect.innerHTML = bottoms.map(p => `<option value="${p.sku}">${p.sku} - ${p.name} (${p.price_range})</option>`).join('');
+      bottomSelect.value = selectedOutfit.bottom;
+    }
+    if (shoesSelect) {
+      shoesSelect.innerHTML = shoes.map(p => `<option value="${p.sku}">${p.sku} - ${p.name} (${p.price_range})</option>`).join('');
+      shoesSelect.value = selectedOutfit.shoes;
+    }
+
+    updateOutfitSlot('top', selectedOutfit.top);
+    updateOutfitSlot('bottom', selectedOutfit.bottom);
+    updateOutfitSlot('shoes', selectedOutfit.shoes);
     updateOutfitPricing();
   }
 
-  function updateOutfitItem(zone, sku) {
-    selectedOutfit[zone] = sku;
+  function handleOutfitChange(slot, sku) {
+    selectedOutfit[slot] = sku;
+    updateOutfitSlot(slot, sku);
+    updateOutfitPricing();
+  }
+
+  function updateOutfitSlot(slot, sku) {
     const p = PRODUCTS.find(x => x.sku === sku);
     if (!p) return;
 
-    if (zone === 'top') {
-      document.getElementById('outfit-top-thumb').innerHTML = p.image_url ? `<img src="${p.image_url}">` : '👕';
-      document.getElementById('outfit-top-price').textContent = p.price_range || '฿390';
-    } else if (zone === 'bottom') {
-      document.getElementById('outfit-bottom-thumb').innerHTML = p.image_url ? `<img src="${p.image_url}">` : '👖';
-      document.getElementById('outfit-bottom-price').textContent = p.price_range || '฿590';
-    } else if (zone === 'shoes') {
-      document.getElementById('outfit-shoes-thumb').innerHTML = p.image_url ? `<img src="${p.image_url}">` : '👟';
-      document.getElementById('outfit-shoes-price').textContent = p.price_range || '฿890';
+    const imgBox = document.getElementById(`slot-img-${slot}`);
+    const skuBox = document.getElementById(`slot-sku-${slot}`);
+    const nameBox = document.getElementById(`slot-name-${slot}`);
+    const priceBox = document.getElementById(`slot-price-${slot}`);
+
+    if (imgBox) {
+      imgBox.innerHTML = p.image_url ? `<img src="${p.image_url}" alt="${p.name}">` : `<span style="font-size:54px;">${p.category_icon || '👕'}</span>`;
     }
+    if (skuBox) skuBox.textContent = p.sku;
+    if (nameBox) nameBox.textContent = p.name;
+    if (priceBox) priceBox.textContent = p.price_range || '-';
+  }
+
+  function parsePriceNum(str) {
+    if (!str) return 0;
+    const clean = str.replace(/[^0-9]/g, '');
+    return parseInt(clean, 10) || 0;
+  }
+
+  function updateOutfitPricing() {
+    const topP = PRODUCTS.find(x => x.sku === selectedOutfit.top);
+    const btmP = PRODUCTS.find(x => x.sku === selectedOutfit.bottom);
+    const shoeP = PRODUCTS.find(x => x.sku === selectedOutfit.shoes);
+
+    const price1 = parsePriceNum(topP?.price_range);
+    const price2 = parsePriceNum(btmP?.price_range);
+    const price3 = parsePriceNum(shoeP?.price_range);
+
+    const rawTotal = price1 + price2 + price3;
+    const discountVal = Math.round(rawTotal * 0.20);
+    const finalPrice = rawTotal - discountVal;
+
+    document.getElementById('bundle-raw-total').textContent = '฿' + rawTotal.toLocaleString();
+    document.getElementById('bundle-discount-val').textContent = '-฿' + discountVal.toLocaleString();
+    document.getElementById('bundle-final-price').textContent = '฿' + finalPrice.toLocaleString();
+
+    const scriptBox = document.getElementById('bundle-speaking-script');
+    if (scriptBox) {
+      scriptBox.textContent = `"เซ็ต Total Look นี้จัดคู่กันลงตัวมากครับ! เสื้อ ${topP?.name || ''} แมตช์กับกางเกง ${btmP?.name || ''} และรองเท้า ${shoeP?.name || ''} ครบ 3 ชิ้นลดพิเศษ 20% จาก ฿${rawTotal.toLocaleString()} เหลือเพียง ฿${finalPrice.toLocaleString()} เท่านั้นครับ!"`;
+    }
+  }
+
+  function loadOutfitPreset(preset) {
+    document.querySelectorAll('.preset-pill-btn').forEach(b => b.classList.remove('active'));
+    event?.currentTarget?.classList.add('active');
+
+    if (preset === 'smart_casual') {
+      selectedOutfit = { top: 'WA-261PLACL15', bottom: 'LP-241JEMW103', shoes: 'WF-232SNACL01' };
+    } else if (preset === 'cafe_street') {
+      selectedOutfit = { top: 'WA-234TSACL01', bottom: 'LP-241JEMW101', shoes: 'WF-232SNACL01' };
+    } else if (preset === 'active_running') {
+      selectedOutfit = { top: 'WA-241RNACL01', bottom: 'WP-1509', shoes: 'WF-241RNACL01' };
+    } else if (preset === 'matchday') {
+      selectedOutfit = { top: 'WA-241FBATH51', bottom: 'WP-241TRACL01', shoes: 'WF-232SNACL01' };
+    }
+
+    const topSelect = document.getElementById('select-slot-top');
+    const bottomSelect = document.getElementById('select-slot-bottom');
+    const shoesSelect = document.getElementById('select-slot-shoes');
+
+    if (topSelect) topSelect.value = selectedOutfit.top;
+    if (bottomSelect) bottomSelect.value = selectedOutfit.bottom;
+    if (shoesSelect) shoesSelect.value = selectedOutfit.shoes;
+
+    updateOutfitSlot('top', selectedOutfit.top);
+    updateOutfitSlot('bottom', selectedOutfit.bottom);
+    updateOutfitSlot('shoes', selectedOutfit.shoes);
     updateOutfitPricing();
   }
 
   function sendToLookbook(sku) {
-    selectedOutfit.top = sku;
+    const p = PRODUCTS.find(x => x.sku === sku);
+    if (!p) return;
+
+    if (p.category === 'Pants & Shorts' || p.category === 'Jeans') {
+      selectedOutfit.bottom = sku;
+    } else if (p.category === 'Running Shoes' || p.category === 'Football Boots' || p.category === 'Sneakers & Lifestyle') {
+      selectedOutfit.shoes = sku;
+    } else {
+      selectedOutfit.top = sku;
+    }
+
+    initOutfitBuilder();
     switchView('lookbook');
-    const sel = document.getElementById('outfit-top-select');
-    if (sel) sel.value = sku;
-    updateOutfitItem('top', sku);
-    showToast('👗 เพิ่ม ' + sku + ' เข้าสู่อุปกรณ์จัดเซ็ต Lookbook แล้ว!');
+    showToast(`👗 นำ ${p.sku} เข้าสู่ Lookbook เรียบร้อย!`);
   }
 
-  function updateOutfitPricing() {
-    const top = PRODUCTS.find(p => p.sku === selectedOutfit.top);
-    const bottom = PRODUCTS.find(p => p.sku === selectedOutfit.bottom);
-    const shoes = PRODUCTS.find(p => p.sku === selectedOutfit.shoes);
-
-    const getPrice = (p) => {
-      if (!p || !p.price_range) return 400;
-      const m = p.price_range.match(/\d+/);
-      return m ? parseInt(m[0]) : 400;
-    };
-
-    const p1 = getPrice(top);
-    const p2 = getPrice(bottom);
-    const p3 = getPrice(shoes);
-    const total = p1 + p2 + p3;
-    const discount = Math.round(total * 0.15);
-    const finalPrice = total - discount;
-
-    document.getElementById('outfit-total-msrp').textContent = '฿' + total.toLocaleString();
-    document.getElementById('outfit-discount-val').textContent = '-฿' + discount.toLocaleString();
-    document.getElementById('outfit-final-price').textContent = '฿' + finalPrice.toLocaleString();
-
-    const topName = top ? top.name.substring(0, 25) : 'เสื้อ Warrix';
-    const bName = bottom ? bottom.name.substring(0, 25) : 'กางเกง';
-    const sName = shoes ? shoes.name.substring(0, 25) : 'รองเท้า';
-
-    document.getElementById('outfit-pitch-text').textContent = '"ใครชอบลุคนี้ จัดเซ็ตครบ 3 ชิ้น [' + topName + '] + [' + bName + '] + [' + sName + '] ปกติ ' + total.toLocaleString() + ' บาท วันนี้ในไลฟ์กดปักหมุดเซ็ตคู่ลดทันที 15% เหลือเพียง ' + finalPrice.toLocaleString() + ' บาทเท่านั้นครับ!"';
-  }
-
-  function copyOutfitPitch() {
-    const txt = document.getElementById('outfit-pitch-text')?.innerText || '';
-    navigator.clipboard.writeText(txt).then(() => showToast('📋 คัดลอกสคริปต์ขายเซ็ตคู่เรียบร้อย!'));
-  }
-
-  function askAiStylistForOutfit() {
-    const top = PRODUCTS.find(p => p.sku === selectedOutfit.top);
-    const bottom = PRODUCTS.find(p => p.sku === selectedOutfit.bottom);
-    const shoes = PRODUCTS.find(p => p.sku === selectedOutfit.shoes);
-
-    const q = 'ช่วยแนะนำการแต่งตัวสำหรับลุคนี้: เสื้อ [' + (top?.name || '-') + '] คู่กับกางเกง [' + (bottom?.name || '-') + '] และรองเท้า [' + (shoes?.name || '-') + '] เหมาะกับโอกาสไหน และมีทริกการแต่งตัวอย่างไรให้ดูมีสไตล์';
-    switchView('stylist');
-    const input = document.getElementById('stylistChatInput');
-    if (input) {
-      input.value = q;
-      handleStylistSubmit(new Event('submit'));
+  function copyBundleScript() {
+    const text = document.getElementById('bundle-speaking-script')?.textContent;
+    if (text) {
+      navigator.clipboard.writeText(text).then(() => showToast('📋 คัดลอกบทพูด Total Look เรียบร้อยแล้ว!'));
     }
   }
 
-  function setUndertone(tone) {
+  // =========================================================
+  // AI PERSONAL STYLIST ENGINE (GEMINI 3.6 FLASH TURBO)
+  // =========================================================
+  function setPersonalColor(tone) {
     document.querySelectorAll('.undertone-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('btn-undertone-' + tone)?.classList.add('active');
-    const txt = document.getElementById('undertone-rec-text');
+    event?.currentTarget?.classList.add('active');
+
+    const recBox = document.getElementById('personal-color-rec');
     if (tone === 'warm') {
-      txt.innerHTML = '✨ <strong>Warm Tone (ผิวสองสี/ผิวเหลือง):</strong> แนะนำ <em>Forest Pine, Midnight Navy, Champagne Gold, Maroon</em> ช่วยขับออร่าหน้าไบรท์';
+      recBox.innerHTML = '💡 <strong>Warm Tone (ผิวสองสี/เหลือง):</strong> ขับผิวได้ดีที่สุดด้วยเฉด <em>Forest Pine (เขียวไพน์), Midnight Navy, Champagne Gold</em> หน้าจะดูสว่างออร่า';
     } else if (tone === 'cool') {
-      txt.innerHTML = '❄️ <strong>Cool Tone (ผิวขาวชมพู/ผิวสว่าง):</strong> แนะนำ <em>Royal Blue, Crimson Red, Carbon Black, Pure White</em> ใส่แล้วโดดเด่นตัดกับผิว';
+      recBox.innerHTML = '💡 <strong>Cool Tone (ผิวขาวอมชมพู):</strong> เหมาะกับเฉด <em>Crimson Red (แดงเข้ม), Ivory Mist (ขาวนวล), Cobalt Blue</em> ขับผิวดูโดดเด่นสดใส';
     } else if (tone === 'deep') {
-      txt.innerHTML = '🍂 <strong>Deep Tone (ผิวเข้ม/แทนคมเข้ม):</strong> แนะนำ <em>Ivory Mist, Mustard Yellow, Olive Green, Bronze</em> เพิ่มความมีมิติและดูพรีเมียม';
+      recBox.innerHTML = '💡 <strong>Deep Tone (ผิวเข้มคมเข้ม):</strong> แนะนำใส่เฉด <em>Carbon Black, Midnight Navy, Burgundy</em> ได้ลุค Smart & Powerful คมเข้มดูแพง';
     }
-    showToast('🎨 อัปเดตคำแนะนำเฉดสีตามโทนผิวแล้ว');
   }
 
   function clearStylistChat() {
-    const timeline = document.getElementById('stylistChatTimeline');
-    if (timeline) {
-      timeline.innerHTML = '<div class="stylist-msg-ai"><div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;"><span style="font-size:16px;">💄</span><strong style="color:#f472b6; font-size:13px;">WARRIX Celebrity Stylist</strong></div><p>ประวัติการแชตถูกล้างเรียบร้อยแล้วครับ พร้อมให้คำปรึกษาเรื่องสไตล์ใหม่!</p></div>';
-    }
+    document.getElementById('stylistChatTimeline').innerHTML = `
+      <div class="stylist-msg-ai">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+          <span style="font-size:16px;">💄</span>
+          <strong style="color:#f472b6; font-size:13px;">WARRIX Celebrity Stylist</strong>
+        </div>
+        <p>สวัสดีครับ! ต้องการคำแนะนำเรื่องสไตล์การแต่งตัว หรือแมตช์คู่สีสำหรับไลฟ์สดถามได้เลยครับ!</p>
+      </div>
+    `;
   }
 
-  // Stylist Chat Streaming
   async function handleStylistSubmit(e) {
     if (e) e.preventDefault();
     const input = document.getElementById('stylistChatInput');
@@ -1688,6 +2647,7 @@
     userDiv.className = 'stylist-msg-user';
     userDiv.textContent = query;
     timeline.appendChild(userDiv);
+
     if (input) input.value = '';
     timeline.scrollTop = timeline.scrollHeight;
 
@@ -1703,8 +2663,6 @@
 
     try {
       let accumulated = '';
-      let streamed = false;
-
       const sysPrompt = 'คุณคือ WARRIX Celebrity Fashion Stylist & Live Commerce Director ให้คำแนะนำเรื่องการแต่งตัว แมตช์คู่สี สไตล์ และทริกการใส่เสื้อผ้าให้ดูดี ตอบกระชับ 3-4 ประโยคพร้อม Hook พูดสดหน้ากล้อง';
 
       const directStream = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:streamGenerateContent?alt=sse&key=' + apiKey, {
@@ -1736,7 +2694,6 @@
                     accumulated += parts[j].text;
                     contentEl.innerHTML = (typeof marked !== 'undefined') ? marked.parse(accumulated) : accumulated.split(String.fromCharCode(10)).join('<br/>');
                     timeline.scrollTop = timeline.scrollHeight;
-                    streamed = true;
                   }
                 }
               } catch (_) {}
