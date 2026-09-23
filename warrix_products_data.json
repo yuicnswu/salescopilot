@@ -180,7 +180,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-253placl33",
@@ -373,7 +374,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wa-252placl30",
@@ -659,7 +661,8 @@
         "name": "Champagne Gold (ทอง/เหลือง)",
         "hex": "#d97706"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wa-261placl02",
@@ -853,7 +856,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-261placr01",
@@ -1020,7 +1024,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-261placl30",
@@ -1245,7 +1250,8 @@
         "name": "YW (หลากโทนสีพาสเทลและเอิร์ธโทน)",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 299
   },
   {
     "id": "wa-261placy01",
@@ -1421,7 +1427,8 @@
         "name": "Crimson Red (แดงเข้ม)",
         "hex": "#b91c1c"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-plan15",
@@ -1653,7 +1660,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 200
   },
   {
     "id": "wa-212placl30",
@@ -1836,7 +1844,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 250
   },
   {
     "id": "wa-221placl30",
@@ -2053,7 +2062,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 290
   },
   {
     "id": "wa-253plmcl37",
@@ -2260,7 +2270,8 @@
         "name": "Imperial Violet (ม่วง)",
         "hex": "#7e22ce"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-252placl31-wavora",
@@ -2473,7 +2484,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 320
   },
   {
     "id": "wa-252placl31-tactical",
@@ -2686,7 +2698,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-242placl30",
@@ -2868,7 +2881,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wa-232placl34",
@@ -3051,7 +3065,8 @@
         "name": "หลากหลายสีสันโทนโมเดิร์นสปอร์ต",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 299
   },
   {
     "id": "wa-222placl34",
@@ -3233,7 +3248,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 320
   },
   {
     "id": "wa-221placl32",
@@ -3414,7 +3430,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 299
   },
   {
     "id": "wa-214placl32",
@@ -3596,7 +3613,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 490
   },
   {
     "id": "wa-252placl32-wisp",
@@ -3776,7 +3794,8 @@
         "name": "โทนสปอร์ตคลาสสิก แถบคอสีตัด",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 320
   },
   {
     "id": "wa-pla029",
@@ -3958,7 +3977,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 290
   },
   {
     "id": "wf-261rnacl01",
@@ -4148,7 +4168,8 @@
         "name": "Imperial Violet (ม่วง)",
         "hex": "#7e22ce"
       }
-    ]
+    ],
+    "numeric_price": 1290
   },
   {
     "id": "wf-261rnacl02",
@@ -4317,7 +4338,8 @@
         "name": "KK (กากีโอลีฟ)",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 1490
   },
   {
     "id": "wf-261rnacl03",
@@ -4492,7 +4514,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 1690
   },
   {
     "id": "wf-261rnacl04",
@@ -4647,7 +4670,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 1590
   },
   {
     "id": "wf-253rnacl04",
@@ -4802,7 +4826,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 1390
   },
   {
     "id": "wf-253rnacl03",
@@ -4970,7 +4995,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 1290
   },
   {
     "id": "wf-253rnacl02",
@@ -5163,7 +5189,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 1290
   },
   {
     "id": "wf-203rnacl01",
@@ -5358,7 +5385,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 890
   },
   {
     "id": "wf-254fbamy01",
@@ -5526,7 +5554,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 1190
   },
   {
     "id": "wf-254fbamy03",
@@ -5694,7 +5723,8 @@
         "name": "โทนสีดุดัน ทรงพลัง",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 1190
   },
   {
     "id": "wf-254fsamy01",
@@ -5862,7 +5892,8 @@
         "name": "โทนสีสปอร์ตฟุตซอล",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 990
   },
   {
     "id": "wa-243fbath10",
@@ -6044,7 +6075,8 @@
         "name": "โทนสตรีททีมชาติคลาสสิก",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-261fbwth11",
@@ -6225,7 +6257,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-261fbwth15",
@@ -6426,7 +6459,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wa-253fbath51",
@@ -6646,7 +6680,8 @@
         "name": "Forest Pine (เขียว)",
         "hex": "#15803d"
       }
-    ]
+    ],
+    "numeric_price": 2490
   },
   {
     "id": "wa-253fbath52",
@@ -6842,7 +6877,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 890
   },
   {
     "id": "wa-253fbath53-cheer",
@@ -7038,7 +7074,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 399
   },
   {
     "id": "lp-241jemw901",
@@ -7188,7 +7225,8 @@
         "name": "สียีนส์ฟอกสตรีท, สียีนส์เข้ม",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 990
   },
   {
     "id": "lp-241jemw103",
@@ -7364,7 +7402,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 1490
   },
   {
     "id": "wa-261fjacl06",
@@ -7546,7 +7585,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 450
   },
   {
     "id": "wp-252fjacl01",
@@ -7726,7 +7766,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wp-254wramy01",
@@ -7843,7 +7884,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 890
   },
   {
     "id": "wp-254wramy02",
@@ -7959,7 +8001,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 290
   },
   {
     "id": "wa-252bkawp01",
@@ -8158,7 +8201,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 490
   },
   {
     "id": "wa-254bkath01",
@@ -8336,7 +8380,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 690
   },
   {
     "id": "la-243tsacl01",
@@ -8524,7 +8569,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 249
   },
   {
     "id": "la-233tsacl04",
@@ -8705,7 +8751,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wa-241fbacl06-199",
@@ -8886,7 +8933,8 @@
         "name": "มีมากกว่า 15 สี สดใสและสุภาพ",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 199
   },
   {
     "id": "la-262tsawk01",
@@ -9067,7 +9115,8 @@
         "name": "โทนสีสตรีทมินิมอล",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wa-262jkacl70",
@@ -9232,7 +9281,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 890
   },
   {
     "id": "wa-254cpamy01",
@@ -9348,7 +9398,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 590
   },
   {
     "id": "wp-254cpamy01",
@@ -9464,7 +9515,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 690
   },
   {
     "id": "wa-262fbask10",
@@ -9639,7 +9691,8 @@
         "name": "ชมพู-ฟ้า สวนกุหลาบ",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 490
   },
   {
     "id": "wa-262fbabc10",
@@ -9814,7 +9867,8 @@
         "name": "Imperial Violet (ม่วง)",
         "hex": "#7e22ce"
       }
-    ]
+    ],
+    "numeric_price": 490
   },
   {
     "id": "la-254djacl01",
@@ -9965,7 +10019,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 5990
   },
   {
     "id": "la-254djwcl01",
@@ -10122,7 +10177,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 4990
   },
   {
     "id": "la-254jkmcl02",
@@ -10272,7 +10328,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 3490
   },
   {
     "id": "wa-changsuek-blackout",
@@ -10440,7 +10497,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 1290
   },
   {
     "id": "wa-blue-gold-polo",
@@ -10615,7 +10673,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 319
   },
   {
     "id": "wa-262fbath51",
@@ -10797,7 +10856,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 2490
   },
   {
     "id": "wa-262fbath52",
@@ -10978,7 +11038,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 1125
   },
   {
     "id": "wa-262fbath30",
@@ -11167,7 +11228,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 475
   },
   {
     "id": "wa-262fbath53",
@@ -11362,7 +11424,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 330
   },
   {
     "id": "wa-241placl32-easy",
@@ -11550,7 +11613,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 214
   },
   {
     "id": "ws-262asath01",
@@ -11732,7 +11796,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 399
   },
   {
     "id": "wp-1509",
@@ -11903,7 +11968,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 290
   },
   {
     "id": "wp-252rnacl02",
@@ -12099,7 +12165,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 350
   },
   {
     "id": "wp-223wracl30",
@@ -12261,7 +12328,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wp-231wracl70",
@@ -12430,7 +12498,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-fba071",
@@ -12610,7 +12679,8 @@
         "name": "หลากหลายสีสัน",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 99
   },
   {
     "id": "wa-233fbath53",
@@ -12791,7 +12861,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 299
   },
   {
     "id": "wa-221fbare01",
@@ -12979,7 +13050,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 990
   },
   {
     "id": "wa-263placu01",
@@ -13153,7 +13225,8 @@
         "name": "ชมพูจุฬาฯ",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 385
   },
   {
     "id": "wa-smiley-patchplay",
@@ -13334,7 +13407,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 1190
   },
   {
     "id": "wa-254plath31",
@@ -13532,7 +13606,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 599
   },
   {
     "id": "wa-244plath30",
@@ -13723,7 +13798,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 599
   },
   {
     "id": "la-254plmcl01",
@@ -13908,7 +13984,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 1190
   },
   {
     "id": "wa-253plath32",
@@ -14106,7 +14183,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 599
   },
   {
     "id": "wa-252fbare01",
@@ -14305,7 +14383,8 @@
         "name": "ชมพูสด",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 990
   },
   {
     "id": "la-254jkmcl03",
@@ -14466,7 +14545,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 1590
   },
   {
     "id": "wf-233alacl01",
@@ -14638,7 +14718,8 @@
         "name": "Slate Grey (เทา)",
         "hex": "#64748b"
       }
-    ]
+    ],
+    "numeric_price": 1090
   },
   {
     "id": "lp-244jemw104",
@@ -14805,7 +14886,8 @@
         "name": "สีไบโอวอช",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 790
   },
   {
     "id": "wa-253fbath12",
@@ -15004,7 +15086,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 819
   },
   {
     "id": "wa-223placl30",
@@ -15254,7 +15337,8 @@
         "name": "ฟ้า",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 259
   },
   {
     "id": "wa-241placl30",
@@ -15452,7 +15536,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 399
   },
   {
     "id": "wc-262fbath01",
@@ -15650,7 +15735,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 290
   },
   {
     "id": "wc-243rnacl01",
@@ -15870,7 +15956,8 @@
         "name": "Forest Pine (เขียว)",
         "hex": "#15803d"
       }
-    ]
+    ],
+    "numeric_price": 245
   },
   {
     "id": "wf-242caacl01",
@@ -16062,7 +16149,8 @@
         "name": "Forest Pine (เขียว)",
         "hex": "#15803d"
       }
-    ]
+    ],
+    "numeric_price": 490
   },
   {
     "id": "wf-263tracl01",
@@ -16241,7 +16329,8 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 590
   },
   {
     "id": "ws-253tcacl02",
@@ -16375,7 +16464,8 @@
         "name": "สีกากี (Coyote Tan)",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 490
   },
   {
     "id": "wb-254wramy03",
@@ -16490,7 +16580,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 890
   },
   {
     "id": "wb-253tcacl02",
@@ -16624,7 +16715,8 @@
         "name": "สีกากีแทน",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 1590
   },
   {
     "id": "wb-263wracl01",
@@ -16765,7 +16857,8 @@
         "name": "Crimson Red (แดงเข้ม)",
         "hex": "#b91c1c"
       }
-    ]
+    ],
+    "numeric_price": 390
   },
   {
     "id": "wa-224rnacl05",
@@ -16970,7 +17063,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 175
   },
   {
     "id": "wa-261fbacl90",
@@ -17187,7 +17281,8 @@
         "name": "ชมพู",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 129
   },
   {
     "id": "wa-241fbbkl01",
@@ -17371,7 +17466,8 @@
         "name": "Ivory White (ขาว)",
         "hex": "#f8fafc"
       }
-    ]
+    ],
+    "numeric_price": 690
   },
   {
     "id": "wa-251fbtte01",
@@ -17575,7 +17671,8 @@
         "name": "Carbon Black (ดำ)",
         "hex": "#0f172a"
       }
-    ]
+    ],
+    "numeric_price": 590
   },
   {
     "id": "wa-242msc01",
@@ -17714,7 +17811,8 @@
         "name": "สีเบอร์กันดี",
         "hex": "#1e293b"
       }
-    ]
+    ],
+    "numeric_price": 1290
   },
   {
     "id": "wa-253jtm01",
@@ -17924,7 +18022,8 @@
         "name": "Imperial Violet (ม่วง)",
         "hex": "#7e22ce"
       }
-    ]
+    ],
+    "numeric_price": 690
   },
   {
     "id": "wa-3315",
@@ -18072,6 +18171,7 @@
         "name": "Midnight Navy (กรมท่า)",
         "hex": "#1e3a8a"
       }
-    ]
+    ],
+    "numeric_price": 199
   }
 ]
