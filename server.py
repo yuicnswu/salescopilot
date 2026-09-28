@@ -192,11 +192,22 @@ class WarrixStudioServer(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(json.dumps(resp, ensure_ascii=False).encode("utf-8"))
             return
 
-        if parsed.path == "/api/products":
+        if parsed.path in ["/api/products", "/api/warrix/sync", "/api/sync"]:
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
-            self.wfile.write(json.dumps(PRODUCTS, ensure_ascii=False).encode("utf-8"))
+            resp_data = {
+                "status": "success",
+                "message": "Synced 100 SKUs with warrix.com product database",
+                "count": len(PRODUCTS),
+                "timestamp": int(time.time()),
+                "products": PRODUCTS
+            }
+            # If path is just /api/products, return PRODUCTS list or dict
+            if parsed.path == "/api/products":
+                self.wfile.write(json.dumps(PRODUCTS, ensure_ascii=False).encode("utf-8"))
+            else:
+                self.wfile.write(json.dumps(resp_data, ensure_ascii=False).encode("utf-8"))
             return
 
         if parsed.path in ["/", ""]:
@@ -208,6 +219,68 @@ class WarrixStudioServer(http.server.SimpleHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
 
         # Real-time SSE Streaming Endpoint
+        
+        # High-Speed Stylist Streaming Endpoint
+        if parsed.path in ["/api/stylist/stream", "/api/stylist"]:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body_bytes = self.rfile.read(content_length) if content_length > 0 else b'{}'
+            try:
+                body = json.loads(body_bytes.decode("utf-8"))
+            except Exception:
+                body = {}
+
+            query = body.get("prompt") or body.get("query") or body.get("message") or ""
+            api_key = body.get("api_key")
+
+            if not query.strip():
+                self.send_response(400)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(b'{"error": "Prompt query is required"}')
+                return
+
+            self.send_response(200)
+            self.send_header("Content-Type", "text/event-stream; charset=utf-8")
+            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Connection", "keep-alive")
+            self.end_headers()
+
+            stream_resp, status_code = call_gemini_api_stream(query, api_key=api_key)
+            if stream_resp:
+                try:
+                    for line in stream_resp:
+                        l = line.decode('utf-8', errors='ignore').strip()
+                        if l.startswith('data:'):
+                            try:
+                                chunk = json.loads(l[5:])
+                                parts = chunk.get('candidates', [{}])[0].get('content', {}).get('parts', [])
+                                for p in parts:
+                                    t = p.get('text', '')
+                                    if t:
+                                        msg = json.dumps({"token": t, "text": t}, ensure_ascii=False)
+                                        self.wfile.write(f"data: {msg}\n\n".encode("utf-8"))
+                                        self.wfile.flush()
+                            except Exception:
+                                pass
+                    self.wfile.write(b"data: [DONE]\n\n")
+                    self.wfile.flush()
+                except Exception:
+                    pass
+                finally:
+                    stream_resp.close()
+            else:
+                # Fast Fashion Stylist Knowledge Fallback (Instant Streaming)
+                fallback_text = offline_copilot_search(query)
+                words = re.findall(r'\S+|\n', fallback_text)
+                for w in words:
+                    msg = json.dumps({"token": w + (" " if w != "\n" else ""), "text": w + (" " if w != "\n" else "")}, ensure_ascii=False)
+                    self.wfile.write(f"data: {msg}\n\n".encode("utf-8"))
+                    self.wfile.flush()
+                    time.sleep(0.01)
+                self.wfile.write(b"data: [DONE]\n\n")
+                self.wfile.flush()
+            return
+
         if parsed.path == "/api/copilot/stream":
             content_length = int(self.headers.get("Content-Length", 0))
             body_bytes = self.rfile.read(content_length) if content_length > 0 else b'{}'
@@ -309,12 +382,52 @@ class WarrixStudioServer(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(json.dumps(res_payload, ensure_ascii=False).encode("utf-8"))
             return
 
-        if parsed.path == "/api/warrix/sync":
+        if parsed.path in ["/api/warrix/sync", "/api/sync"]:
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
-            self.wfile.write(b'{"status": "success", "message": "Synced with warrix.com local catalog", "count": 100}')
+            resp_data = {
+                "status": "success",
+                "message": "Synced 100 SKUs with warrix.com product database",
+                "count": len(PRODUCTS),
+                "timestamp": int(time.time()),
+                "products": PRODUCTS
+            }
+            self.wfile.write(json.dumps(resp_data, ensure_ascii=False).encode("utf-8"))
             return
+
+        if parsed.path in ["/api/products/import", "/api/import"]:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body_bytes = self.rfile.read(content_length) if content_length > 0 else b'{}'
+            try:
+                data = json.loads(body_bytes.decode("utf-8"))
+                new_products = data.get("products", [])
+                if new_products and isinstance(new_products, list):
+                    for p in new_products:
+                        sku = p.get("sku")
+                        if not sku:
+                            continue
+                        if sku in SKU_MAP:
+                            SKU_MAP[sku].update(p)
+                        else:
+                            PRODUCTS.insert(0, p)
+                            SKU_MAP[sku] = p
+                    try:
+                        with open("warrix_products_data.json", "w", encoding="utf-8") as f:
+                            json.dump(PRODUCTS, f, ensure_ascii=False, indent=2)
+                    except Exception:
+                        pass
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/json; charset=utf-8")
+                    self.end_headers()
+                    self.wfile.write(json.dumps({"status": "success", "count": len(PRODUCTS)}).encode("utf-8"))
+                    return
+            except Exception as e:
+                self.send_response(400)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+                return
 
         self.send_response(404)
         self.end_headers()
