@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sales Copilot • Live Commerce Studio & Size Matrix Fullscreen (WARRIX)</title>
+  <title>Sales Copilot • Studio Pro Live Teleprompter (WARRIX)</title>
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,65 +27,63 @@
   </script>
   
   <style>
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }
-    ::-webkit-scrollbar-thumb { background: rgba(51, 65, 85, 0.8); border-radius: 9999px; }
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.5); }
+    ::-webkit-scrollbar-thumb { background: rgba(51, 65, 85, 0.7); border-radius: 9999px; }
     ::-webkit-scrollbar-thumb:hover { background: rgba(71, 85, 105, 1); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans min-h-full flex flex-col antialiased selection:bg-indigo-500 selection:text-white">
 
   <!-- ================= TOP HEADER NAVIGATION ================= -->
-  <header id="globalHeader" class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800/80 px-4 lg:px-6 py-3 transition-all">
+  <header id="globalHeader" class="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 px-4 lg:px-6 py-2.5 transition-all">
     <div class="max-w-[1720px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
       
-      <!-- Brand & Status -->
+      <!-- Brand & Live Indicator -->
       <div class="flex items-center justify-between w-full md:w-auto gap-4">
         <div class="flex items-center gap-3">
-          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center font-black text-white text-lg shadow-lg shadow-indigo-600/30">
+          <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-600 flex items-center justify-center font-black text-white text-base shadow-md shadow-indigo-600/30">
             W
           </div>
           <div>
             <div class="flex items-center gap-2">
-              <span class="font-extrabold text-base tracking-tight text-slate-100">SALES COPILOT</span>
-              <span class="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 border border-indigo-500/30">STUDIO PRO</span>
+              <span class="font-extrabold text-sm tracking-tight text-slate-100">SALES COPILOT</span>
+              <span class="text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">STUDIO PRO</span>
             </div>
-            <p class="text-[11px] text-slate-400 font-medium">WARRIX Live Commerce & Size Matrix Studio</p>
           </div>
         </div>
 
-        <!-- Live indicator -->
-        <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold">
+        <div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs font-semibold">
           <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
           <span>ON AIR • 105 SKUs</span>
         </div>
       </div>
 
-      <!-- Navigation Tabs -->
-      <nav class="flex items-center gap-1.5 overflow-x-auto w-full md:w-auto py-1 max-w-full">
-        <button onclick="switchView('prompter')" id="tab-prompter" class="view-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-indigo-600 text-white shadow-lg shadow-indigo-600/20 flex items-center gap-2 whitespace-nowrap">
-          <span>🎙️</span> LIVE PROMPTER
+      <!-- Segmented View Tabs (Clean, Minimalist) -->
+      <nav class="flex items-center gap-1 bg-slate-900/90 p-1 rounded-xl border border-slate-800/80 overflow-x-auto w-full md:w-auto">
+        <button onclick="switchView('prompter')" id="tab-prompter" class="view-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-indigo-600 text-white shadow-sm flex items-center gap-1.5 whitespace-nowrap">
+          <span>🎙️</span> <span>Teleprompter</span>
         </button>
-        <button onclick="switchView('checklist')" id="tab-checklist" class="view-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 hover:text-white border border-slate-800 flex items-center gap-2 whitespace-nowrap">
-          <span>🎤</span> LIVE CHECKLIST & QUEUE
+        <button onclick="switchView('checklist')" id="tab-checklist" class="view-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-1.5 whitespace-nowrap">
+          <span>🎤</span> <span>Checklist & Queue</span>
         </button>
-        <button onclick="switchView('lookbook')" id="tab-lookbook" class="view-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 hover:text-white border border-slate-800 flex items-center gap-2 whitespace-nowrap">
-          <span>👗</span> MIX & MATCH LOOKBOOK
+        <button onclick="switchView('lookbook')" id="tab-lookbook" class="view-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-1.5 whitespace-nowrap">
+          <span>👗</span> <span>Lookbook</span>
         </button>
-        <button onclick="switchView('sizes')" id="tab-sizes" class="view-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 hover:text-white border border-slate-800 flex items-center gap-2 whitespace-nowrap">
-          <span>📏</span> SIZE MATRIX & FULLSCREEN
+        <button onclick="switchView('sizes')" id="tab-sizes" class="view-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-1.5 whitespace-nowrap">
+          <span>📏</span> <span>Size Hub</span>
         </button>
-        <button onclick="switchView('stylist')" id="tab-stylist" class="view-tab-btn px-4 py-2 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 hover:text-white border border-slate-800 flex items-center gap-2 whitespace-nowrap">
-          <span>✨</span> FAST AI STYLIST
+        <button onclick="switchView('stylist')" id="tab-stylist" class="view-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-400 hover:text-white flex items-center gap-1.5 whitespace-nowrap">
+          <span>✨</span> <span>AI Stylist</span>
         </button>
       </nav>
 
       <!-- Global Actions -->
       <div class="hidden lg:flex items-center gap-2">
-        <button onclick="openSizeChartModal(selectedSku, true)" class="px-3.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/20 transition-all flex items-center gap-1.5">
-          <span>⛶</span> ตารางไซซ์เต็มจอ (Fullscreen)
+        <button onclick="openSizeChartModal(selectedSku, true)" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white font-semibold text-xs border border-slate-800 transition-colors flex items-center gap-1.5">
+          <span>⛶</span> ตารางไซซ์
         </button>
-        <button onclick="copyCurrentSkuPitch()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-xs border border-slate-700 transition-colors flex items-center gap-1.5">
+        <button onclick="copyCurrentSkuPitch()" class="px-3 py-1.5 rounded-lg bg-indigo-600/90 hover:bg-indigo-600 text-white font-semibold text-xs transition-colors flex items-center gap-1.5">
           <span>📋</span> คัดลอกสคริปต์
         </button>
       </div>
@@ -94,27 +92,27 @@
   </header>
 
   <!-- ================= FLOATING REOPEN SIDEBAR BUTTON ================= -->
-  <button id="floatingOpenSidebarBtn" onclick="toggleSidebar()" class="fixed bottom-6 left-6 z-40 hidden px-4 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-2xl shadow-indigo-600/40 border border-indigo-400/30 items-center gap-2.5 transition-all transform hover:scale-105">
+  <button id="floatingOpenSidebarBtn" onclick="toggleSidebar()" class="fixed bottom-6 left-6 z-40 hidden px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-xl shadow-indigo-600/30 border border-indigo-400/30 items-center gap-2 transition-all">
     <span>▶</span> <span>เปิดรายการสินค้า (105 SKUs)</span>
   </button>
 
   <!-- ================= MAIN APP WORKSPACE ================= -->
-  <main class="flex-1 max-w-[1720px] w-full mx-auto p-3 lg:p-6 flex gap-6 relative">
+  <main class="flex-1 max-w-[1720px] w-full mx-auto p-3 lg:p-5 flex gap-5 relative">
     
     <!-- ================= VIEW 1: LIVE PROMPTER (SPLIT VIEW) ================= -->
-    <div id="view-prompter" class="view-container flex w-full gap-6">
+    <div id="view-prompter" class="view-container flex w-full gap-5">
       
       <!-- LEFT SIDEBAR: 100-SKU CATALOG (COLLAPSIBLE) -->
-      <aside id="sidebar-panel" class="w-full lg:w-96 flex-shrink-0 flex flex-col gap-4 bg-slate-900/90 border border-slate-800/80 rounded-2xl p-4 shadow-xl transition-all duration-300 max-h-[calc(100vh-120px)] sticky top-20 overflow-hidden">
+      <aside id="sidebar-panel" class="w-full lg:w-80 flex-shrink-0 flex flex-col gap-3 bg-slate-900/80 border border-slate-800/80 rounded-2xl p-3.5 shadow-lg transition-all duration-300 max-h-[calc(100vh-96px)] sticky top-16 overflow-hidden">
         
         <!-- Search & Filter Controls -->
-        <div class="space-y-3">
+        <div class="space-y-2.5">
           <div class="flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <span class="font-bold text-xs tracking-wider uppercase text-slate-300">📦 รายการสินค้า (105)</span>
+            <div class="flex items-center gap-1.5">
+              <span class="font-bold text-xs tracking-wider uppercase text-slate-300">📦 แคตตาล็อกสินค้า</span>
               <span class="text-[10px] px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 font-mono font-bold" id="productCountBadge">105</span>
             </div>
-            <button onclick="toggleSidebar()" class="text-[11px] font-bold text-slate-400 hover:text-white bg-slate-800/80 hover:bg-slate-700 px-2.5 py-1 rounded-lg border border-slate-700/60 transition-colors flex items-center gap-1">
+            <button onclick="toggleSidebar()" class="text-[11px] font-semibold text-slate-400 hover:text-white bg-slate-800/60 hover:bg-slate-800 px-2 py-0.5 rounded-md border border-slate-700/50 transition-colors flex items-center gap-1">
               <span>◀</span> <span>พับเก็บ</span>
             </button>
           </div>
@@ -126,33 +124,32 @@
               id="skuSearchInput" 
               placeholder="ค้นหา SKU, ชื่อรุ่น, ผ้า, สี..." 
               oninput="handleSearch(this.value)"
-              class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
+              class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
             >
-            <span class="absolute right-3 top-2 text-xs text-slate-500 font-mono">⌘K</span>
+            <span class="absolute right-2.5 top-1.5 text-[10px] text-slate-500 font-mono">⌘K</span>
           </div>
 
           <!-- Quick Vibe Filters -->
-          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-[11px] font-medium">
+          <div class="flex items-center gap-1 overflow-x-auto pb-0.5 text-[11px] font-medium">
             <button onclick="setFilter('ALL')" class="vibe-pill px-2.5 py-1 rounded-lg bg-indigo-600 text-white font-bold transition-colors">ทั้งหมด</button>
-            <button onclick="setFilter('TOP')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-amber-300 font-bold border border-amber-500/30 transition-colors">🏆 Top 10</button>
-            <button onclick="setFilter('SPORT')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-blue-300 font-bold border border-blue-500/30 transition-colors">⚡ Sport</button>
-            <button onclick="setFilter('LIFESTYLE')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-pink-300 font-bold border border-pink-500/30 transition-colors">☕ Lifestyle</button>
+            <button onclick="setFilter('TOP')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-amber-300 font-semibold border border-amber-500/20 transition-colors">🏆 Top 10</button>
+            <button onclick="setFilter('SPORT')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-blue-300 font-semibold border border-blue-500/20 transition-colors">⚡ Sport</button>
+            <button onclick="setFilter('LIFESTYLE')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-pink-300 font-semibold border border-pink-500/20 transition-colors">☕ Life</button>
             <button onclick="setFilter('Polo Shirts')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 transition-colors">โปโล</button>
-            <button onclick="setFilter('Thailand National Team')" class="vibe-pill px-2.5 py-1 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-slate-300 transition-colors">ทีมชาติไทย</button>
           </div>
         </div>
 
         <!-- Scrollable Product List -->
-        <div id="productListContainer" class="flex-1 overflow-y-auto space-y-2 pr-1">
+        <div id="productListContainer" class="flex-1 overflow-y-auto space-y-1.5 pr-1">
           <!-- Dynamically populated product cards -->
         </div>
       </aside>
 
       <!-- RIGHT MAIN: TELEPROMPTER STAGE & SCRIPT VIEW -->
-      <section id="prompter-stage" class="flex-1 flex flex-col gap-5 min-w-0">
+      <section id="prompter-stage" class="flex-1 flex flex-col gap-4 min-w-0">
         
         <!-- Active SKU Prompter Stage Card -->
-        <div id="prompterActiveCard" class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-5 lg:p-7 shadow-2xl flex flex-col gap-6">
+        <div id="prompterActiveCard" class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col gap-5">
           <!-- Dynamically filled with active product details & scripts -->
         </div>
 
@@ -161,249 +158,219 @@
     </div>
 
     <!-- ================= VIEW 2: CHECKLIST & RUN OF SHOW ================= -->
-    <div id="view-checklist" class="view-container hidden flex-col gap-6 w-full">
-      <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-6 shadow-xl flex flex-col gap-6">
+    <div id="view-checklist" class="view-container hidden flex-col gap-5 w-full">
+      <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col gap-5">
         
         <!-- Checklist Header & Progress -->
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
-            <h2 class="text-xl lg:text-2xl font-black text-slate-100 flex items-center gap-2.5">
+            <h2 class="text-lg lg:text-xl font-black text-slate-100 flex items-center gap-2">
               <span>🎤</span> CHECKLIST เตรียมขึ้น LIVE & คิวสินค้า (Run of Show)
             </h2>
-            <p class="text-xs lg:text-sm text-slate-400 mt-1">คู่มือตรวจสอบความพร้อม 12 ขั้นตอนสำหรับ MC และทีมงานไลฟ์สตรีมมิ่ง</p>
+            <p class="text-xs text-slate-400 mt-0.5">คู่มือตรวจสอบความพร้อม 12 ขั้นตอนสำหรับ MC และทีมงาน</p>
           </div>
           
-          <!-- Progress Bar Indicator -->
-          <div class="flex items-center gap-4 bg-slate-950/80 border border-slate-800 p-3 rounded-2xl">
+          <div class="flex items-center gap-3 bg-slate-950/80 border border-slate-800 px-3.5 py-2 rounded-xl">
             <div>
-              <div class="text-[10px] font-bold uppercase text-slate-400">ความพร้อม (Readiness)</div>
-              <div class="text-lg font-black font-mono text-indigo-400" id="checklistProgressPercent">0%</div>
+              <div class="text-[9px] font-bold uppercase text-slate-400">ความพร้อม</div>
+              <div class="text-base font-black font-mono text-indigo-400" id="checklistProgressPercent">0%</div>
             </div>
-            <div class="w-32 lg:w-44 h-3 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-28 h-2 bg-slate-800 rounded-full overflow-hidden">
               <div id="checklistProgressBar" class="h-full bg-gradient-to-r from-indigo-500 to-emerald-400 rounded-full transition-all duration-300" style="width: 0%"></div>
             </div>
-            <button onclick="resetChecklist()" class="text-xs text-slate-400 hover:text-rose-400 underline font-semibold">รีเซ็ต</button>
+            <button onclick="resetChecklist()" class="text-xs text-slate-400 hover:text-rose-400 font-medium">รีเซ็ต</button>
           </div>
         </div>
 
         <!-- Split Grid: 12-Step Checklist + Live Product Lineup Queue -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          
-          <!-- 12-Step Interactive Checklist -->
-          <div class="lg:col-span-7 flex flex-col gap-4">
-            <h3 class="text-sm font-bold uppercase tracking-wider text-indigo-400 flex items-center gap-2">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+          <div class="lg:col-span-7 flex flex-col gap-3">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
               <span>📋</span> 12 ขั้นตอนเตรียมตัวก่อนเปิดกล้อง
-            </h3>
-            
-            <div id="checklistContainer" class="space-y-3">
+            </div>
+            <div id="checklistContainer" class="space-y-2">
               <!-- Rendered via JS -->
             </div>
           </div>
 
-          <!-- Live Product Lineup Queue (Run of Show) -->
-          <div class="lg:col-span-5 flex flex-col gap-4 bg-slate-950/70 border border-slate-800 rounded-2xl p-5">
+          <div class="lg:col-span-5 flex flex-col gap-3 bg-slate-950/60 border border-slate-800 rounded-2xl p-4">
             <div class="flex items-center justify-between">
-              <h3 class="text-sm font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-2">
-                <span>🎯</span> ลำดับคิวสินค้าขึ้นไลฟ์ (Run of Show)
-              </h3>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+                <span>🎯</span> ลำดับคิวสินค้าขึ้นไลฟ์
+              </span>
               <span class="text-xs font-mono text-slate-400 font-bold" id="queueCountBadge">5 ชิ้น</span>
             </div>
-            <p class="text-xs text-slate-400">เลือกสินค้าที่จะปักหมุดในวันนี้ และจัดลำดับก่อน-หลังตามช่วงเวลาคนดู</p>
 
-            <!-- Queue Add selector -->
             <div class="flex gap-2">
-              <select id="queueProductSelect" class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
+              <select id="queueProductSelect" class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
                 <!-- Options populated dynamically -->
               </select>
-              <button onclick="addProductToQueue()" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors flex items-center gap-1">
-                <span>+</span> <span>เพิ่มคิว</span>
+              <button onclick="addProductToQueue()" class="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors">
+                + เพิ่ม
               </button>
             </div>
 
-            <!-- Queue List -->
-            <div id="liveQueueContainer" class="space-y-2 mt-2 max-h-[500px] overflow-y-auto pr-1">
+            <div id="liveQueueContainer" class="space-y-2 mt-1 max-h-[500px] overflow-y-auto pr-1">
               <!-- Queue items dynamically rendered -->
             </div>
           </div>
-
         </div>
 
       </div>
     </div>
 
     <!-- ================= VIEW 3: MIX & MATCH LOOKBOOK ================= -->
-    <div id="view-lookbook" class="view-container hidden flex-col gap-6 w-full">
-      <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-6 shadow-xl flex flex-col gap-6">
+    <div id="view-lookbook" class="view-container hidden flex-col gap-5 w-full">
+      <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col gap-5">
         
         <!-- Header -->
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-800 pb-4">
           <div>
-            <h2 class="text-xl lg:text-2xl font-black text-slate-100 flex items-center gap-2.5">
+            <h2 class="text-lg lg:text-xl font-black text-slate-100 flex items-center gap-2">
               <span>👗</span> MIX & MATCH LOOKBOOK STUDIO
             </h2>
-            <p class="text-xs lg:text-sm text-slate-400 mt-1">จัดเซ็ต Total Look สไตล์ Sport & Lifestyle กระตุ้นยอดขายต่อบิล (AOV Booster)</p>
+            <p class="text-xs text-slate-400 mt-0.5">จัดเซ็ต Total Look สไตล์ Sport & Lifestyle เพิ่มยอดสั่งซื้อต่อบิล (AOV Booster)</p>
           </div>
           
           <div class="flex items-center gap-2">
-            <button onclick="autoRandomOutfit()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs border border-slate-700 transition-all flex items-center gap-1.5">
-              <span>🎲</span> สุ่มเซ็ตเสื้อผ้า
+            <button onclick="autoRandomOutfit()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs border border-slate-700 transition-all flex items-center gap-1">
+              <span>🎲</span> สุ่มลุค
             </button>
-            <button onclick="copyOutfitScript()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-600/20 transition-all flex items-center gap-1.5">
-              <span>📋</span> คัดลอกสคริปต์ Total Look
+            <button onclick="copyOutfitScript()" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow transition-all flex items-center gap-1">
+              <span>📋</span> คัดลอกสคริปต์
             </button>
           </div>
         </div>
 
         <!-- 1. SPORT LOOKS SECTION -->
-        <div class="bg-slate-950/60 border border-blue-900/30 rounded-2xl p-5 flex flex-col gap-3">
+        <div class="bg-slate-950/60 border border-blue-900/30 rounded-2xl p-4 flex flex-col gap-2.5">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-blue-400 uppercase tracking-wider flex items-center gap-2">
-              <span>⚡</span> 1. SPORT LOOKS (RUN / FOOTBALL / TRAIN / TRAIL / RECOVER)
+            <span class="text-xs font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span>⚡</span> SPORT LOOKS (RUN / FOOTBALL / TRAIN / TRAIL / RECOVER)
             </span>
-            <span class="text-[11px] text-slate-500 font-medium">Performance & Functional</span>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
-            <button onclick="applyPreset('SPORT_RUN')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/20 transition-all group">
-              <div class="text-xs font-bold text-blue-300 group-hover:text-blue-200">⚡ RUNNING</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Light, Technical, Fast</div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+            <button onclick="applyPreset('SPORT_RUN')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 transition-all">
+              <div class="text-xs font-bold text-blue-300">⚡ RUNNING</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Technical Fast</div>
             </button>
-            <button onclick="applyPreset('SPORT_FOOTBALL')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/20 transition-all group">
-              <div class="text-xs font-bold text-blue-300 group-hover:text-blue-200">⚽ FOOTBALL</div>
+            <button onclick="applyPreset('SPORT_FOOTBALL')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 transition-all">
+              <div class="text-xs font-bold text-blue-300">⚽ FOOTBALL</div>
               <div class="text-[10px] text-slate-400 mt-0.5">Match & Training</div>
             </button>
-            <button onclick="applyPreset('SPORT_TRAIN')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/20 transition-all group">
-              <div class="text-xs font-bold text-blue-300 group-hover:text-blue-200">💪 TRAINING / GYM</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Clean Athletic</div>
+            <button onclick="applyPreset('SPORT_TRAIN')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 transition-all">
+              <div class="text-xs font-bold text-blue-300">💪 GYM & TRAIN</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Athletic Clean</div>
             </button>
-            <button onclick="applyPreset('SPORT_TRAIL')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/20 transition-all group">
-              <div class="text-xs font-bold text-blue-300 group-hover:text-blue-200">🌲 TRAIL OUTDOOR</div>
+            <button onclick="applyPreset('SPORT_TRAIL')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 transition-all">
+              <div class="text-xs font-bold text-blue-300">🌲 TRAIL OUTDOOR</div>
               <div class="text-[10px] text-slate-400 mt-0.5">Technical Utility</div>
             </button>
-            <button onclick="applyPreset('SPORT_RECOVER')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/20 transition-all group">
-              <div class="text-xs font-bold text-blue-300 group-hover:text-blue-200">🛡️ RECOVERY</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Before/After Sport</div>
+            <button onclick="applyPreset('SPORT_RECOVER')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-500 transition-all">
+              <div class="text-xs font-bold text-blue-300">🛡️ RECOVERY</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">After Sport</div>
             </button>
           </div>
         </div>
 
         <!-- 2. LIFESTYLE LOOKS SECTION -->
-        <div class="bg-slate-950/60 border border-pink-900/30 rounded-2xl p-5 flex flex-col gap-3">
+        <div class="bg-slate-950/60 border border-pink-900/30 rounded-2xl p-4 flex flex-col gap-2.5">
           <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-pink-400 uppercase tracking-wider flex items-center gap-2">
-              <span>☕</span> 2. LIFESTYLE LOOKS (STREET / CASUAL / RETRO / CLEAN / TECH / CULTURE)
+            <span class="text-xs font-bold text-pink-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span>☕</span> LIFESTYLE LOOKS (STREET / CASUAL / RETRO / CLEAN / TECH / CULTURE)
             </span>
-            <span class="text-[11px] text-slate-500 font-medium">Fashion Attitudes & Aesthetic</span>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
-            <button onclick="applyPreset('LIFE_STREET')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 hover:bg-pink-950/20 transition-all group">
-              <div class="text-xs font-bold text-pink-300 group-hover:text-pink-200">🛹 STREET</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Blokecore & Denim</div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+            <button onclick="applyPreset('LIFE_STREET')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 transition-all">
+              <div class="text-xs font-bold text-pink-300">🛹 STREET</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Blokecore</div>
             </button>
-            <button onclick="applyPreset('LIFE_CLEAN')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 hover:bg-pink-950/20 transition-all group">
-              <div class="text-xs font-bold text-pink-300 group-hover:text-pink-200">👔 CLEAN SPORT</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Quiet Luxury Polo</div>
+            <button onclick="applyPreset('LIFE_CLEAN')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 transition-all">
+              <div class="text-xs font-bold text-pink-300">👔 CLEAN LUXURY</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Smart Polo</div>
             </button>
-            <button onclick="applyPreset('LIFE_CASUAL')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 hover:bg-pink-950/20 transition-all group">
-              <div class="text-xs font-bold text-pink-300 group-hover:text-pink-200">☕ CASUAL</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Everyday Athleisure</div>
+            <button onclick="applyPreset('LIFE_CASUAL')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 transition-all">
+              <div class="text-xs font-bold text-pink-300">☕ CASUAL</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Everyday</div>
             </button>
-            <button onclick="applyPreset('LIFE_TECH')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 hover:bg-pink-950/20 transition-all group">
-              <div class="text-xs font-bold text-pink-300 group-hover:text-pink-200">🎒 TECH STREET</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Gorpcore Commuter</div>
+            <button onclick="applyPreset('LIFE_TECH')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 transition-all">
+              <div class="text-xs font-bold text-pink-300">🎒 TECH STREET</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Gorpcore</div>
             </button>
-            <button onclick="applyPreset('LIFE_CULTURE')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 hover:bg-pink-950/20 transition-all group">
-              <div class="text-xs font-bold text-pink-300 group-hover:text-pink-200">🇹🇭 CULTURE</div>
+            <button onclick="applyPreset('LIFE_CULTURE')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 transition-all">
+              <div class="text-xs font-bold text-pink-300">🇹🇭 CULTURE</div>
               <div class="text-[10px] text-slate-400 mt-0.5">National Pride</div>
             </button>
-            <button onclick="applyPreset('LIFE_RETRO')" class="look-preset-btn text-left p-3 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 hover:bg-pink-950/20 transition-all group">
-              <div class="text-xs font-bold text-pink-300 group-hover:text-pink-200">📻 RETRO</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Y2K / Terrace</div>
+            <button onclick="applyPreset('LIFE_RETRO')" class="text-left p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-pink-500 transition-all">
+              <div class="text-xs font-bold text-pink-300">📻 RETRO</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">Y2K Terrace</div>
             </button>
           </div>
         </div>
 
-        <!-- 3-Slot Outfit Showcase Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-          
-          <!-- Slot 1: TOP -->
-          <div class="bg-slate-950/70 border border-slate-800/80 rounded-2xl p-5 flex flex-col gap-4">
+        <!-- 3-Slot Outfit Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Top -->
+          <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3">
             <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">1. ท่อนบน (Top)</span>
-                <span id="slot-vibe-top" class="px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-950 text-indigo-300 border border-indigo-800">☕ LIFESTYLE</span>
-              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">1. ท่อนบน (Top)</span>
               <span class="text-xs font-mono text-emerald-400 font-bold" id="slot-price-top">฿390</span>
             </div>
-            <div id="slot-img-top" class="w-full h-52 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
-              <span class="text-4xl">👕</span>
+            <div id="slot-img-top" class="w-full h-44 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
+              <span class="text-3xl">👕</span>
             </div>
             <div>
               <div id="slot-sku-top" class="text-xs font-mono text-slate-400 font-bold">WA-261PLACL15</div>
               <div id="slot-name-top" class="text-sm font-bold text-slate-100 line-clamp-1">THE SIGNATURE POLO</div>
             </div>
-            <select id="select-slot-top" onchange="changeOutfitSlot('top', this.value)" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
-              <!-- Options populated dynamically -->
+            <select id="select-slot-top" onchange="changeOutfitSlot('top', this.value)" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-200">
             </select>
           </div>
 
-          <!-- Slot 2: BOTTOM -->
-          <div class="bg-slate-950/70 border border-slate-800/80 rounded-2xl p-5 flex flex-col gap-4">
+          <!-- Bottom -->
+          <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3">
             <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-rose-400">2. ท่อนล่าง (Bottom)</span>
-                <span id="slot-vibe-bottom" class="px-2 py-0.5 rounded text-[10px] font-bold bg-pink-950 text-pink-300 border border-pink-800">☕ LIFESTYLE</span>
-              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-rose-400">2. ท่อนล่าง (Bottom)</span>
               <span class="text-xs font-mono text-emerald-400 font-bold" id="slot-price-bottom">฿490</span>
             </div>
-            <div id="slot-img-bottom" class="w-full h-52 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
-              <span class="text-4xl">👖</span>
+            <div id="slot-img-bottom" class="w-full h-44 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
+              <span class="text-3xl">👖</span>
             </div>
             <div>
               <div id="slot-sku-bottom" class="text-xs font-mono text-slate-400 font-bold">LP-241JEMW103</div>
               <div id="slot-name-bottom" class="text-sm font-bold text-slate-100 line-clamp-1">Pansa Raw Denim</div>
             </div>
-            <select id="select-slot-bottom" onchange="changeOutfitSlot('bottom', this.value)" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
-              <!-- Options populated dynamically -->
+            <select id="select-slot-bottom" onchange="changeOutfitSlot('bottom', this.value)" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-200">
             </select>
           </div>
 
-          <!-- Slot 3: SHOES -->
-          <div class="bg-slate-950/70 border border-slate-800/80 rounded-2xl p-5 flex flex-col gap-4">
+          <!-- Shoes -->
+          <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3">
             <div class="flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="text-xs font-bold uppercase tracking-wider text-amber-400">3. รองเท้า (Shoes)</span>
-                <span id="slot-vibe-shoes" class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800">⚡ SPORT</span>
-              </div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400">3. รองเท้า (Shoes)</span>
               <span class="text-xs font-mono text-emerald-400 font-bold" id="slot-price-shoes">฿1,290</span>
             </div>
-            <div id="slot-img-shoes" class="w-full h-52 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
-              <span class="text-4xl">👟</span>
+            <div id="slot-img-shoes" class="w-full h-44 bg-slate-900 border border-slate-800 rounded-xl overflow-hidden flex items-center justify-center">
+              <span class="text-3xl">👟</span>
             </div>
             <div>
               <div id="slot-sku-shoes" class="text-xs font-mono text-slate-400 font-bold">WF-253RNACL04</div>
               <div id="slot-name-shoes" class="text-sm font-bold text-slate-100 line-clamp-1">Warrix Running Pro</div>
             </div>
-            <select id="select-slot-shoes" onchange="changeOutfitSlot('shoes', this.value)" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
-              <!-- Options populated dynamically -->
+            <select id="select-slot-shoes" onchange="changeOutfitSlot('shoes', this.value)" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-1.5 text-xs text-slate-200">
             </select>
           </div>
-
         </div>
 
-        <!-- Bundle Pricing & Spoken Pitch Card -->
-        <div class="bg-gradient-to-r from-indigo-950/50 via-slate-950/60 to-slate-950/50 border border-indigo-800/40 rounded-2xl p-6 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+        <!-- Total Look Pricing Banner -->
+        <div class="bg-gradient-to-r from-indigo-950/40 via-slate-950/60 to-slate-950/40 border border-indigo-800/40 rounded-2xl p-5 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <div>
-            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-1">ราคารวม Total Look เซ็ตนี้</div>
-            <div class="flex items-baseline gap-3">
-              <span id="outfit-total-price" class="text-4xl font-black font-mono text-emerald-400">฿2,170</span>
-              <span class="text-xs text-slate-400">คุ้มค่าครบเซ็ตไม่ต้องคิดเยอะ</span>
-            </div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-indigo-400">ราคารวม Total Look เซ็ตนี้</div>
+            <div class="text-3xl font-black font-mono text-emerald-400" id="outfit-total-price">฿2,170</div>
           </div>
-          <div class="flex-1 max-w-2xl bg-slate-900/80 border border-slate-800 rounded-xl p-4">
-            <div class="text-xs font-bold text-amber-300 mb-1">🎙️ สคริปต์ MC สำหรับขายยกเซ็ต Total Look:</div>
-            <p id="outfit-speaking-script" class="text-xs lg:text-sm text-slate-200 leading-relaxed">
-              "ใครที่อยากได้ลุคหล่อเนี้ยบแบบจบในบิลเดียว แนะนำเซ็ตนี้เลยครับ เสื้อ The Signature แมตช์คู่กางเกง Pansa Denim และสนีกเกอร์ Warrix Running ได้ทั้งชุดในราคาพิเศษ ฿2,170 จบครบทั้งทำงานและเที่ยวคาเฟ่ครับ!"
-            </p>
+          <div class="flex-1 max-w-2xl bg-slate-900/80 border border-slate-800 rounded-xl p-3.5">
+            <div class="text-xs font-bold text-amber-300 mb-1">🎙️ สคริปต์พูดขายยกเซ็ต Total Look:</div>
+            <p id="outfit-speaking-script" class="text-xs text-slate-200 leading-relaxed"></p>
           </div>
         </div>
 
@@ -411,23 +378,20 @@
     </div>
 
     <!-- ================= VIEW 4: SIZE MATRIX & FULLSCREEN VIEW ================= -->
-    <div id="view-sizes" class="view-container hidden flex-col gap-6 w-full transition-all">
-      <div id="sizeHubMainCard" class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col gap-6">
+    <div id="view-sizes" class="view-container hidden flex-col gap-5 w-full transition-all">
+      <div id="sizeHubMainCard" class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-5 lg:p-7 shadow-xl flex flex-col gap-5">
         
         <!-- Header with Fullscreen Mode Toggle -->
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
           <div>
-            <div class="flex items-center gap-3">
-              <h2 class="text-xl lg:text-2xl font-black text-slate-100 flex items-center gap-2.5">
-                <span>📏</span> SIZE MATRIX & SMART FIT ADVISOR
-              </h2>
-              <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-blue-950 text-blue-400 border border-blue-800">STUDIO HD</span>
-            </div>
-            <p class="text-xs lg:text-sm text-slate-400 mt-1">ตารางวัดไซซ์ละเอียดระดับ SKU และระบบเทียบไซซ์ไวใน 3 วินาทีสำหรับพิธีกรไลฟ์</p>
+            <h2 class="text-lg lg:text-xl font-black text-slate-100 flex items-center gap-2">
+              <span>📏</span> SIZE MATRIX & SMART FIT ADVISOR
+            </h2>
+            <p class="text-xs text-slate-400 mt-0.5">ตารางวัดไซซ์ละเอียดระดับ SKU และระบบเทียบไซซ์ไวใน 3 วินาที</p>
           </div>
 
           <!-- Controls: Select Product & Fullscreen Button -->
-          <div class="flex items-center gap-2.5 flex-wrap">
+          <div class="flex items-center gap-2 flex-wrap">
             <div class="flex items-center gap-2 bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5">
               <label class="text-[11px] font-bold text-slate-400 uppercase">สินค้า:</label>
               <select id="sizeAdvisorSkuSelect" onchange="renderSizeHubTable(this.value)" class="bg-transparent text-xs font-bold text-indigo-300 focus:outline-none cursor-pointer">
@@ -435,93 +399,89 @@
               </select>
             </div>
 
-            <!-- Fullscreen Studio Mode Toggle Button -->
-            <button onclick="toggleViewSizesFullscreen()" id="sizeViewFsBtn" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg shadow-indigo-600/30 transition-all flex items-center gap-1.5">
-              <span>⛶</span> <span id="sizeViewFsBtnText">เต็มจอ (Fullscreen Studio)</span>
+            <button onclick="toggleViewSizesFullscreen()" id="sizeViewFsBtn" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-md transition-all flex items-center gap-1.5">
+              <span>⛶</span> <span id="sizeViewFsBtnText">เต็มจอ (Studio)</span>
             </button>
           </div>
         </div>
 
         <!-- 3-Second Quick Sizing Calculator -->
-        <div class="bg-slate-950/80 border border-indigo-900/40 rounded-2xl p-6 flex flex-col gap-4">
+        <div class="bg-slate-950/80 border border-indigo-900/40 rounded-2xl p-5 flex flex-col gap-3.5">
           <div class="flex items-center justify-between">
-            <span class="text-xs lg:text-sm font-bold text-indigo-400 uppercase tracking-wider flex items-center gap-2">
-              <span>⚡</span> เครื่องคำนวณและแนะนำไซซ์อัตโนมัติ (ใส่ค่าลูกค้าที่ถามในแชต)
+            <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span>⚡</span> เครื่องคำนวณและแนะนำไซซ์อัตโนมัติ
             </span>
-            <span class="text-[11px] text-slate-500">สูตรคำนวณปรับตาม Fit Type ของสินค้าอัตโนมัติ</span>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
             <div>
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">รอบอก / เอวจริง (นิ้ว)</label>
-              <input type="number" id="calcChest" value="40" oninput="calculateSize()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-base text-slate-100 font-mono font-bold focus:outline-none focus:border-indigo-500">
+              <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">รอบอก / เอวจริง (นิ้ว)</label>
+              <input type="number" id="calcChest" value="40" oninput="calculateSize()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 font-mono font-bold focus:outline-none focus:border-indigo-500">
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">ส่วนสูง (Height - ซม.)</label>
-              <input type="number" id="calcHeight" value="175" oninput="calculateSize()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-base text-slate-100 font-mono font-bold focus:outline-none focus:border-indigo-500">
+              <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">ส่วนสูง (Height - ซม.)</label>
+              <input type="number" id="calcHeight" value="175" oninput="calculateSize()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 font-mono font-bold focus:outline-none focus:border-indigo-500">
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">น้ำหนัก (Weight - กก.)</label>
-              <input type="number" id="calcWeight" value="70" oninput="calculateSize()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-base text-slate-100 font-mono font-bold focus:outline-none focus:border-indigo-500">
+              <label class="block text-[11px] font-bold text-slate-400 uppercase mb-1">น้ำหนัก (Weight - กก.)</label>
+              <input type="number" id="calcWeight" value="70" oninput="calculateSize()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2 text-sm text-slate-100 font-mono font-bold focus:outline-none focus:border-indigo-500">
             </div>
           </div>
 
           <!-- Calculated Result Banner -->
-          <div class="bg-gradient-to-r from-blue-950/40 via-indigo-950/40 to-slate-950 border border-blue-800/40 rounded-2xl p-5 lg:p-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-5">
-              <div id="calcRecommendedSize" class="w-20 h-20 rounded-2xl bg-indigo-600 font-black text-3xl lg:text-4xl text-white flex items-center justify-center shadow-xl shadow-indigo-600/40 font-mono">
+          <div class="bg-gradient-to-r from-blue-950/30 via-indigo-950/30 to-slate-950 border border-blue-800/40 rounded-2xl p-4 lg:p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div id="calcRecommendedSize" class="w-16 h-16 rounded-2xl bg-indigo-600 font-black text-2xl text-white flex items-center justify-center shadow-lg font-mono">
                 L
               </div>
               <div>
-                <div class="text-xs font-bold uppercase tracking-wider text-blue-400">ไซซ์ที่แนะนำสำหรับคุณ</div>
-                <div class="text-lg lg:text-xl font-black text-slate-100" id="calcSizeText">Size L (อกเสื้อ 42" • ทรงมาตรฐานใส่สบาย)</div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-blue-400">ไซซ์ที่แนะนำสำหรับคุณ</div>
+                <div class="text-base font-black text-slate-100" id="calcSizeText">Size L (อกเสื้อ 42" • ทรงมาตรฐาน)</div>
               </div>
             </div>
-            <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 lg:p-5 max-w-xl text-xs lg:text-base text-slate-200">
-              <div class="flex items-center justify-between mb-1.5">
-                <span class="font-bold text-amber-300 flex items-center gap-1.5"><span>🎙️</span> สคริปต์พูดตอบลูกค้าทันที:</span>
-                <button onclick="copyCalculatedPitch()" class="text-xs text-indigo-400 hover:text-indigo-300 font-bold bg-indigo-950/80 px-2.5 py-1 rounded-lg border border-indigo-800">📋 คัดลอก</button>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 max-w-lg text-xs text-slate-200">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-amber-300">🎙️ สคริปต์ตอบลูกค้า:</span>
+                <button onclick="copyCalculatedPitch()" class="text-[11px] text-indigo-400 hover:text-indigo-300 font-bold">📋 คัดลอก</button>
               </div>
-              <p id="calcSpokenPitch" class="leading-relaxed font-medium">"คุณลูกค้าอก 40 สูง 175 หนัก 70 กดไซซ์ L ในตะกร้าได้เลยครับ ทรงกำลังพอดีตัว ซักแล้วไม่หดแน่นอนครับ!"</p>
+              <p id="calcSpokenPitch" class="leading-relaxed"></p>
             </div>
           </div>
         </div>
 
         <!-- Full Dynamic Size Matrix Table for Selected Product -->
-        <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-6 lg:p-8 flex flex-col gap-4">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-5 flex flex-col gap-3.5">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <div class="flex items-center gap-3 flex-wrap">
-                <span id="sizeTableTitle" class="text-lg lg:text-xl font-black text-slate-100">ตารางไซซ์มาตรฐาน: THE SIGNATURE POLO</span>
-                <span id="sizeTableFitBadge" class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800">👔 REGULAR FIT</span>
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <span id="sizeTableTitle" class="text-base font-black text-slate-100">ตารางไซซ์: THE SIGNATURE POLO</span>
+                <span id="sizeTableFitBadge" class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800">👔 REGULAR FIT</span>
               </div>
-              <p id="sizeTableModelRef" class="text-xs lg:text-sm text-slate-400 mt-1">นายแบบสูง 180 ซม. หนัก 74 กก. สวมใส่ไซซ์ L</p>
+              <p id="sizeTableModelRef" class="text-xs text-slate-400 mt-0.5">นายแบบสูง 180 ซม. หนัก 74 กก. สวมใส่ไซซ์ L</p>
             </div>
 
             <!-- Units Switcher -->
-            <div class="flex items-center bg-slate-900 border border-slate-800 rounded-xl p-1 text-xs font-bold">
-              <button id="unitBtnIn" onclick="setSizeUnit('inch')" class="px-4 py-1.5 rounded-lg bg-indigo-600 text-white transition-colors">📏 นิ้ว (Inches)</button>
-              <button id="unitBtnCm" onclick="setSizeUnit('cm')" class="px-4 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors">📐 ซม. (CM)</button>
+            <div class="flex items-center bg-slate-900 border border-slate-800 rounded-xl p-0.5 text-xs font-bold">
+              <button id="unitBtnIn" onclick="setSizeUnit('inch')" class="px-3 py-1 rounded-lg bg-indigo-600 text-white transition-colors">📏 นิ้ว</button>
+              <button id="unitBtnCm" onclick="setSizeUnit('cm')" class="px-3 py-1 rounded-lg text-slate-400 hover:text-white transition-colors">📐 ซม.</button>
             </div>
           </div>
 
-          <!-- Responsive Table Container with Large Teleprompter Friendly Fonts -->
-          <div class="overflow-x-auto rounded-2xl border border-slate-800">
-            <table class="w-full text-left text-xs lg:text-sm border-collapse">
-              <thead id="sizeTableHead" class="bg-slate-900 text-slate-400 uppercase font-bold text-xs border-b border-slate-800">
-                <!-- Populated dynamically -->
+          <!-- Responsive Table Container -->
+          <div class="overflow-x-auto rounded-xl border border-slate-800">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead id="sizeTableHead" class="bg-slate-900 text-slate-400 uppercase font-bold text-[11px] border-b border-slate-800">
               </thead>
               <tbody id="sizeTableBody" class="divide-y divide-slate-800/60 font-mono">
-                <!-- Populated dynamically -->
               </tbody>
             </table>
           </div>
 
           <!-- Fit Advice Callout -->
-          <div class="p-4 bg-amber-950/20 border border-amber-900/30 rounded-xl text-xs lg:text-sm text-amber-300/90 flex items-start gap-2.5">
-            <span class="text-base">💡</span>
+          <div class="p-3 bg-amber-950/20 border border-amber-900/30 rounded-xl text-xs text-amber-300/90 flex items-start gap-2">
+            <span>💡</span>
             <div>
-              <strong>คำแนะนำเรื่องไซซ์สำหรับพิธีกร:</strong>
+              <strong>คำแนะนำเรื่องไซซ์:</strong>
               <span id="sizeTableAdvice" class="ml-1 text-slate-300">ทรงมาตรฐานใส่ตรงไซซ์ได้เลย เนื้อผ้ายืดหยุ่นสูง ซักไม่หด</span>
             </div>
           </div>
@@ -531,28 +491,28 @@
     </div>
 
     <!-- ================= VIEW 5: AI STYLIST STUDIO VIEW ================= -->
-    <div id="view-stylist" class="view-container hidden flex-col gap-6 w-full">
-      <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-6 shadow-xl flex flex-col gap-6">
+    <div id="view-stylist" class="view-container hidden flex-col gap-5 w-full">
+      <div class="bg-slate-900/90 border border-slate-800/80 rounded-2xl p-5 lg:p-6 shadow-xl flex flex-col gap-4">
         <div>
-          <h2 class="text-xl lg:text-2xl font-black text-slate-100 flex items-center gap-2.5">
+          <h2 class="text-lg lg:text-xl font-black text-slate-100 flex items-center gap-2">
             <span>✨</span> FAST AI STYLIST STUDIO
           </h2>
-          <p class="text-xs lg:text-sm text-slate-400 mt-1">ผู้ช่วยสไตลิสต์ AI ประจำสตูฯ วิเคราะห์สไตล์และสร้างบทสนทนาปิดการขายแบบเรียลไทม์</p>
+          <p class="text-xs text-slate-400 mt-0.5">ผู้ช่วยสไตลิสต์ AI ประจำสตูฯ วิเคราะห์สไตล์และสร้างบทสนทนาปิดการขาย</p>
         </div>
 
-        <div id="stylistChatBox" class="bg-slate-950/80 border border-slate-800 rounded-2xl p-6 min-h-[360px] max-h-[500px] overflow-y-auto space-y-4">
+        <div id="stylistChatBox" class="bg-slate-950/80 border border-slate-800 rounded-2xl p-5 min-h-[360px] max-h-[500px] overflow-y-auto space-y-3">
           <div class="flex items-start gap-3">
-            <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white text-xs">AI</div>
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl rounded-tl-none p-4 text-xs lg:text-sm text-slate-200 max-w-2xl leading-relaxed">
+            <div class="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white text-xs">AI</div>
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl rounded-tl-none p-3.5 text-xs text-slate-200 max-w-2xl leading-relaxed">
               สวัสดีครับคุณ MC! ผมคือ AI Stylist ประจำห้องไลฟ์ คุณสามารถคลิกเลือกสินค้าหรือพิมพ์ถามคู่สีที่เข้ากัน หรือขอสคริปต์ดันยอดตะกร้าเฉพาะเจาะจงได้เลยครับ!
             </div>
           </div>
         </div>
 
-        <form onsubmit="handleStylistChat(event)" class="flex gap-3">
+        <form onsubmit="handleStylistChat(event)" class="flex gap-2">
           <input type="text" id="stylistInput" placeholder="พิมพ์ถามสไตลิสต์ เช่น 'เสื้อโปโลสีดำจับคู่กางเกงสีไหนดีสุดสำหรับคนผิวสองสี?'..." 
-            class="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500">
-          <button type="submit" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-bold text-sm shadow-lg shadow-indigo-600/20 hover:bg-indigo-500 transition-all flex items-center gap-2">
+            class="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500">
+          <button type="submit" class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-xs shadow hover:bg-indigo-500 transition-all flex items-center gap-1.5">
             🚀 ถาม AI
           </button>
         </form>
@@ -572,12 +532,11 @@
             <span id="modalSku" class="text-xs font-mono font-bold text-indigo-400">WA-261PLACL15</span>
             <span id="modalFitBadge" class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-800">👔 REGULAR FIT</span>
           </div>
-          <h3 id="modalName" class="text-xl lg:text-2xl font-black text-slate-100 mt-1">THE SIGNATURE POLO</h3>
-          <p id="modalModelRef" class="text-xs lg:text-sm text-slate-400 mt-0.5">นายแบบสูง 180 ซม. หนัก 74 กก. รอบอก 40" สวมใส่ไซซ์ L</p>
+          <h3 id="modalName" class="text-lg lg:text-xl font-black text-slate-100 mt-1">THE SIGNATURE POLO</h3>
+          <p id="modalModelRef" class="text-xs text-slate-400 mt-0.5">นายแบบสูง 180 ซม. หนัก 74 กก. รอบอก 40" สวมใส่ไซซ์ L</p>
         </div>
 
         <div class="flex items-center gap-2">
-          <!-- Modal Fullscreen Toggle -->
           <button onclick="toggleModalFullscreen()" id="modalFsToggleBtn" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 transition-colors flex items-center gap-1">
             <span>⛶</span> <span id="modalFsText">เต็มจอ</span>
           </button>
@@ -588,36 +547,34 @@
       </div>
 
       <!-- Unit switch & advice -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
-        <div class="text-xs lg:text-sm text-slate-300">
-          <span class="font-bold text-amber-400">💡 ทรงเสื้อ & คำแนะนำ:</span> <span id="modalAdvice">ใส่ตรงไซซ์ได้เลย เนื้อผ้าซักไม่หด</span>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-950/60 p-3.5 rounded-xl border border-slate-800/80">
+        <div class="text-xs text-slate-300">
+          <span class="font-bold text-amber-400">💡 คำแนะนำ:</span> <span id="modalAdvice">ใส่ตรงไซซ์ได้เลย เนื้อผ้าซักไม่หด</span>
         </div>
-        <div class="flex items-center bg-slate-900 border border-slate-800 rounded-xl p-1 text-xs font-bold self-start sm:self-auto">
-          <button id="modalUnitIn" onclick="setModalUnit('inch')" class="px-3.5 py-1.5 rounded-lg bg-indigo-600 text-white transition-colors">📏 นิ้ว</button>
-          <button id="modalUnitCm" onclick="setModalUnit('cm')" class="px-3.5 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors">📐 ซม.</button>
+        <div class="flex items-center bg-slate-900 border border-slate-800 rounded-xl p-0.5 text-xs font-bold self-start sm:self-auto">
+          <button id="modalUnitIn" onclick="setModalUnit('inch')" class="px-3 py-1 rounded-lg bg-indigo-600 text-white transition-colors">📏 นิ้ว</button>
+          <button id="modalUnitCm" onclick="setModalUnit('cm')" class="px-3 py-1 rounded-lg text-slate-400 hover:text-white transition-colors">📐 ซม.</button>
         </div>
       </div>
 
       <!-- Matrix Table -->
-      <div class="overflow-x-auto rounded-2xl border border-slate-800">
-        <table class="w-full text-left text-xs lg:text-sm border-collapse">
-          <thead id="modalTableHead" class="bg-slate-950 text-slate-400 uppercase font-bold text-xs border-b border-slate-800">
-            <!-- Headers populated dynamically -->
+      <div class="overflow-x-auto rounded-xl border border-slate-800">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead id="modalTableHead" class="bg-slate-950 text-slate-400 uppercase font-bold text-[11px] border-b border-slate-800">
           </thead>
           <tbody id="modalTableBody" class="divide-y divide-slate-800/60 font-mono">
-            <!-- Rows populated dynamically -->
           </tbody>
         </table>
       </div>
 
       <!-- Live Sizing Prompt for MC -->
-      <div class="bg-indigo-950/40 border border-indigo-800/60 rounded-2xl p-4 lg:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div class="text-xs lg:text-sm text-indigo-200">
+      <div class="bg-indigo-950/30 border border-indigo-800/50 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+        <div class="text-xs text-indigo-200">
           <span class="font-bold text-amber-300">🎙️ สคริปต์ตอบไซซ์:</span>
           <span id="modalQuickPitch" class="ml-1 font-sans">"รุ่นนี้ใส่ตรงไซซ์ได้เลยครับ ทรงมาตรฐานหล่อภูมิฐาน ไม่รัดรูปครับ"</span>
         </div>
-        <button onclick="copyModalPitch()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow-lg transition-colors whitespace-nowrap self-end sm:self-auto">
-          📋 คัดลอกสคริปต์
+        <button onclick="copyModalPitch()" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs shadow transition-colors whitespace-nowrap self-end sm:self-auto">
+          📋 คัดลอก
         </button>
       </div>
 
@@ -625,7 +582,7 @@
   </div>
 
   <!-- ================= GLOBAL TOAST ================= -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-200 bg-indigo-600 text-white px-5 py-3 rounded-xl shadow-2xl font-bold text-xs flex items-center gap-2">
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-200 bg-indigo-600 text-white px-4 py-2.5 rounded-xl shadow-2xl font-bold text-xs flex items-center gap-2">
     <span>📋</span> <span id="toast-text">คัดลอกข้อมูลสำเร็จ!</span>
   </div>
 
@@ -711,7 +668,7 @@
 
       const pText = document.getElementById('prompterToggleSidebarText');
       if (pText) {
-        pText.textContent = isHidden ? 'แสดงรายการสินค้า' : 'พับเก็บรายการสินค้า';
+        pText.textContent = isHidden ? 'แสดงรายการ' : 'พับเก็บรายการ';
       }
 
       showToast(isHidden ? '◀ พับเก็บรายการสินค้าแล้ว (กด ⌘B เพื่อเปิด)' : '▶ เปิดรายการสินค้าแล้ว');
@@ -724,8 +681,8 @@
 
       document.querySelectorAll('.view-container').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.view-tab-btn').forEach(b => {
-        b.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/20');
-        b.classList.add('bg-slate-900', 'text-slate-300', 'border', 'border-slate-800');
+        b.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm');
+        b.classList.add('text-slate-400');
       });
 
       const activeView = document.getElementById(`view-${viewKey}`);
@@ -733,19 +690,19 @@
 
       const activeBtn = document.getElementById(`tab-${viewKey}`);
       if (activeBtn) {
-        activeBtn.classList.remove('bg-slate-900', 'text-slate-300', 'border', 'border-slate-800');
-        activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/20');
+        activeBtn.classList.remove('text-slate-400');
+        activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
       }
     }
 
     function setFilter(cat) {
       currentFilter = cat;
       document.querySelectorAll('.vibe-pill').forEach(b => {
-        b.classList.remove('bg-indigo-600', 'text-white', 'shadow');
-        b.classList.add('bg-slate-800/80', 'text-slate-300', 'border', 'border-slate-700/60');
+        b.classList.remove('bg-indigo-600', 'text-white', 'font-bold');
+        b.classList.add('bg-slate-800/80', 'text-slate-300');
       });
-      event.currentTarget.classList.remove('bg-slate-800/80', 'text-slate-300', 'border', 'border-slate-700/60');
-      event.currentTarget.classList.add('bg-indigo-600', 'text-white', 'shadow');
+      event.currentTarget.classList.remove('bg-slate-800/80', 'text-slate-300');
+      event.currentTarget.classList.add('bg-indigo-600', 'text-white', 'font-bold');
       renderAll();
     }
 
@@ -781,7 +738,7 @@
       renderAll();
       const p = PRODUCTS.find(x => x.sku === sku);
       if (p) {
-        showToast(`📌 ปักหมุด: ${p.sku} • ${p.name}`);
+        showToast(`📌 ปักหมุด: ${p.sku}`);
         renderSizeHubTable(sku);
       }
     }
@@ -798,45 +755,38 @@
       
       container.innerHTML = '';
       if (list.length === 0) {
-        container.innerHTML = `<div class="text-center py-8 text-xs text-slate-500">ไม่พบสินค้าที่ค้นหา</div>`;
+        container.innerHTML = `<div class="text-center py-6 text-xs text-slate-500">ไม่พบสินค้า</div>`;
         return;
       }
 
       list.forEach(p => {
         const isSelected = p.sku === selectedSku;
         const card = document.createElement('div');
-        card.className = `p-3 rounded-xl border transition-all duration-150 cursor-pointer flex gap-3 ${
+        card.className = `p-2.5 rounded-xl border transition-all duration-150 cursor-pointer flex gap-2.5 ${
           isSelected 
-            ? 'bg-indigo-950/60 border-indigo-500 shadow-md ring-1 ring-indigo-500/50' 
-            : 'bg-slate-950/50 border-slate-800/80 hover:border-slate-700 hover:bg-slate-800/30'
+            ? 'bg-indigo-950/70 border-indigo-500 ring-1 ring-indigo-500/50' 
+            : 'bg-slate-950/40 border-slate-800/70 hover:border-slate-700 hover:bg-slate-800/20'
         }`;
         card.onclick = () => selectProduct(p.sku);
 
         const imgHtml = p.image_url 
-          ? `<img src="${p.image_url}" alt="${p.name}" class="w-12 h-12 object-cover rounded-lg bg-slate-900 border border-slate-800 flex-shrink-0">`
-          : `<div class="w-12 h-12 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-xl flex-shrink-0">${p.category_icon || '🏷️'}</div>`;
+          ? `<img src="${p.image_url}" alt="${p.name}" class="w-10 h-10 object-cover rounded-lg bg-slate-900 border border-slate-800 flex-shrink-0">`
+          : `<div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-lg flex-shrink-0">${p.category_icon || '🏷️'}</div>`;
 
         const rankBadge = p.top_rank_info 
-          ? `<span class="px-1.5 py-0.5 rounded text-[9px] font-black bg-gradient-to-r ${p.top_rank_info.color} text-slate-950 uppercase shadow-sm">TOP #${p.top_rank_info.rank}</span>`
+          ? `<span class="px-1.5 py-0.2 rounded text-[8px] font-black bg-gradient-to-r ${p.top_rank_info.color} text-slate-950 uppercase">#${p.top_rank_info.rank}</span>`
           : '';
-
-        const vibeBadge = p.style_vibe === 'SPORT' 
-          ? `<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-blue-950 text-blue-300 border border-blue-800">⚡ SPORT</span>`
-          : `<span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-pink-950 text-pink-300 border border-pink-800">☕ LIFE</span>`;
 
         card.innerHTML = `
           ${imgHtml}
           <div class="flex-1 min-w-0 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[11px] font-mono font-bold text-slate-400 truncate">${p.sku}</span>
-                <span class="text-xs font-mono font-bold text-emerald-400">฿${(p.numeric_price || 390).toLocaleString()}</span>
-              </div>
-              <h4 class="text-xs font-bold text-slate-200 line-clamp-1 mt-0.5">${p.name}</h4>
+            <div class="flex items-center justify-between gap-1">
+              <span class="text-[10px] font-mono font-bold text-slate-400 truncate">${p.sku}</span>
+              <span class="text-xs font-mono font-bold text-emerald-400">฿${(p.numeric_price || 390).toLocaleString()}</span>
             </div>
-            <div class="flex items-center gap-1.5 mt-1.5">
+            <h4 class="text-xs font-semibold text-slate-200 line-clamp-1">${p.name}</h4>
+            <div class="flex items-center gap-1 mt-0.5">
               ${rankBadge}
-              ${vibeBadge}
               <span class="text-[9px] text-slate-500 font-mono truncate">${p.category}</span>
             </div>
           </div>
@@ -845,6 +795,9 @@
       });
     }
 
+    // ==========================================
+    // SENIOR PRINCIPAL UX/UI PROMPTER STAGE
+    // ==========================================
     function renderPrompterStage() {
       const p = PRODUCTS.find(x => x.sku === selectedSku) || PRODUCTS[0];
       const stage = document.getElementById('prompterActiveCard');
@@ -856,153 +809,189 @@
 
       // Quick size chips based on size chart rows
       const sizeChipsHtml = sz.rows ? sz.rows.map(r => `
-        <button onclick="previewSpecificSize('${p.sku}', '${r.size}')" class="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-indigo-600 hover:text-white border border-slate-700/80 text-[11px] font-mono font-bold text-slate-300 transition-colors">
+        <button onclick="previewSpecificSize('${p.sku}', '${r.size}')" class="px-2 py-0.5 rounded-lg bg-slate-900 hover:bg-indigo-600 hover:text-white border border-slate-800 text-[10px] font-mono font-bold text-slate-300 transition-colors">
           ${r.size}
         </button>
       `).join('') : '';
 
       stage.innerHTML = `
-        <!-- Top Toolbar & Product Overview -->
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-slate-800 pb-5">
-          <div class="flex items-start gap-4">
-            <div class="w-16 h-16 rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-center text-3xl overflow-hidden flex-shrink-0 shadow-lg">
+        <!-- ZONE 1: BROADCAST HERO HEADER -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <div class="w-14 h-14 rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-center text-2xl overflow-hidden flex-shrink-0 shadow-md">
               ${p.image_url ? `<img src="${p.image_url}" class="w-full h-full object-cover">` : (p.category_icon || '👕')}
             </div>
-            <div>
+            <div class="min-w-0">
               <div class="flex items-center gap-2 flex-wrap">
                 <span class="text-xs font-mono font-bold text-indigo-400 bg-indigo-950/60 border border-indigo-800/80 px-2 py-0.5 rounded-lg">${p.sku}</span>
-                ${p.top_rank_info ? `<span class="px-2 py-0.5 rounded text-[10px] font-black bg-gradient-to-r ${p.top_rank_info.color} text-slate-950 uppercase shadow-sm">${p.top_rank_info.badge}</span>` : ''}
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold ${p.style_vibe === 'SPORT' ? 'bg-blue-950 text-blue-300 border border-blue-800' : 'bg-pink-950 text-pink-300 border border-pink-800'}">
-                  ${p.style_vibe_label}
+                ${p.top_rank_info ? `<span class="px-2 py-0.5 rounded text-[9px] font-black bg-gradient-to-r ${p.top_rank_info.color} text-slate-950 uppercase shadow-sm">${p.top_rank_info.badge}</span>` : ''}
+                <span class="px-2 py-0.5 rounded text-[9px] font-bold ${p.style_vibe === 'SPORT' ? 'bg-blue-950 text-blue-300 border border-blue-800' : 'bg-pink-950 text-pink-300 border border-pink-800'}">
+                  ${p.style_vibe_badge}
                 </span>
-                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-300 border border-slate-700 font-mono">${sz.fit_badge || 'REGULAR FIT'}</span>
+                <span class="px-2 py-0.5 rounded text-[9px] font-bold bg-slate-800 text-slate-300 border border-slate-700 font-mono">${sz.fit_badge || 'REGULAR FIT'}</span>
               </div>
-              <h1 class="text-xl lg:text-2xl font-black text-slate-100 tracking-tight mt-1.5">${p.name}</h1>
-              <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
-                <span>หมวดหมู่: <strong class="text-slate-300">${p.category}</strong></span>
-                <span>•</span>
-                <span>ผ้า: <strong class="text-slate-300">${p.product_details?.fabric || 'Jacquard Innovation'}</strong></span>
+              <h1 class="text-lg lg:text-xl font-black text-slate-100 tracking-tight mt-1 truncate">${p.name}</h1>
+              <div class="text-[11px] text-slate-400 mt-0.5">
+                หมวด: <strong class="text-slate-300">${p.category}</strong> • ผ้า: <strong class="text-slate-300">${p.product_details?.fabric || 'Jacquard Innovation'}</strong>
               </div>
             </div>
           </div>
 
-          <!-- Price & Prompter Actions -->
-          <div class="flex items-center gap-3">
+          <!-- Price & Primary Fast Actions -->
+          <div class="flex items-center gap-4 flex-shrink-0">
             <div class="text-right">
-              <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">ราคาในไลฟ์วันนี้</div>
-              <div class="text-3xl font-black font-mono text-emerald-400">฿${(p.numeric_price || 390).toLocaleString()}</div>
+              <div class="text-[9px] font-bold text-slate-400 uppercase tracking-wider">ราคาในไลฟ์</div>
+              <div class="text-2xl lg:text-3xl font-black font-mono text-emerald-400">฿${(p.numeric_price || 390).toLocaleString()}</div>
             </div>
             <div class="flex flex-col gap-1.5">
-              <button onclick="openSizeChartModal('${p.sku}')" class="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/20 transition-all flex items-center gap-1.5 whitespace-nowrap">
-                <span>📏</span> ตารางไซซ์ (Size Chart)
+              <button onclick="openSizeChartModal('${p.sku}')" class="px-3 py-1.5 rounded-xl bg-blue-600/90 hover:bg-blue-500 text-white font-bold text-xs shadow transition-all flex items-center gap-1.5 whitespace-nowrap">
+                <span>📏</span> ตารางไซซ์
               </button>
-              <button onclick="toggleSidebar()" class="px-3.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-[11px] border border-slate-700 transition-colors flex items-center justify-center gap-1">
-                <span>📑</span> <span id="prompterToggleSidebarText">พับ/เปิดรายการ</span>
+              <button onclick="toggleSidebar()" class="px-3 py-1 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium text-[10px] border border-slate-700 transition-colors text-center">
+                <span id="prompterToggleSidebarText">พับ/เปิดรายการ</span>
               </button>
             </div>
           </div>
         </div>
 
-        <!-- 4-LEVEL VALUE LADDER & LIVE HOOK -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
-          
-          <!-- Left 12 Cols: Full Teleprompter Stream -->
-          <div class="lg:col-span-12 flex flex-col gap-5">
+        <!-- ZONE 2: PRIMARY TELEPROMPTER FLOW -->
+        <div class="flex flex-col gap-4">
 
-            <!-- 4-Level Value Ladder -->
-            <div class="bg-slate-950/70 border border-slate-800/80 rounded-2xl p-4 lg:p-5">
-              <div class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-3 flex items-center gap-2">
-                <span>💎</span> 4-LEVEL FASHION VALUE LADDER (ลำดับการพูดเพิ่มมูลค่า)
+          <!-- ⚡ 1. THE OPENING HOOK BANNER -->
+          <div class="p-4 bg-gradient-to-r from-amber-500/10 via-amber-500/5 to-slate-900 border-l-4 border-amber-400 rounded-r-2xl">
+            <div class="flex items-center justify-between mb-1">
+              <div class="text-[11px] font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                <span>⚡</span> 1. HOOK • ประโยคเปิดสะกดคนดู (พูดทันทีที่ปักตะกร้า)
               </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3">
-                  <div class="text-[10px] font-bold text-slate-400 uppercase mb-1">1. คุณสมบัติ (Attribute)</div>
-                  <div class="text-xs font-medium text-slate-200 leading-snug">${vl.level_1_attribute || '-'}</div>
+              <button onclick="copyProductScript('${p.sku}')" class="text-[10px] text-amber-300 hover:text-white font-bold bg-amber-950/60 px-2 py-0.5 rounded border border-amber-800">
+                📋 คัดลอก
+              </button>
+            </div>
+            <div class="text-sm lg:text-base font-bold text-amber-100 leading-relaxed font-sans">
+              "${s.hook || '-'}"
+            </div>
+          </div>
+
+          <!-- 💎 2. CORE PITCH DECK (BALANCED 2-COLUMN GRID) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+            
+            <!-- Left Col (7 cols): 4-Level Fashion Value Ladder -->
+            <div class="lg:col-span-7 bg-slate-950/60 border border-slate-800/80 rounded-2xl p-4 flex flex-col gap-2.5">
+              <div class="flex items-center justify-between text-xs font-bold text-indigo-400 uppercase tracking-wider mb-1">
+                <span class="flex items-center gap-1.5"><span>💎</span> 2. FASHION VALUE LADDER (พูดเพิ่มมูลค่า)</span>
+                <span class="text-[10px] text-slate-500 font-normal">Level 1 ➔ 4</span>
+              </div>
+
+              <div class="space-y-2">
+                <div class="p-2.5 bg-slate-900/90 border border-slate-800/80 rounded-xl flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded bg-slate-800 text-slate-400 font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+                  <div class="min-w-0">
+                    <div class="text-[9px] font-bold text-slate-400 uppercase">คุณสมบัติ (Attribute)</div>
+                    <div class="text-xs text-slate-200 font-medium leading-snug">${vl.level_1_attribute || '-'}</div>
+                  </div>
                 </div>
-                <div class="bg-blue-950/30 border border-blue-800/40 rounded-xl p-3">
-                  <div class="text-[10px] font-bold text-blue-400 uppercase mb-1">2. ฟังก์ชัน (Function)</div>
-                  <div class="text-xs font-medium text-blue-200 leading-snug">${vl.level_2_functional || '-'}</div>
+
+                <div class="p-2.5 bg-blue-950/20 border border-blue-900/40 rounded-xl flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded bg-blue-950 text-blue-400 font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+                  <div class="min-w-0">
+                    <div class="text-[9px] font-bold text-blue-400 uppercase">ฟังก์ชัน (Function)</div>
+                    <div class="text-xs text-blue-100 font-medium leading-snug">${vl.level_2_functional || '-'}</div>
+                  </div>
                 </div>
-                <div class="bg-pink-950/30 border border-pink-800/40 rounded-xl p-3">
-                  <div class="text-[10px] font-bold text-pink-400 uppercase mb-1">3. ความมั่นใจ (Emotion)</div>
-                  <div class="text-xs font-medium text-pink-200 leading-snug">${vl.level_3_emotional || '-'}</div>
+
+                <div class="p-2.5 bg-pink-950/20 border border-pink-900/40 rounded-xl flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded bg-pink-950 text-pink-400 font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+                  <div class="min-w-0">
+                    <div class="text-[9px] font-bold text-pink-400 uppercase">อารมณ์ / ความมั่นใจ (Emotion)</div>
+                    <div class="text-xs text-pink-100 font-medium leading-snug">${vl.level_3_emotional || '-'}</div>
+                  </div>
                 </div>
-                <div class="bg-amber-950/30 border border-amber-800/40 rounded-xl p-3">
-                  <div class="text-[10px] font-bold text-amber-400 uppercase mb-1">4. ภาพลักษณ์ (Identity)</div>
-                  <div class="text-xs font-medium text-amber-200 leading-snug">${vl.level_4_identity || '-'}</div>
+
+                <div class="p-2.5 bg-amber-950/20 border border-amber-900/40 rounded-xl flex items-start gap-2.5">
+                  <span class="w-5 h-5 rounded bg-amber-950 text-amber-400 font-bold text-[10px] flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
+                  <div class="min-w-0">
+                    <div class="text-[9px] font-bold text-amber-400 uppercase">ภาพลักษณ์ (Identity)</div>
+                    <div class="text-xs text-amber-100 font-medium leading-snug">${vl.level_4_identity || '-'}</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- ⚡ HOOK BANNER -->
-            <div class="p-4 bg-gradient-to-r from-amber-500/15 via-amber-500/5 to-transparent border-l-4 border-amber-400 rounded-r-2xl">
-              <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-1">⚡ HOOK • ประโยคเปิดสะกดคนดู (พูดทันทีที่ปักตะกร้า)</div>
-              <div class="text-base lg:text-lg font-bold text-amber-100 leading-relaxed">
-                "${s.hook || '-'}"
+            <!-- Right Col (5 cols): Live Demo, Pain Point, CTA & Urgent Close -->
+            <div class="lg:col-span-5 flex flex-col gap-3">
+              
+              <!-- Live Demo Action -->
+              <div class="bg-indigo-950/30 border border-indigo-800/40 rounded-2xl p-3.5">
+                <div class="text-[11px] font-bold text-indigo-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+                  <span>🎥</span> ท่าสาธิตหน้ากล้อง (Live Demo)
+                </div>
+                <p class="text-xs text-slate-200 leading-relaxed">${s.live_demo || '-'}</p>
               </div>
+
+              <!-- Pain Point & CTA -->
+              <div class="bg-slate-950/60 border border-slate-800 rounded-2xl p-3.5 flex flex-col gap-2">
+                <div>
+                  <div class="text-[10px] font-bold text-rose-400 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span>🔥</span> Pain Point ที่ช่วยแก้:
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">${s.pain_point || '-'}</p>
+                </div>
+                <div class="pt-2 border-t border-slate-800">
+                  <div class="text-[10px] font-bold text-amber-400 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                    <span>💬</span> คำถามดึงคอมเมนต์ (CTA):
+                  </div>
+                  <p class="text-xs text-amber-100/90 leading-relaxed">${s.interactive_cta || '-'}</p>
+                </div>
+              </div>
+
+              <!-- Urgent Close -->
+              <div class="bg-gradient-to-r from-purple-950/30 to-slate-950 border border-purple-900/40 rounded-2xl p-3">
+                <div class="text-[10px] font-bold text-purple-300 uppercase tracking-wider mb-0.5 flex items-center gap-1">
+                  <span>⏳</span> เร่งปิดการขาย (Close Gap):
+                </div>
+                <p class="text-xs text-purple-100 font-medium leading-relaxed">"${s.close_the_gap || 'ราคาพิเศษเฉพาะในไลฟ์นี้เท่านั้นครับ'}"</p>
+              </div>
+
             </div>
 
-            <!-- 📏 Quick Sizing Formula & Size Chips -->
-            <div class="bg-blue-950/40 border border-blue-800/60 rounded-2xl p-4 flex flex-col gap-3">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                <div class="flex items-center gap-2 text-xs lg:text-sm font-semibold text-blue-300">
-                  <span>📏</span> <strong>สูตรเทียบไซซ์ 3 วินาที:</strong> ${s.quick_size || sz.fit_advice}
+          </div>
+
+          <!-- 🛒 3. SMART MERCHANDISING & SIZE DOCK (BOTTOM TRAY) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 pt-1">
+            
+            <!-- Size Quick-Check Tray (6 cols) -->
+            <div class="lg:col-span-6 bg-blue-950/30 border border-blue-800/40 rounded-2xl p-3.5 flex flex-col justify-between gap-2.5">
+              <div>
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-bold text-blue-300 uppercase tracking-wider flex items-center gap-1.5">
+                    <span>📏</span> สูตรเทียบไซซ์ไว 3 วิ:
+                  </span>
+                  <button onclick="openSizeChartModal('${p.sku}', true)" class="text-[11px] font-bold text-indigo-400 hover:text-indigo-300 underline">
+                    ⛶ ตารางเต็มจอ
+                  </button>
                 </div>
-                <button onclick="openSizeChartModal('${p.sku}', true)" class="text-xs font-bold text-indigo-400 hover:text-indigo-300 underline self-start sm:self-auto flex items-center gap-1">
-                  <span>⛶</span> เปิดตารางไซซ์เต็มจอ ↗
-                </button>
+                <p class="text-xs text-blue-100/90 font-medium">${s.quick_size || sz.fit_advice}</p>
               </div>
-              <div class="flex items-center gap-2 flex-wrap pt-1 border-t border-blue-900/40">
-                <span class="text-[10px] font-bold uppercase text-blue-400">คลิกเทียบไซซ์ด่วน:</span>
+              <div class="flex items-center gap-1 flex-wrap pt-2 border-t border-blue-900/30">
+                <span class="text-[10px] font-bold text-blue-400 uppercase">สัดส่วนด่วน:</span>
                 ${sizeChipsHtml}
               </div>
             </div>
 
-            <!-- 🚀 CROSS-SELL & UP-SELL DEDICATED CARDS -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              <div class="bg-gradient-to-br from-emerald-950/40 to-slate-950/60 border border-emerald-800/50 p-4 rounded-xl">
-                <div class="text-xs font-bold text-emerald-400 mb-1.5 flex items-center gap-1.5">
-                  <span>🔗</span> CROSS-SELL (จับคู่สร้างยอดบิล / Total Look)
+            <!-- Merchandising Up/Cross-Sell (6 cols) -->
+            <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="bg-emerald-950/20 border border-emerald-900/30 rounded-2xl p-3 flex flex-col justify-between">
+                <div class="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-1">
+                  <span>🔗</span> CROSS-SELL (ดันยอดบิล)
                 </div>
-                <div class="text-xs text-slate-200 leading-relaxed">${s.cross_sell || s.basket_builder || '-'}</div>
+                <p class="text-[11px] text-slate-300 leading-relaxed">${s.cross_sell || s.basket_builder || '-'}</p>
               </div>
 
-              <div class="bg-gradient-to-br from-indigo-950/40 to-slate-950/60 border border-indigo-800/50 p-4 rounded-xl">
-                <div class="text-xs font-bold text-indigo-300 mb-1.5 flex items-center gap-1.5">
-                  <span>🚀</span> UP-SELL (อัปเกรดความคุ้มค่า / ซื้อแพ็กคู่ 2 ชิ้น)
+              <div class="bg-indigo-950/20 border border-indigo-900/30 rounded-2xl p-3 flex flex-col justify-between">
+                <div class="text-[10px] font-bold text-indigo-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+                  <span>🚀</span> UP-SELL (ความคุ้มค่า)
                 </div>
-                <div class="text-xs text-slate-200 leading-relaxed">${s.up_sell || '-'}</div>
-              </div>
-            </div>
-
-            <!-- 2x2 Script Flow Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-              <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-3.5">
-                <div class="text-xs font-bold text-rose-400 mb-1 flex items-center gap-1.5">
-                  <span>🔥</span> Pain Point ที่ช่วยแก้:
-                </div>
-                <div class="text-xs text-slate-300 leading-relaxed">${s.pain_point || '-'}</div>
-              </div>
-
-              <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-3.5">
-                <div class="text-xs font-bold text-indigo-400 mb-1 flex items-center gap-1.5">
-                  <span>🎥</span> Live Demo (ท่าสาธิตหน้ากล้อง):
-                </div>
-                <div class="text-xs text-slate-300 leading-relaxed">${s.live_demo || '-'}</div>
-              </div>
-
-              <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-3.5">
-                <div class="text-xs font-bold text-amber-400 mb-1 flex items-center gap-1.5">
-                  <span>💬</span> Interactive CTA (ดึงคอมเมนต์):
-                </div>
-                <div class="text-xs text-slate-300 leading-relaxed">${s.interactive_cta || '-'}</div>
-              </div>
-
-              <div class="bg-slate-950/60 border border-slate-800 rounded-xl p-3.5">
-                <div class="text-xs font-bold text-purple-400 mb-1 flex items-center gap-1.5">
-                  <span>⏳</span> Close The Gap (เร่งปิดการขาย):
-                </div>
-                <div class="text-xs text-slate-300 leading-relaxed">${s.close_the_gap || 'ราคาพิเศษเฉพาะในไลฟ์นี้เท่านั้นครับ'}</div>
+                <p class="text-[11px] text-slate-300 leading-relaxed">${s.up_sell || '-'}</p>
               </div>
             </div>
 
@@ -1049,12 +1038,12 @@
 
       if (isModalFullscreen) {
         card.classList.remove('max-w-4xl', 'rounded-3xl', 'max-h-[92vh]');
-        card.classList.add('fixed', 'inset-0', 'w-full', 'h-full', 'max-w-none', 'max-h-none', 'rounded-none', 'p-8', 'lg:p-12', 'z-50');
+        card.classList.add('fixed', 'inset-0', 'w-full', 'h-full', 'max-w-none', 'max-h-none', 'rounded-none', 'p-6', 'lg:p-10', 'z-50');
         fsText.textContent = 'ย่อจอ';
         showToast('⛶ เข้าสู่โหมดตารางไซซ์เต็มจอ (กด ESC เพื่อออก)');
       } else {
         card.classList.add('max-w-4xl', 'rounded-3xl', 'max-h-[92vh]');
-        card.classList.remove('fixed', 'inset-0', 'w-full', 'h-full', 'max-w-none', 'max-h-none', 'rounded-none', 'p-8', 'lg:p-12', 'z-50');
+        card.classList.remove('fixed', 'inset-0', 'w-full', 'h-full', 'max-w-none', 'max-h-none', 'rounded-none', 'p-6', 'lg:p-10', 'z-50');
         fsText.textContent = 'เต็มจอ';
       }
     }
@@ -1073,14 +1062,14 @@
       } else {
         if (header) header.classList.remove('hidden');
         view.classList.remove('fixed', 'inset-0', 'z-50', 'bg-slate-950', 'p-6', 'lg:p-10', 'overflow-y-auto');
-        fsBtnText.textContent = 'เต็มจอ (Fullscreen Studio)';
+        fsBtnText.textContent = 'เต็มจอ (Studio)';
       }
     }
 
     function setModalUnit(unit) {
       modalUnit = unit;
-      document.getElementById('modalUnitIn').className = unit === 'inch' ? 'px-3.5 py-1.5 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-3.5 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors';
-      document.getElementById('modalUnitCm').className = unit === 'cm' ? 'px-3.5 py-1.5 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-3.5 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors';
+      document.getElementById('modalUnitIn').className = unit === 'inch' ? 'px-3 py-1 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-3 py-1 rounded-lg text-slate-400 hover:text-white transition-colors';
+      document.getElementById('modalUnitCm').className = unit === 'cm' ? 'px-3 py-1 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-3 py-1 rounded-lg text-slate-400 hover:text-white transition-colors';
       
       const p = PRODUCTS.find(x => x.sku === selectedSku) || PRODUCTS[0];
       const sz = p.size_chart || SIZE_TEMPLATES['WARRIX_POLO_REGULAR'];
@@ -1093,17 +1082,17 @@
 
       head.innerHTML = `
         <tr>
-          ${sz.columns.map(c => `<th class="px-5 py-3.5 font-bold">${c}</th>`).join('')}
+          ${sz.columns.map(c => `<th class="px-4 py-3 font-bold">${c}</th>`).join('')}
         </tr>
       `;
 
       body.innerHTML = sz.rows.map(r => `
         <tr class="hover:bg-slate-800/40 transition-colors">
-          <td class="px-5 py-3.5 font-bold text-indigo-300 font-sans text-sm">${r.size}</td>
-          <td class="px-5 py-3.5 text-slate-100 font-semibold">${modalUnit === 'inch' ? r.chest_in : r.chest_cm}</td>
-          <td class="px-5 py-3.5 text-slate-200">${modalUnit === 'inch' ? r.length_in : r.length_cm}</td>
-          <td class="px-5 py-3.5 text-slate-300 font-sans">${r.weight_rec}</td>
-          <td class="px-5 py-3.5 text-slate-300 font-sans">${r.height_rec}</td>
+          <td class="px-4 py-3 font-bold text-indigo-300 font-sans">${r.size}</td>
+          <td class="px-4 py-3 text-slate-100 font-semibold">${modalUnit === 'inch' ? r.chest_in : r.chest_cm}</td>
+          <td class="px-4 py-3 text-slate-200">${modalUnit === 'inch' ? r.length_in : r.length_cm}</td>
+          <td class="px-4 py-3 text-slate-300 font-sans">${r.weight_rec}</td>
+          <td class="px-4 py-3 text-slate-300 font-sans">${r.height_rec}</td>
         </tr>
       `).join('');
     }
@@ -1121,7 +1110,7 @@
       if (!p) return;
 
       const sz = p.size_chart || SIZE_TEMPLATES['WARRIX_POLO_REGULAR'];
-      document.getElementById('sizeTableTitle').textContent = `ตารางไซซ์มาตรฐาน: ${p.name}`;
+      document.getElementById('sizeTableTitle').textContent = `ตารางไซซ์: ${p.name}`;
       document.getElementById('sizeTableFitBadge').textContent = sz.fit_badge || 'REGULAR FIT';
       document.getElementById('sizeTableModelRef').textContent = sz.model_reference || '';
       document.getElementById('sizeTableAdvice').textContent = sz.fit_advice || '';
@@ -1131,17 +1120,17 @@
 
       head.innerHTML = `
         <tr>
-          ${sz.columns.map(c => `<th class="px-5 py-4 font-bold text-xs lg:text-sm">${c}</th>`).join('')}
+          ${sz.columns.map(c => `<th class="px-4 py-3.5 font-bold text-xs">${c}</th>`).join('')}
         </tr>
       `;
 
       body.innerHTML = sz.rows.map(r => `
         <tr class="hover:bg-slate-800/40 transition-colors">
-          <td class="px-5 py-4 font-bold text-indigo-300 font-sans text-sm lg:text-base">${r.size}</td>
-          <td class="px-5 py-4 text-slate-100 font-bold text-sm lg:text-base">${currentUnit === 'inch' ? r.chest_in : r.chest_cm}</td>
-          <td class="px-5 py-4 text-slate-200 text-sm lg:text-base">${currentUnit === 'inch' ? r.length_in : r.length_cm}</td>
-          <td class="px-5 py-4 text-slate-300 font-sans text-sm lg:text-base">${r.weight_rec}</td>
-          <td class="px-5 py-4 text-slate-300 font-sans text-sm lg:text-base">${r.height_rec}</td>
+          <td class="px-4 py-3.5 font-bold text-indigo-300 font-sans text-xs">${r.size}</td>
+          <td class="px-4 py-3.5 text-slate-100 font-bold text-xs">${currentUnit === 'inch' ? r.chest_in : r.chest_cm}</td>
+          <td class="px-4 py-3.5 text-slate-200 text-xs">${currentUnit === 'inch' ? r.length_in : r.length_cm}</td>
+          <td class="px-4 py-3.5 text-slate-300 font-sans text-xs">${r.weight_rec}</td>
+          <td class="px-4 py-3.5 text-slate-300 font-sans text-xs">${r.height_rec}</td>
         </tr>
       `).join('');
 
@@ -1150,8 +1139,8 @@
 
     function setSizeUnit(unit) {
       currentUnit = unit;
-      document.getElementById('unitBtnIn').className = unit === 'inch' ? 'px-4 py-1.5 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-4 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors';
-      document.getElementById('unitBtnCm').className = unit === 'cm' ? 'px-4 py-1.5 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-4 py-1.5 rounded-lg text-slate-400 hover:text-white transition-colors';
+      document.getElementById('unitBtnIn').className = unit === 'inch' ? 'px-3 py-1 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-3 py-1 rounded-lg text-slate-400 hover:text-white transition-colors';
+      document.getElementById('unitBtnCm').className = unit === 'cm' ? 'px-3 py-1 rounded-lg bg-indigo-600 text-white transition-colors' : 'px-3 py-1 rounded-lg text-slate-400 hover:text-white transition-colors';
       const selSku = document.getElementById('sizeAdvisorSkuSelect').value;
       renderSizeHubTable(selSku);
     }
@@ -1250,10 +1239,10 @@
 
         const isChecked = checkedItems.includes(item.id);
         const card = document.createElement('div');
-        card.className = `p-3.5 rounded-xl border transition-all duration-150 flex items-start gap-3.5 cursor-pointer ${
+        card.className = `p-3 rounded-xl border transition-all duration-150 flex items-start gap-3 cursor-pointer ${
           isChecked 
-            ? 'bg-emerald-950/30 border-emerald-800/60 text-slate-200' 
-            : 'bg-slate-950/60 border-slate-800/80 hover:border-slate-700'
+            ? 'bg-emerald-950/20 border-emerald-800/50 text-slate-200' 
+            : 'bg-slate-950/50 border-slate-800/80 hover:border-slate-700'
         }`;
         card.onclick = (e) => {
           if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'A') {
@@ -1263,19 +1252,16 @@
 
         card.innerHTML = `
           <input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleCheckItem(${item.id})" 
-            class="mt-1 w-4 h-4 rounded text-indigo-600 bg-slate-900 border-slate-700 focus:ring-indigo-500 cursor-pointer">
+            class="mt-0.5 w-4 h-4 rounded text-indigo-600 bg-slate-900 border-slate-700 focus:ring-indigo-500 cursor-pointer">
           <div class="flex-1 min-w-0">
             <div class="flex items-center justify-between gap-2">
               <span class="text-xs font-bold ${isChecked ? 'text-emerald-300 line-through' : 'text-slate-100'}">
                 ${item.id}. ${item.title}
               </span>
-              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-400">
-                ข้อที่ ${item.id}
-              </span>
             </div>
             <p class="text-xs text-slate-300 mt-0.5 leading-relaxed">${item.desc}</p>
-            <div class="mt-2 text-[11px] text-amber-400/90 bg-amber-950/20 border border-amber-900/30 px-2.5 py-1.5 rounded-lg flex items-start gap-1.5">
-              <span>💡</span> <span><strong>คำแนะนำ:</strong> ${item.tip}</span>
+            <div class="mt-1.5 text-[10px] text-amber-400/90 bg-amber-950/20 border border-amber-900/30 px-2 py-1 rounded-lg flex items-start gap-1">
+              <span>💡</span> <span><strong>ทริก:</strong> ${item.tip}</span>
             </div>
           </div>
         `;
@@ -1355,23 +1341,23 @@
         if (!p) return;
 
         const card = document.createElement('div');
-        card.className = 'p-3 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-between gap-3 hover:border-slate-700 transition-colors';
+        card.className = 'p-2.5 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-between gap-2.5 hover:border-slate-700 transition-colors';
         card.innerHTML = `
-          <div class="flex items-center gap-2.5 min-w-0">
-            <span class="w-6 h-6 rounded-lg bg-slate-800 flex items-center justify-center text-xs font-mono font-bold text-slate-400">${idx + 1}</span>
+          <div class="flex items-center gap-2 min-w-0">
+            <span class="w-5 h-5 rounded bg-slate-800 flex items-center justify-center text-[10px] font-mono font-bold text-slate-400">${idx + 1}</span>
             <div class="min-w-0">
-              <div class="flex items-center gap-2">
-                <span class="text-xs font-mono font-bold text-indigo-400">${p.sku}</span>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] font-mono font-bold text-indigo-400">${p.sku}</span>
                 <span class="text-xs font-mono font-bold text-emerald-400">฿${(p.numeric_price || 390).toLocaleString()}</span>
               </div>
-              <div class="text-xs font-bold text-slate-200 truncate">${p.name}</div>
+              <div class="text-xs font-semibold text-slate-200 truncate">${p.name}</div>
             </div>
           </div>
-          <div class="flex items-center gap-1.5 flex-shrink-0">
-            <button onclick="selectProduct('${p.sku}'); switchView('prompter');" class="px-2.5 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[11px] transition-colors">
-              🎙️ ปักหมุด
+          <div class="flex items-center gap-1 flex-shrink-0">
+            <button onclick="selectProduct('${p.sku}'); switchView('prompter');" class="px-2 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[10px] transition-colors">
+              🎙️ ปัก
             </button>
-            <button onclick="removeProductFromQueue('${p.sku}')" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-rose-950 text-slate-400 hover:text-rose-400 font-bold text-xs transition-colors">
+            <button onclick="removeProductFromQueue('${p.sku}')" class="px-1.5 py-1 rounded-lg bg-slate-800 hover:bg-rose-950 text-slate-400 hover:text-rose-400 font-bold text-xs transition-colors">
               ✕
             </button>
           </div>
@@ -1403,7 +1389,7 @@
       if (!sel) return;
       sel.innerHTML = items.map(p => `
         <option value="${p.sku}" ${p.sku === selectedVal ? 'selected' : ''}>
-          ${p.sku} - ${p.name.substring(0, 32)} (฿${(p.numeric_price || 390).toLocaleString()})
+          ${p.sku} - ${p.name.substring(0, 30)} (฿${(p.numeric_price || 390).toLocaleString()})
         </option>
       `).join('');
     }
@@ -1442,18 +1428,11 @@
       const skuBox = document.getElementById(`slot-sku-${slot}`);
       const nameBox = document.getElementById(`slot-name-${slot}`);
       const priceBox = document.getElementById(`slot-price-${slot}`);
-      const vibeBox = document.getElementById(`slot-vibe-${slot}`);
 
-      if (imgBox) imgBox.innerHTML = p.image_url ? `<img src="${p.image_url}" alt="${p.name}" class="w-full h-full object-cover">` : `<span class="text-4xl">${p.category_icon || '🏷️'}</span>`;
+      if (imgBox) imgBox.innerHTML = p.image_url ? `<img src="${p.image_url}" alt="${p.name}" class="w-full h-full object-cover">` : `<span class="text-3xl">${p.category_icon || '🏷️'}</span>`;
       if (skuBox) skuBox.textContent = p.sku;
       if (nameBox) nameBox.textContent = p.name;
       if (priceBox) priceBox.textContent = `฿${(p.numeric_price || 390).toLocaleString()}`;
-      if (vibeBox) {
-        vibeBox.textContent = p.style_vibe_badge || '☕ LIFESTYLE';
-        vibeBox.className = p.style_vibe === 'SPORT'
-          ? 'px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800'
-          : 'px-2 py-0.5 rounded text-[10px] font-bold bg-pink-950 text-pink-300 border border-pink-800';
-      }
     }
 
     function updateOutfitPricing(customPitch) {
@@ -1503,10 +1482,10 @@
       const uMsg = document.createElement('div');
       uMsg.className = 'flex items-start justify-end gap-3';
       uMsg.innerHTML = `
-        <div class="bg-indigo-600 rounded-2xl rounded-tr-none p-4 text-xs lg:text-sm text-white max-w-2xl leading-relaxed">
+        <div class="bg-indigo-600 rounded-2xl rounded-tr-none p-3 text-xs text-white max-w-xl leading-relaxed">
           ${q}
         </div>
-        <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center font-bold text-slate-300 text-xs">MC</div>
+        <div class="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center font-bold text-slate-300 text-xs">MC</div>
       `;
       chatBox.appendChild(uMsg);
       input.value = '';
@@ -1515,9 +1494,9 @@
         const aiMsg = document.createElement('div');
         aiMsg.className = 'flex items-start gap-3';
         aiMsg.innerHTML = `
-          <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white text-xs">AI</div>
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl rounded-tl-none p-4 text-xs lg:text-sm text-slate-200 max-w-2xl leading-relaxed">
-            💡 <strong>คำแนะนำจาก AI Stylist:</strong> สำหรับ "${q}" แนะนำให้เลือกแมตช์ <strong>สาย ${selectedOutfit.top.includes('FB') ? '⚡ SPORT BLOKECORE' : '☕ SMART LIFESTYLE'}</strong> โดยจับคู่เสื้อกับกางเกงสแล็คหรือยีนส์สีเข้ม จะช่วยให้ลุคดูสมดุล และใช้สคริปต์: <em>"ใครที่อยากได้ลุคที่ใส่ทำงานได้และไปเที่ยวต่อได้ทันที เซ็ตนี้ตอบโจทย์ครบในราคาคุ้มค่าครับ!"</em>
+          <div class="w-7 h-7 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white text-xs">AI</div>
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl rounded-tl-none p-3.5 text-xs text-slate-200 max-w-xl leading-relaxed">
+            💡 <strong>คำแนะนำ:</strong> สำหรับ "${q}" แนะนำให้เลือกแมตช์ <strong>สาย ${selectedOutfit.top.includes('FB') ? '⚡ SPORT BLOKECORE' : '☕ SMART LIFESTYLE'}</strong> โดยจับคู่เสื้อกับกางเกงสแล็คหรือยีนส์สีเข้ม และใช้สคริปต์: <em>"เซ็ตนี้ใส่ทำงานได้และไปเที่ยวต่อได้ทันที ตอบโจทย์ครบจบในราคาคุ้มค่าครับ!"</em>
           </div>
         `;
         chatBox.appendChild(aiMsg);
@@ -1537,6 +1516,10 @@
 📏 สูตรไซซ์: ${p.selling_script?.quick_size || ''}`;
       navigator.clipboard.writeText(text);
       showToast('📋 คัดลอกสคริปต์สินค้าเรียบร้อย!');
+    }
+
+    function copyProductScript(sku) {
+      copyCurrentSkuPitch();
     }
 
     function copyOutfitScript() {
