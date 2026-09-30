@@ -668,11 +668,6 @@
           </div>
         </div>
 
-        <!-- Non-Warrix Test Button to demonstrate security rejection -->
-        <button onclick="loginWithSimulatedAccount('user.test@gmail.com', 'บุคคลภายนอก (Gmail)')" class="w-full text-center text-[10px] text-slate-500 hover:text-rose-400 transition-colors underline pt-1">
-          (ทดสอบล็อกอินด้วยเมลภายนอก เช่น @gmail.com เพื่อทดสอบระบบตัดสิทธิ์)
-        </button>
-
       </div>
 
       <div class="text-[10px] text-slate-500">
@@ -698,6 +693,7 @@
     // MS365 AUTHENTICATION CONFIG & DOMAIN GUARD
     // ==========================================
     const ALLOWED_EMAIL_DOMAINS = ['warrix.co.th', 'warrix.com', 'warrix.sport'];
+    const AUTHORIZED_SPECIAL_USERS = ['yuichan1993@gmail.com'];
     
     // Default MSAL Config (can be hooked to company Azure AD App ID)
     const msalConfig = {
@@ -790,8 +786,9 @@
     // AUTHENTICATION LOGIC & DOMAIN VALIDATION
     // ==========================================
     function isWarrixDomain(email) {
-      if (!email) return false;
+      if (!email || typeof email !== 'string') return false;
       const lower = email.trim().toLowerCase();
+      if (AUTHORIZED_SPECIAL_USERS.includes(lower)) return true;
       return ALLOWED_EMAIL_DOMAINS.some(domain => lower.endsWith('@' + domain));
     }
 
