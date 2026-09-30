@@ -245,16 +245,16 @@
     },
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -520,16 +520,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -930,20 +930,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -1210,16 +1210,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -1752,18 +1752,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -2006,16 +2006,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -2362,20 +2362,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -2631,18 +2631,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -2962,20 +2962,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -3266,16 +3266,16 @@
     },
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -3567,20 +3567,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
+      "WINTER",
       "SPRING",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
+        "WINTER",
         "SPRING",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -3872,18 +3872,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -4138,18 +4138,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -4410,18 +4410,18 @@
     },
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -4676,18 +4676,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -4941,18 +4941,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -5207,18 +5207,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -5471,18 +5471,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -5737,18 +5737,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -6035,20 +6035,20 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -6563,18 +6563,18 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "WINTER",
       "SUMMER",
+      "WINTER",
       "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "WINTER",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "WINTER",
         "SUMMER",
+        "WINTER",
         "SPRING"
       ],
-      "season_badge": "🎨 WINTER & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -7302,18 +7302,18 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -7597,20 +7597,20 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -7896,20 +7896,20 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -8162,16 +8162,16 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -8424,18 +8424,18 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -8688,18 +8688,18 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -8954,18 +8954,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -9798,18 +9798,18 @@
     "top_rank_info": null,
     "size_chart_template": "FOOTBALL_PLAYER_SLIM",
     "supported_seasons": [
-      "AUTUMN",
       "WINTER",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
         "WINTER",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -10090,18 +10090,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
       "WINTER",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
         "WINTER",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -10382,18 +10382,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
       "WINTER",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
         "WINTER",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -10847,18 +10847,18 @@
     },
     "size_chart_template": "BOTTOMS_PANTS_JEANS",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -11113,18 +11113,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -11341,18 +11341,18 @@
     "top_rank_info": null,
     "size_chart_template": "BOTTOMS_SHORTS",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -12039,16 +12039,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -12569,20 +12569,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -12836,18 +12836,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -13074,18 +13074,18 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -13312,18 +13312,18 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -13555,20 +13555,20 @@
     "top_rank_info": null,
     "size_chart_template": "JACKETS_OUTERWEAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -14224,16 +14224,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -14917,18 +14917,18 @@
     "top_rank_info": null,
     "size_chart_template": "JACKETS_OUTERWEAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -15620,16 +15620,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SPRING",
       "recommended_seasons": [
-        "AUTUMN",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SPRING MATCH",
+      "season_badge": "🎨 SPRING & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -16406,16 +16406,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -16695,18 +16695,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
       "WINTER",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
         "WINTER",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -16973,20 +16973,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -17491,20 +17491,20 @@
     "top_rank_info": null,
     "size_chart_template": "BOTTOMS_PANTS_JEANS",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -17749,18 +17749,18 @@
     "top_rank_info": null,
     "size_chart_template": "BOTTOMS_SHORTS",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -17986,18 +17986,18 @@
     "top_rank_info": null,
     "size_chart_template": "BOTTOMS_PANTS_JEANS",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -18236,18 +18236,18 @@
     "top_rank_info": null,
     "size_chart_template": "BOTTOMS_PANTS_JEANS",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -18473,18 +18473,18 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -19038,20 +19038,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -19292,16 +19292,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SPRING",
       "recommended_seasons": [
-        "AUTUMN",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SPRING MATCH",
+      "season_badge": "🎨 SPRING & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -19555,18 +19555,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -19843,16 +19843,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -20122,18 +20122,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -20391,18 +20391,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -20679,18 +20679,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -20992,20 +20992,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -21227,18 +21227,18 @@
     "top_rank_info": null,
     "size_chart_template": "JACKETS_OUTERWEAR",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -21495,18 +21495,18 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -22028,20 +22028,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -22394,20 +22394,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -22684,18 +22684,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "SPRING"
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "SPRING"
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -22972,16 +22972,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -23277,20 +23277,20 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -23579,20 +23579,20 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -23862,18 +23862,18 @@
     "top_rank_info": null,
     "size_chart_template": "SHOES_FOOTWEAR",
     "supported_seasons": [
+      "WINTER",
       "SPRING",
-      "AUTUMN",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
+        "WINTER",
         "SPRING",
-        "AUTUMN",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & AUTUMN MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -24130,16 +24130,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -24371,16 +24371,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -24637,16 +24637,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -24916,18 +24916,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
+      "WINTER",
       "SPRING",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
+        "WINTER",
         "SPRING",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SPRING MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -25190,18 +25190,18 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
-      "AUTUMN",
+      "WINTER",
       "SPRING",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
+        "WINTER",
         "SPRING",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SPRING MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -25482,20 +25482,20 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
+      "WINTER",
       "SPRING",
-      "WINTER"
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
+        "WINTER",
         "SPRING",
-        "WINTER"
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -26029,16 +26029,16 @@
     "top_rank_info": null,
     "size_chart_template": "RUNNING_PERFORMANCE_TEE",
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -26300,16 +26300,16 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & WINTER MATCH",
+      "season_badge": "🎨 WINTER & AUTUMN MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -26610,18 +26610,18 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "AUTUMN",
       "SUMMER",
-      "WINTER"
+      "WINTER",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "AUTUMN",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "AUTUMN",
         "SUMMER",
-        "WINTER"
+        "WINTER",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 AUTUMN & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -26898,20 +26898,20 @@
     "top_rank_info": null,
     "size_chart_template": "WARRIX_POLO_REGULAR",
     "supported_seasons": [
-      "SPRING",
       "SUMMER",
-      "AUTUMN",
-      "WINTER"
+      "WINTER",
+      "SPRING",
+      "AUTUMN"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "SUMMER",
       "recommended_seasons": [
-        "SPRING",
         "SUMMER",
-        "AUTUMN",
-        "WINTER"
+        "WINTER",
+        "SPRING",
+        "AUTUMN"
       ],
-      "season_badge": "🎨 SPRING & SUMMER MATCH",
+      "season_badge": "🎨 SUMMER & WINTER MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -27088,16 +27088,16 @@
       }
     ],
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -27274,16 +27274,16 @@
       }
     ],
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -27464,16 +27464,16 @@
       }
     ],
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -27628,16 +27628,16 @@
       }
     ],
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
@@ -27783,16 +27783,16 @@
       }
     ],
     "supported_seasons": [
-      "SPRING",
-      "WINTER"
+      "WINTER",
+      "SPRING"
     ],
     "personal_color_guide": {
-      "primary_season": "SPRING",
+      "primary_season": "WINTER",
       "recommended_seasons": [
-        "SPRING",
-        "WINTER"
+        "WINTER",
+        "SPRING"
       ],
-      "season_badge": "🎨 SPRING & WINTER MATCH",
+      "season_badge": "🎨 WINTER & SPRING MATCH",
       "skin_pitches": {
         "SPRING": "คนผิวขาวเหลือง (Spring) แนะนำเลือกสีสว่าง ขาว WW หรือส้ม/เหลือง ช่วยดึงความสดใส ขับหน้าไบรท์มีออร่า!",
         "SUMMER": "คนผิวขาวชมพู (Summer) แนะนำเลือกสีฟ้า LL หรือเทา EE ได้ลุคผู้ดี สุภาพ นวลตา ไม่กลืนกับผิว!",
