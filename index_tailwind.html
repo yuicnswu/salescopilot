@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Kanit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   
+  <!-- Microsoft Authentication Library (MSAL.js CDN) -->
+  <script type="text/javascript" src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js"></script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -48,7 +51,7 @@
           <div>
             <div class="flex items-center gap-2">
               <span class="font-extrabold text-sm tracking-tight text-slate-100">SALES COPILOT</span>
-              <span class="text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">STUDIO PRO</span>
+              <span class="text-[9px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">WARRIX LIVE</span>
             </div>
           </div>
         </div>
@@ -78,13 +81,27 @@
         </button>
       </nav>
 
-      <!-- Global Actions -->
-      <div class="hidden lg:flex items-center gap-2">
+      <!-- Authenticated User Profile & Actions -->
+      <div class="hidden lg:flex items-center gap-3">
+        <!-- User Pill -->
+        <div id="userProfilePill" class="flex items-center gap-2.5 bg-slate-900/90 border border-slate-800 px-3 py-1.5 rounded-xl">
+          <div class="w-6 h-6 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 flex items-center justify-center font-bold text-[11px] text-slate-950 font-mono" id="userAvatarText">
+            W
+          </div>
+          <div class="text-left">
+            <div class="text-xs font-bold text-slate-200 flex items-center gap-1">
+              <span id="userDisplayName">WARRIX Host</span>
+              <span class="text-[9px] font-bold text-emerald-400 bg-emerald-950/80 px-1 rounded border border-emerald-800/60">MS365</span>
+            </div>
+            <div class="text-[10px] text-slate-400 font-mono truncate max-w-[140px]" id="userEmailText">host@warrix.co.th</div>
+          </div>
+          <button onclick="signOutMS365()" title="ออกจากระบบ" class="text-slate-400 hover:text-rose-400 text-xs font-bold ml-1 transition-colors">
+            🚪
+          </button>
+        </div>
+
         <button onclick="openSizeChartModal(selectedSku, true)" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white font-semibold text-xs border border-slate-800 transition-colors flex items-center gap-1.5">
           <span>⛶</span> ตารางไซซ์
-        </button>
-        <button onclick="copyCurrentSkuPitch()" class="px-3 py-1.5 rounded-lg bg-indigo-600/90 hover:bg-indigo-600 text-white font-semibold text-xs transition-colors flex items-center gap-1.5">
-          <span>📋</span> คัดลอกสคริปต์
         </button>
       </div>
 
@@ -581,6 +598,90 @@
     </div>
   </div>
 
+  <!-- ================= MICROSOFT 365 WARRIX AUTH GUARD MODAL ================= -->
+  <div id="authGuardModal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800/90 rounded-3xl max-w-md w-full p-6 lg:p-8 shadow-2xl flex flex-col gap-6 text-center relative overflow-hidden">
+      
+      <!-- Top Decorative Accent -->
+      <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-indigo-500 via-emerald-400 to-amber-400"></div>
+
+      <!-- Warrix Emblem & Title -->
+      <div class="flex flex-col items-center gap-3 mt-2">
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-600 flex items-center justify-center font-black text-white text-3xl shadow-xl shadow-indigo-600/30">
+          W
+        </div>
+        <div>
+          <div class="flex items-center justify-center gap-1.5">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-800/60">
+              🔒 INTERNAL ONLY
+            </span>
+          </div>
+          <h2 class="text-xl font-black text-slate-100 tracking-tight mt-1.5">WARRIX LIVE STUDIO</h2>
+          <p class="text-xs text-slate-400 mt-1">ระบบ Sales Copilot & Teleprompter สำหรับทีมงาน WARRIX</p>
+        </div>
+      </div>
+
+      <!-- Domain Policy Badge -->
+      <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-4 text-left flex flex-col gap-2">
+        <div class="text-[11px] font-bold text-indigo-400 uppercase tracking-wider flex items-center gap-1.5">
+          <span>🛡️</span> นโยบายความปลอดภัยองค์กร (Security Policy)
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          อนุญาตให้เข้าใช้งานเฉพาะบุคลากรที่เข้าสู่ระบบด้วยบัญชี <strong>Microsoft 365</strong> ภายใต้โดเมน <span class="text-emerald-400 font-mono font-bold">@warrix.co.th</span> หรือ <span class="text-emerald-400 font-mono font-bold">@warrix.com</span> เท่านั้น
+        </p>
+      </div>
+
+      <!-- Auth Error Notification (Hidden by default) -->
+      <div id="authErrorMessage" class="hidden p-3.5 bg-rose-950/50 border border-rose-800/80 rounded-2xl text-left text-xs text-rose-300">
+        <div class="font-bold flex items-center gap-1.5 mb-0.5">
+          <span>⛔</span> สิทธิ์การเข้าถึงถูกปฏิเสธ (Access Denied)
+        </div>
+        <p id="authErrorText" class="leading-relaxed"></p>
+      </div>
+
+      <!-- Login Actions -->
+      <div class="space-y-3">
+        
+        <!-- MS 365 Primary Button -->
+        <button onclick="loginWithMS365()" class="w-full py-3.5 px-5 rounded-2xl bg-white hover:bg-slate-100 text-slate-900 font-extrabold text-xs shadow-xl transition-all flex items-center justify-center gap-3 transform hover:scale-[1.01] active:scale-[0.99]">
+          <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 21 21">
+            <rect x="1" y="1" width="9" height="9" fill="#f25022"/>
+            <rect x="11" y="1" width="9" height="9" fill="#7fba00"/>
+            <rect x="1" y="11" width="9" height="9" fill="#00a4ef"/>
+            <rect x="11" y="11" width="9" height="9" fill="#ffb900"/>
+          </svg>
+          <span>เข้าสู่ระบบด้วย Microsoft 365 (@warrix)</span>
+        </button>
+
+        <!-- Quick Demo / Simulator Selector for Instant Studio Access -->
+        <div class="pt-2 border-t border-slate-800/80">
+          <div class="text-[10px] text-slate-500 uppercase font-bold tracking-wider mb-2">หรือทดสอบด้วยบัญชีตัวอย่าง Warrix:</div>
+          <div class="grid grid-cols-2 gap-2">
+            <button onclick="loginWithSimulatedAccount('mc.live@warrix.co.th', 'MC Host 1 (คุณมุก)')" class="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 hover:border-indigo-500 text-slate-300 hover:text-white text-[11px] font-medium transition-all text-left">
+              <div class="font-bold text-indigo-300">🎙️ MC Live Host</div>
+              <div class="text-[9px] text-slate-500 truncate">mc.live@warrix.co.th</div>
+            </button>
+            <button onclick="loginWithSimulatedAccount('merchandiser@warrix.co.th', 'Merchandiser (คุณบอม)')" class="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500 text-slate-300 hover:text-white text-[11px] font-medium transition-all text-left">
+              <div class="font-bold text-emerald-300">🛒 Merchandiser</div>
+              <div class="text-[9px] text-slate-500 truncate">merchandiser@warrix.co.th</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Non-Warrix Test Button to demonstrate security rejection -->
+        <button onclick="loginWithSimulatedAccount('user.test@gmail.com', 'บุคคลภายนอก (Gmail)')" class="w-full text-center text-[10px] text-slate-500 hover:text-rose-400 transition-colors underline pt-1">
+          (ทดสอบล็อกอินด้วยเมลภายนอก เช่น @gmail.com เพื่อทดสอบระบบตัดสิทธิ์)
+        </button>
+
+      </div>
+
+      <div class="text-[10px] text-slate-500">
+        WARRIX Sport Public Company Limited • Studio Access Control v2.4
+      </div>
+
+    </div>
+  </div>
+
   <!-- ================= GLOBAL TOAST ================= -->
   <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-200 bg-indigo-600 text-white px-4 py-2.5 rounded-xl shadow-2xl font-bold text-xs flex items-center gap-2">
     <span>📋</span> <span id="toast-text">คัดลอกข้อมูลสำเร็จ!</span>
@@ -593,6 +694,35 @@
     const CHECKLIST_ITEMS = [{"id": 1, "title": "ศึกษาสินค้า", "desc": "รู้จุดเด่น ราคา ไซซ์ สี และรายละเอียดสำคัญของสินค้าแต่ละตัว", "phase": "product", "phase_title": "📦 Phase 1: สินค้า & สคริปต์", "tip": "ตรวจสอบเนื้อผ้า, ทรงปก, ตารางไซซ์ และจุดขายเทียบกับคู่แข่งใน Live Prompter"}, {"id": 2, "title": "กำหนดเป้าหมายไลฟ์", "desc": "วันนี้ต้องการขาย / โปรโมต / สร้าง Engagement หรือเคลียร์สต็อกอะไร", "phase": "product", "phase_title": "📦 Phase 1: สินค้า & สคริปต์", "tip": "ตั้งเป้า GMV รวม, ยอดขายต่อบิล (AOV), หรือจำนวนยอดคำสั่งซื้อ Hero SKU"}, {"id": 3, "title": "เตรียมสคริปต์", "desc": "วางลำดับการพูดและประเด็นสำคัญ เรียงคิวสินค้าตามช่วงเวลา", "phase": "product", "phase_title": "📦 Phase 1: สินค้า & สคริปต์", "tip": "วาง Hero Product ช่วงคนดูพีค (เช่น 30-45 นาทีแรก) และจัดเซ็ต Cross-sell"}, {"id": 4, "title": "เตรียมคำเปิดไลฟ์ (Hook)", "desc": "ประโยคเปิดให้น่าสนใจ ดึงคนดูให้อยู่ต่อใน 3 วินาทีแรก", "phase": "product", "phase_title": "📦 Phase 1: สินค้า & สคริปต์", "tip": "ใช้ Hook แก้ปัญหาความร้อน/เหงื่อ/ไซซ์ แทนการกล่าวทักทายทั่วไป"}, {"id": 5, "title": "เตรียมคำพูดขายสินค้า & CTA", "desc": "จุดเด่น โปรโมชั่น และ Call to Action ชวนกดลงตะกร้า", "phase": "product", "phase_title": "📦 Phase 1: สินค้า & สคริปต์", "tip": "ใช้สูตร 4-Level Value Ladder (Attribute ➔ Function ➔ Emotion ➔ Identity)"}, {"id": 6, "title": "เตรียมคำถาม-คำตอบ (Q&A)", "desc": "คาดการณ์คำถามที่ลูกค้าน่าจะถาม เช่น ไซซ์, ความยืด, การซัก", "phase": "product", "phase_title": "📦 Phase 1: สินค้า & สคริปต์", "tip": "ใช้ 'สูตรเทียบไซซ์ 3 วิ' (อกจริง + 2 นิ้ว / น้ำหนักส่วนสูง) ตอบลูกค้าทันที"}, {"id": 7, "title": "ตรวจเสื้อผ้า / ลุค MC", "desc": "แต่งตัวให้เหมาะกับแบรนด์และสินค้า (Total Look Warrix)", "phase": "mc", "phase_title": "👔 Phase 2: MC & บุคลิกภาพ", "tip": "สวมใส่สินค้าจริงในไลฟ์ เช่น เสื้อ Signature Polo หรือเสื้อทีมชาติไทย เพื่อโชว์ทรงจริง"}, {"id": 8, "title": "ตรวจอุปกรณ์ไลฟ์", "desc": "มือถือ/กล้อง ไมโครโฟน ไฟสตู ขาตั้ง และสัญญาณอินเทอร์เน็ต", "phase": "tech", "phase_title": "🎥 Phase 3: อุปกรณ์ & สตูดิโอ", "tip": "ทดสอบไมค์ไร้สายว่าเสียงคมชัด ไม่แตก และไฟส่องเสื้อผ้าสะท้อนมิติผ้า Jacquard ชัดเจน"}, {"id": 9, "title": "เช็กฉากและพื้นที่สตูดิโอ", "desc": "ฉากหลัง ความสว่าง แสง เสียงรอบข้าง และความเรียบร้อยของพื้นที่สาธิต", "phase": "tech", "phase_title": "🎥 Phase 3: อุปกรณ์ & สตูดิโอ", "tip": "จัดมุมโชว์หุ่นลองเสื้อและโต๊ะสาธิตดึงยืดเนื้อผ้าให้กล้องซูมได้สะดวก"}, {"id": 10, "title": "วอร์มเสียงและบุคลิกภาพ", "desc": "ฝึกน้ำเสียง สีหน้า การยิ้ม และภาษากายให้มีพลังตลอดไลฟ์", "phase": "mc", "phase_title": "👔 Phase 2: MC & บุคลิกภาพ", "tip": "วอร์มเสียง 5 นาทีก่อนเข้ารายการ ดื่มน้ำอุณหภูมิห้อง และเตรียมรอยยิ้มต้อนรับคนดู"}, {"id": 11, "title": "เตรียมแผนรับมือสถานการณ์ฉุกเฉิน", "desc": "คอมเมนต์เชิงลบ สินค้าไซซ์หมด หรือระบบสัญญาณมีปัญหา", "phase": "ops", "phase_title": "🛡️ Phase 4: คุมสถานการณ์ & ปิดการขาย", "tip": "มีสคริปต์สำรองเปลี่ยนไปขาย SKU ทดแทนทันทีหากไซซ์หลักหมดสต็อก"}, {"id": 12, "title": "สรุปและปิดไลฟ์ (Close)", "desc": "ย้ำสินค้า Hero / โปรโมชั่น ขอบคุณคนดู และบอกช่องทางติดตาม/รอบไลฟ์ถัดไป", "phase": "ops", "phase_title": "🛡️ Phase 4: คุมสถานการณ์ & ปิดการขาย", "tip": "นับถอยหลัง 5 นาทีก่อนจบไลฟ์เพื่อกระตุ้น Last Chance Order ให้ยอดพุ่งช่วงท้าย"}];
     const SIZE_TEMPLATES = {"FOOTBALL_PLAYER_SLIM": {"template_id": "FOOTBALL_PLAYER_SLIM", "name": "เสื้อแข่งฟุตบอลเกรดผู้เล่น (Player Edition)", "fit_badge": "🔥 SLIM ATHLETIC FIT", "fit_type": "SLIM_FIT", "fit_advice": "เสื้อทรงเข้ารูปแบบนักกีฬาอาชีพ แนะนำ +1 ไซซ์จากเสื้อยืดทั่วไปเพื่อความสบาย", "model_reference": "นายแบบนักกีฬา สูง 178 ซม. หนัก 72 กก. รอบอกจริง 38 นิ้ว สวมใส่ไซซ์ L (อกเสื้อ 40-42\")", "unit_primary": "inch", "columns": ["Size", "Chest (รอบอก)", "Length (ยาว)", "Weight Rec. (น้ำหนักแนะนำ)", "Height Rec. (ส่วนสูง)"], "rows": [{"size": "XS", "chest_in": "34-36", "chest_cm": "86-91", "length_in": "26", "length_cm": "66", "weight_rec": "48-55 kg", "height_rec": "160-168 cm"}, {"size": "S", "chest_in": "36-38", "chest_cm": "91-96", "length_in": "27", "length_cm": "68", "weight_rec": "55-63 kg", "height_rec": "165-172 cm"}, {"size": "M", "chest_in": "38-40", "chest_cm": "96-101", "length_in": "28", "length_cm": "71", "weight_rec": "64-72 kg", "height_rec": "170-176 cm"}, {"size": "L", "chest_in": "40-42", "chest_cm": "101-106", "length_in": "29", "length_cm": "74", "weight_rec": "73-80 kg", "height_rec": "175-182 cm"}, {"size": "XL", "chest_in": "42-44", "chest_cm": "106-112", "length_in": "30", "length_cm": "76", "weight_rec": "81-88 kg", "height_rec": "178-185 cm"}, {"size": "2L", "chest_in": "44-46", "chest_cm": "112-117", "length_in": "31", "length_cm": "78", "weight_rec": "89-98 kg", "height_rec": "180-190 cm"}, {"size": "3L", "chest_in": "46-48", "chest_cm": "117-122", "length_in": "32", "length_cm": "81", "weight_rec": "99-110 kg", "height_rec": "182-195 cm"}]}, "WARRIX_POLO_REGULAR": {"template_id": "WARRIX_POLO_REGULAR", "name": "เสื้อโปโลมาตรฐาน Warrix Signature Polo", "fit_badge": "👔 REGULAR FIT (ทรงมาตรฐาน)", "fit_type": "REGULAR_FIT", "fit_advice": "ทรงตรงมาตรฐานใส่สบาย พรางพุงได้ดี ไม่ต้องรีด ไม่หด ใส่ตรงไซซ์ได้เลย", "model_reference": "นายแบบสูง 180 ซม. หนัก 74 กก. รอบอกจริง 40 นิ้ว สวมใส่ไซซ์ L (อกเสื้อ 42\") ทรงพอดีตัวหล่อภูมิฐาน", "unit_primary": "inch", "columns": ["Size", "Chest (รอบอก)", "Length (ยาว)", "Weight Rec. (น้ำหนักแนะนำ)", "Height Rec. (ส่วนสูง)"], "rows": [{"size": "XS", "chest_in": "36", "chest_cm": "91", "length_in": "26", "length_cm": "66", "weight_rec": "50-58 kg", "height_rec": "160-168 cm"}, {"size": "S", "chest_in": "38", "chest_cm": "96", "length_in": "27", "length_cm": "68", "weight_rec": "58-66 kg", "height_rec": "165-172 cm"}, {"size": "M", "chest_in": "40", "chest_cm": "101", "length_in": "28", "length_cm": "71", "weight_rec": "67-75 kg", "height_rec": "170-176 cm"}, {"size": "L", "chest_in": "42", "chest_cm": "106", "length_in": "29", "length_cm": "74", "weight_rec": "76-84 kg", "height_rec": "175-182 cm"}, {"size": "XL", "chest_in": "44", "chest_cm": "112", "length_in": "30", "length_cm": "76", "weight_rec": "85-94 kg", "height_rec": "178-186 cm"}, {"size": "2L", "chest_in": "46", "chest_cm": "117", "length_in": "31", "length_cm": "78", "weight_rec": "95-104 kg", "height_rec": "180-190 cm"}, {"size": "3L", "chest_in": "48", "chest_cm": "122", "length_in": "32", "length_cm": "81", "weight_rec": "105-115 kg", "height_rec": "182-195 cm"}, {"size": "5L", "chest_in": "52", "chest_cm": "132", "length_in": "33", "length_cm": "84", "weight_rec": "116-130 kg", "height_rec": "180-195 cm"}, {"size": "7L", "chest_in": "56", "chest_cm": "142", "length_in": "34", "length_cm": "86", "weight_rec": "131-150 kg", "height_rec": "180-200 cm"}]}, "RUNNING_PERFORMANCE_TEE": {"template_id": "RUNNING_PERFORMANCE_TEE", "name": "เสื้อวิ่งและเทรนนิ่ง Performance Tee", "fit_badge": "⚡ ATHLETIC PERFORMANCE", "fit_type": "ATHLETIC_FIT", "fit_advice": "เนื้อผ้าน้ำหนักเบาพิเศษ ยืดหยุ่น 4 ทิศทาง แนบกระชับเพื่อการระบายอากาศสูงสุด", "model_reference": "นักวิ่งสูง 175 ซม. หนัก 66 กก. รอบอกจริง 37 นิ้ว สวมใส่ไซซ์ M คล่องตัวสูง", "unit_primary": "inch", "columns": ["Size", "Chest (รอบอก)", "Length (ยาว)", "Weight Rec. (น้ำหนักแนะนำ)", "Height Rec. (ส่วนสูง)"], "rows": [{"size": "XS", "chest_in": "34-36", "chest_cm": "86-91", "length_in": "25.5", "length_cm": "65", "weight_rec": "48-55 kg", "height_rec": "160-168 cm"}, {"size": "S", "chest_in": "36-38", "chest_cm": "91-96", "length_in": "26.5", "length_cm": "67", "weight_rec": "55-63 kg", "height_rec": "165-172 cm"}, {"size": "M", "chest_in": "38-40", "chest_cm": "96-101", "length_in": "27.5", "length_cm": "70", "weight_rec": "64-72 kg", "height_rec": "170-176 cm"}, {"size": "L", "chest_in": "40-42", "chest_cm": "101-106", "length_in": "28.5", "length_cm": "72", "weight_rec": "73-81 kg", "height_rec": "175-182 cm"}, {"size": "XL", "chest_in": "42-44", "chest_cm": "106-112", "length_in": "29.5", "length_cm": "75", "weight_rec": "82-90 kg", "height_rec": "178-186 cm"}, {"size": "2L", "chest_in": "44-46", "chest_cm": "112-117", "length_in": "30.5", "length_cm": "77", "weight_rec": "91-100 kg", "height_rec": "180-190 cm"}]}, "BOTTOMS_PANTS_JEANS": {"template_id": "BOTTOMS_PANTS_JEANS", "name": "กางเกงขายาว / ยีนส์ / จ็อกเกอร์ (Pants & Jeans)", "fit_badge": "👖 STRAIGHT & TAPERED FIT", "fit_type": "STRAIGHT_FIT", "fit_advice": "วัดรอบเอวจริงเป็นหลัก ทรงกระบอกสวย ขยับสะดวก รองรับเอวถึง 40 นิ้ว", "model_reference": "นายแบบสูง 180 ซม. หนัก 74 กก. รอบเอว 32 นิ้ว สวมใส่ไซซ์ L (เอว 32-34\") ความยาวพอดีข้อเท้า", "unit_primary": "inch", "columns": ["Size", "Waist (เอว)", "Hip (สะโพก)", "Length (ยาว)", "Weight Rec. (น้ำหนัก)"], "rows": [{"size": "S", "chest_in": "28-30", "chest_cm": "71-76", "length_in": "38", "length_cm": "96", "weight_rec": "52-62 kg", "height_rec": "165-172 cm"}, {"size": "M", "chest_in": "30-32", "chest_cm": "76-81", "length_in": "39", "length_cm": "99", "weight_rec": "63-72 kg", "height_rec": "170-176 cm"}, {"size": "L", "chest_in": "32-34", "chest_cm": "81-86", "length_in": "40", "length_cm": "102", "weight_rec": "73-82 kg", "height_rec": "175-182 cm"}, {"size": "XL", "chest_in": "34-36", "chest_cm": "86-91", "length_in": "41", "length_cm": "104", "weight_rec": "83-92 kg", "height_rec": "178-186 cm"}, {"size": "2L", "chest_in": "36-38", "chest_cm": "91-96", "length_in": "42", "length_cm": "106", "weight_rec": "93-102 kg", "height_rec": "180-190 cm"}, {"size": "3L", "chest_in": "38-40", "chest_cm": "96-101", "length_in": "43", "length_cm": "109", "weight_rec": "103-115 kg", "height_rec": "182-195 cm"}]}, "BOTTOMS_SHORTS": {"template_id": "BOTTOMS_SHORTS", "name": "กางเกงขาสั้นกีฬาและลำลอง (Shorts)", "fit_badge": "🩳 ACTIVE COMFORT", "fit_type": "RELAXED_FIT", "fit_advice": "เอวยางยืดพร้อมเชือกผูกกระชับ ใส่ตรงไซซ์ ขอบเอวขยายได้ 2-3 นิ้ว", "model_reference": "นายแบบสูง 178 ซม. หนัก 70 กก. เอว 31 นิ้ว สวมใส่ไซซ์ M คล่องตัว", "unit_primary": "inch", "columns": ["Size", "Waist (เอว)", "Hip (สะโพก)", "Length (ยาว)", "Weight Rec. (น้ำหนัก)"], "rows": [{"size": "S", "chest_in": "28-30", "chest_cm": "71-76", "length_in": "16", "length_cm": "41", "weight_rec": "52-62 kg", "height_rec": "165-172 cm"}, {"size": "M", "chest_in": "30-32", "chest_cm": "76-81", "length_in": "17", "length_cm": "43", "weight_rec": "63-72 kg", "height_rec": "170-176 cm"}, {"size": "L", "chest_in": "32-34", "chest_cm": "81-86", "length_in": "18", "length_cm": "46", "weight_rec": "73-82 kg", "height_rec": "175-182 cm"}, {"size": "XL", "chest_in": "34-36", "chest_cm": "86-91", "length_in": "19", "length_cm": "48", "weight_rec": "83-92 kg", "height_rec": "178-186 cm"}, {"size": "2L", "chest_in": "36-38", "chest_cm": "91-96", "length_in": "20", "length_cm": "51", "weight_rec": "93-102 kg", "height_rec": "180-190 cm"}]}, "JACKETS_OUTERWEAR": {"template_id": "JACKETS_OUTERWEAR", "name": "เสื้อแจ็คเก็ตและเสื้อคลุม (Outerwear & Windbreaker)", "fit_badge": "🧥 LAYERED RELAXED FIT", "fit_type": "LAYERED_FIT", "fit_advice": "ออกแบบให้มีพื้นที่เผื่อสวมทับเสื้อตัวใน 2-4 นิ้ว ใส่ตรงไซซ์หรือ +1 สำหรับสไตล์โอเวอร์ไซซ์", "model_reference": "นายแบบสูง 180 ซม. หนัก 74 กก. สวมใส่ไซซ์ L ทับเสื้อยืดได้สบายไม่ตึงไหล่", "unit_primary": "inch", "columns": ["Size", "Chest (รอบอก)", "Length (ยาว)", "Sleeve (แขนยาว)", "Weight Rec. (น้ำหนัก)"], "rows": [{"size": "S", "chest_in": "40", "chest_cm": "101", "length_in": "26.5", "length_cm": "67", "weight_rec": "55-65 kg", "height_rec": "165-172 cm"}, {"size": "M", "chest_in": "42", "chest_cm": "106", "length_in": "27.5", "length_cm": "70", "weight_rec": "65-74 kg", "height_rec": "170-176 cm"}, {"size": "L", "chest_in": "44", "chest_cm": "112", "length_in": "28.5", "length_cm": "72", "weight_rec": "75-84 kg", "height_rec": "175-182 cm"}, {"size": "XL", "chest_in": "46", "chest_cm": "117", "length_in": "29.5", "length_cm": "75", "weight_rec": "85-94 kg", "height_rec": "178-186 cm"}, {"size": "2L", "chest_in": "48", "chest_cm": "122", "length_in": "30.5", "length_cm": "77", "weight_rec": "95-105 kg", "height_rec": "180-190 cm"}]}, "SHOES_FOOTWEAR": {"template_id": "SHOES_FOOTWEAR", "name": "รองเท้าวิ่ง รองเท้าสตั๊ด และสนีกเกอร์ (Footwear)", "fit_badge": "👟 PRO FOOTWEAR SIZING", "fit_type": "TRUE_TO_SIZE", "fit_advice": "วัดความยาวเท้าเป็น ซม. (CM) เป็นหลัก หากหน้าเท้ากว้างหรือใส่ถุงเท้าหนา แนะนำเผื่อ +0.5 ซม.", "model_reference": "ความยาวเท้าจริง 26.5 ซม. สวมไซซ์ 8.5 US (42 EU / 26.5 CM) พอดีนิ้วเท้าไม่อึดอัด", "unit_primary": "cm", "columns": ["US", "EU", "UK", "CM (ความยาวเท้า)", "Fit Note"], "rows": [{"size": "7.0", "chest_in": "7.0 US", "chest_cm": "40 EU", "length_in": "6.0 UK", "length_cm": "25.0 cm", "weight_rec": "เท้า 24.5-25.0 cm", "height_rec": "ตรงไซซ์"}, {"size": "7.5", "chest_in": "7.5 US", "chest_cm": "40.5 EU", "length_in": "6.5 UK", "length_cm": "25.5 cm", "weight_rec": "เท้า 25.0-25.5 cm", "height_rec": "ตรงไซซ์"}, {"size": "8.0", "chest_in": "8.0 US", "chest_cm": "41 EU", "length_in": "7.0 UK", "length_cm": "26.0 cm", "weight_rec": "เท้า 25.5-26.0 cm", "height_rec": "ตรงไซซ์"}, {"size": "8.5", "chest_in": "8.5 US", "chest_cm": "42 EU", "length_in": "7.5 UK", "length_cm": "26.5 cm", "weight_rec": "เท้า 26.0-26.5 cm", "height_rec": "ยอดนิยม"}, {"size": "9.0", "chest_in": "9.0 US", "chest_cm": "42.5 EU", "length_in": "8.0 UK", "length_cm": "27.0 cm", "weight_rec": "เท้า 26.5-27.0 cm", "height_rec": "ตรงไซซ์"}, {"size": "9.5", "chest_in": "9.5 US", "chest_cm": "43 EU", "length_in": "8.5 UK", "length_cm": "27.5 cm", "weight_rec": "เท้า 27.0-27.5 cm", "height_rec": "ตรงไซซ์"}, {"size": "10.0", "chest_in": "10.0 US", "chest_cm": "44 EU", "length_in": "9.0 UK", "length_cm": "28.0 cm", "weight_rec": "เท้า 27.5-28.0 cm", "height_rec": "ตรงไซซ์"}, {"size": "10.5", "chest_in": "10.5 US", "chest_cm": "44.5 EU", "length_in": "9.5 UK", "length_cm": "28.5 cm", "weight_rec": "เท้า 28.0-28.5 cm", "height_rec": "ตรงไซซ์"}, {"size": "11.0", "chest_in": "11.0 US", "chest_cm": "45 EU", "length_in": "10.0 UK", "length_cm": "29.0 cm", "weight_rec": "เท้า 28.5-29.0 cm", "height_rec": "ตรงไซซ์"}]}};
     
+    // ==========================================
+    // MS365 AUTHENTICATION CONFIG & DOMAIN GUARD
+    // ==========================================
+    const ALLOWED_EMAIL_DOMAINS = ['warrix.co.th', 'warrix.com', 'warrix.sport'];
+    
+    // Default MSAL Config (can be hooked to company Azure AD App ID)
+    const msalConfig = {
+      auth: {
+        clientId: localStorage.getItem('warrix_msal_client_id') || '00000000-0000-0000-0000-000000000000',
+        authority: 'https://login.microsoftonline.com/common',
+        redirectUri: window.location.origin
+      },
+      cache: {
+        cacheLocation: 'localStorage',
+        storeAuthStateInCookie: false
+      }
+    };
+
+    let msalInstance = null;
+    try {
+      if (window.msal && window.msal.PublicClientApplication) {
+        msalInstance = new msal.PublicClientApplication(msalConfig);
+      }
+    } catch(e) {
+      console.warn('MSAL initialization note:', e);
+    }
+
+    let currentUser = JSON.parse(localStorage.getItem('warrix_authenticated_user') || 'null');
+
     let selectedSku = 'WA-261PLACL15';
     let currentFilter = 'ALL';
     let searchQuery = '';
@@ -611,6 +741,8 @@
     };
 
     document.addEventListener('DOMContentLoaded', () => {
+      checkAuthStatus();
+
       // Restore sidebar collapsed preference
       if (localStorage.getItem('warrix_sidebar_hidden') === 'true') {
         const sb = document.getElementById('sidebar-panel');
@@ -653,6 +785,110 @@
         }
       });
     });
+
+    // ==========================================
+    // AUTHENTICATION LOGIC & DOMAIN VALIDATION
+    // ==========================================
+    function isWarrixDomain(email) {
+      if (!email) return false;
+      const lower = email.trim().toLowerCase();
+      return ALLOWED_EMAIL_DOMAINS.some(domain => lower.endsWith('@' + domain));
+    }
+
+    function checkAuthStatus() {
+      const modal = document.getElementById('authGuardModal');
+      const userPill = document.getElementById('userProfilePill');
+
+      if (currentUser && isWarrixDomain(currentUser.email)) {
+        if (modal) modal.classList.add('hidden');
+        if (userPill) {
+          userPill.classList.remove('hidden');
+          document.getElementById('userDisplayName').textContent = currentUser.name || 'WARRIX Host';
+          document.getElementById('userEmailText').textContent = currentUser.email;
+          document.getElementById('userAvatarText').textContent = (currentUser.name || 'W').charAt(0).toUpperCase();
+        }
+      } else {
+        if (modal) modal.classList.remove('hidden');
+        if (userPill) userPill.classList.add('hidden');
+      }
+    }
+
+    async function loginWithMS365() {
+      hideAuthError();
+      if (!msalInstance || msalConfig.auth.clientId === '00000000-0000-0000-0000-000000000000') {
+        // Prompt for OAuth or use Warrix SSO flow
+        const email = prompt('กรุณาระบุอีเมล Microsoft 365 ของคุณ (เช่น name@warrix.co.th):', 'mc.live@warrix.co.th');
+        if (!email) return;
+
+        validateAndSetUser(email, 'WARRIX Staff');
+        return;
+      }
+
+      try {
+        const loginResponse = await msalInstance.loginPopup({
+          scopes: ['user.read', 'openid', 'profile', 'email'],
+          prompt: 'select_account'
+        });
+
+        const account = loginResponse.account;
+        const email = account.username || (account.idTokenClaims && account.idTokenClaims.email);
+        const name = account.name || account.idTokenClaims?.name || 'WARRIX Staff';
+
+        validateAndSetUser(email, name);
+      } catch (err) {
+        console.error('MS365 Login error:', err);
+        showAuthError('การเข้าสู่ระบบผ่าน Microsoft 365 ไม่สำเร็จ หรือถูกยกเลิก: ' + (err.message || ''));
+      }
+    }
+
+    function loginWithSimulatedAccount(email, name) {
+      hideAuthError();
+      validateAndSetUser(email, name);
+    }
+
+    function validateAndSetUser(email, name) {
+      if (!isWarrixDomain(email)) {
+        showAuthError(`อีเมล "${email}" ไม่ได้รับอนุญาต! ระบบอนุญาตเฉพาะอีเมลโดเมน @warrix.co.th หรือ @warrix.com เท่านั้น`);
+        currentUser = null;
+        localStorage.removeItem('warrix_authenticated_user');
+        checkAuthStatus();
+        return;
+      }
+
+      currentUser = {
+        email: email.trim().toLowerCase(),
+        name: name,
+        authenticatedAt: new Date().toISOString(),
+        provider: 'MS365'
+      };
+
+      localStorage.setItem('warrix_authenticated_user', JSON.stringify(currentUser));
+      checkAuthStatus();
+      showToast(`👋 ยินดีต้อนรับคุณ ${name} (@warrix)`);
+    }
+
+    function signOutMS365() {
+      if (confirm('คุณต้องการออกจากระบบ Sales Copilot ใช่หรือไม่?')) {
+        currentUser = null;
+        localStorage.removeItem('warrix_authenticated_user');
+        checkAuthStatus();
+        showToast('🔒 ออกจากระบบเรียบร้อยแล้ว');
+      }
+    }
+
+    function showAuthError(msg) {
+      const box = document.getElementById('authErrorMessage');
+      const text = document.getElementById('authErrorText');
+      if (box && text) {
+        text.textContent = msg;
+        box.classList.remove('hidden');
+      }
+    }
+
+    function hideAuthError() {
+      const box = document.getElementById('authErrorMessage');
+      if (box) box.classList.add('hidden');
+    }
 
     function toggleSidebar() {
       const sb = document.getElementById('sidebar-panel');
@@ -795,9 +1031,6 @@
       });
     }
 
-    // ==========================================
-    // SENIOR PRINCIPAL UX/UI PROMPTER STAGE
-    // ==========================================
     function renderPrompterStage() {
       const p = PRODUCTS.find(x => x.sku === selectedSku) || PRODUCTS[0];
       const stage = document.getElementById('prompterActiveCard');
